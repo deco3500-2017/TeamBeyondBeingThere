@@ -196,14 +196,14 @@ The team has a regular 2-hour meeting at the workshop on Tuesday afternoon. Sinc
 
 ### Platforms for communication
 The team has set up a Github repository, a Slack channel, a Google Drive folder, and a Wechat group. 
-#### <i class="icon-file"></i> GitHub
-: The Github repository will be used to document the main content of the project, such as the interface design files and the team’s deliverables for the course. Github URL: https://github.com/deco3500-2017/TeamBeyondBeingThere
-#### <i class="icon-file"></i> Google Drive
-: The Google Drive folder is for documentation of the design process and file exchange. For example, the photos of brainstorming have been uploaded to the folder. Google Drive URL: https://drive.google.com/drive/folders/0B3s2700t81vTZ0xiWjV1R1kzTGc?usp=sharing
-#### <i class="icon-file"></i> WeChat
-: WeChat is the most common instant messaging app which all team members regularly use. So we set up a group in the app and use the app as the main online communication tool.
-#### <i class="icon-file"></i> Slack
-: A slack channel has also been set up as a supplementary approach to collaboration. Slack channel: #deco3500-clubhub
+####  GitHub
+The Github repository will be used to document the main content of the project, such as the interface design files and the team’s deliverables for the course. Github URL: https://github.com/deco3500-2017/TeamBeyondBeingThere
+#### Google Drive
+The Google Drive folder is for documentation of the design process and file exchange. For example, the photos of brainstorming have been uploaded to the folder. Google Drive URL: https://drive.google.com/drive/folders/0B3s2700t81vTZ0xiWjV1R1kzTGc?usp=sharing
+#### WeChat
+WeChat is the most common instant messaging app which all team members regularly use. So we set up a group in the app and use the app as the main online communication tool.
+#### Slack
+A slack channel has also been set up as a supplementary approach to collaboration. Slack channel: #deco3500-clubhub
 
 
 
@@ -338,6 +338,9 @@ Some features of our concept were similar to, but different from, Facebook Page 
 # References
 
 Kietzmann, J. H., Hermkens, K., McCarthy, I. P., & Silvestre, B. S. (2011). Social media? Get serious! Understanding the functional building blocks of social media. Business Horizons, 54(3), 241–251. https://doi.org/10.1016/j.bushor.2011.01.005
+
 Ren-Tao, M. (2011). Perceived Organizational Support, Job Satisfaction, Task Performance and Organizational Citizenship Behavior in China. Journal Of Behavioral & Applied Management, 12(2), 105-127.
+
 University of Queensland Union. (n.d.). Find a Club or Society. Retrieved August 31, 2017, from http://www.uqu.com.au/clubs-societies
+
 Xtensio. (n.d.). Persona Template. Retrieved August 31, 2017, from https://app.xtensio.com/
