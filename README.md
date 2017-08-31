@@ -1,6 +1,6 @@
 # Proposal
 
-## Introduction - needs improvement
+## Introduction
 
 There are 219 clubs and societies which hold various types of events and enrich the student's campus life at UQ (University of Queensland Union, 2017). However, the power of clubs has not been fully utilised. Some students have never joined a club, and although some of them join clubs, they do not participate in events. 
 
@@ -108,7 +108,7 @@ The main features of the product involve:
 
 
 
-### Highlights
+### Highlights - to read
 #### Enhanced information transparency
 The product offers users an information exchanging and sharing system by providing an integrated platform to help users to expand the way of knowing clubs events and increase the effectiveness of holding various events.
 : The the core functionality will be novel integrated event information systems for both organizers and other students. For organizers, at the stage of planning of a future event, the platform will publish the general basic detail of it and collect feedbacks from other users for opinions. Then the organizers are able to use the data to change and adapt the event and activity. This can significantly prevent or solve the potential situations of holding an activity that no one interested to come or the event which can be a time and financial waste for the organization. As for students who are interested joining a club or event, this platform will exist as the official means of publishing related events information which provides related detailed information of related events according to the users preferences. Thus, the former situation that members can’t receive events’ notifications or receiving duplicate information from various media approaches will be solved. 
@@ -324,13 +324,13 @@ Some features of our concept were similar to, but different from, Facebook Page 
 
 
 ## Tags
-\# Asynchronous Distributed Interaction 
-\# awareness 
-\# social
-\# Social Software 
-\# identity 
-\# community
-\# mobile
+\#Asynchronous Distributed Interaction 
+\#awareness 
+\#social
+\#Social Software 
+\#identity 
+\#community
+\#mobile
 
 
 
