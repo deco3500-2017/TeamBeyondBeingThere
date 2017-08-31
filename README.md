@@ -1,9 +1,5 @@
 # Proposal
 
-
-----------
-
-
 ## Introduction - needs improvement
 
 There are 219 clubs and societies which hold various types of events and enrich the student's campus life at UQ (University of Queensland Union, 2017). However, the power of clubs has not been fully utilised. Some students have never joined a club, and although some of them join clubs, they do not participate in events. 
@@ -12,7 +8,6 @@ Several main problems have been identified based on the preliminary research. No
 
 How can we design to help each category of users enjoy their social lives more? The team conducted interviews, an online questionnaire, and academic research to investigate into the problem space, and decided to design a mobile app to improve the social connections between members and clubs.
 
-----------
 
 
 ### Preliminary research
@@ -29,7 +24,6 @@ We first conducted interviews within our team to get a better understanding of s
  6. He made friends with other members (not his partners) and maintained relationships in WeChat (a popular instant messaging app in China).
 
 
-----------
 
 
 >Danson has two roles. First we interviewed Danson as a potential member of UQ Beer Club. He was interested in the activities (we call them events in the rest of the proposal) that the club held, but he did not join it. We found:
@@ -39,7 +33,6 @@ We first conducted interviews within our team to get a better understanding of s
  3. Most of the club members were local students, as he observed. So he was afraid of language barriers and cultural differences.
 
 
-----------
 
 >And then, we continued to interview Danson as a committee member (we call him an organiser in the rest of the proposal) of UQ Chinese Student and Scholar Association. He worked for the society as an HR, and based on his experience, we found:
 >
@@ -63,7 +56,6 @@ Later on, we designed and distributed an online questionnaire and collected 64 r
  4. Activities they like at UQ are: (1) freebies (2) Market Day (3) study (4) sports.
 
 
-----------
 >For existing members:
 >
  1. 93.5% of them get information about clubs on the Market Day.
@@ -76,7 +68,6 @@ Later on, we designed and distributed an online questionnaire and collected 64 r
  8. Some of them find disconnected from the club.
 
 
-----------
 >For organisers (who are also existing members):
 >
  1. They rate the activeness of the club as high.
@@ -85,8 +76,6 @@ Later on, we designed and distributed an online questionnaire and collected 64 r
  4. They have trouble in organising information, promoting events, collaboration, being motivated and supported.
  5. Their attitudes towards a new mobile social app vary.
 
-
-----------
 
 
 ### Literature review
@@ -99,14 +88,12 @@ With the rise of social media, it is really convenient for an individual or orga
 
 A social media platform focuses on several elements of the honeycomb model. For example, Facebook mostly covers relationships, presence, identity, conversations, and reputation. Whereas in our concept, we focus more on groups, identity, sharing, and reputation.
 
-----------
 
 
 ## Concept
 
 The goal of our project, UQ ClubHub, is to improve the social connections between members and clubs. It allows members to know more about various clubs and societies and the events they hold. It helps members make decisions when choosing clubs to join and events to attend. For organisers, the app is designed to facilitate club management and event operation. To achieve these goals, our team have decided to design a mobile app as the final form of our product. Due to the fact that users would like to be informed about adjacent events and access all the information anywhere, anytime, mobile phones would be the best platform for our product. Within a mobile app, all the utility and functionalities can be integrated effectively.
 
-----------
 
 
 ### Main features
@@ -119,7 +106,6 @@ The main features of the product involve:
  5. rating the activeness of clubs and members, including a rewarding mechanism to motivate participation, and
  6. having a good utility for organisers, including a social network diagram to visualise relationships between members within a club. 
 
-----------
 
 
 ### Highlights
@@ -132,10 +118,9 @@ Providing an activeness evaluation system and corresponding  rewarding system fo
 #### Explore a new pathway to joining a club 
 The product changes the traditional mode for students to join clubs. 
 ![A new mode to join a club](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/newmode.png "A new mode to join a club")
-: At last, after analysis of the data received from questionnaires, over ninety percent of the students receive clubs information from market day which leads to that fact that they will need to decide whether to join the club or not without attending any related events and activities. To change this traditional means of joining clubs. The system provides a unique way for users by simply choosing a preferred relation to the certain club. Currently, the user are allowed to choose relations as “Following” which will be marked as potential member, “Participating” as the causal member, “Joined” as the loyalty member of the club. Through this system, all users can join multiple clubs according to personal interests easily. At meantime the scale of each organization can be enlarged significantly.
+At last, after analysis of the data received from questionnaires, over ninety percent of the students receive clubs information from market day which leads to that fact that they will need to decide whether to join the club or not without attending any related events and activities. To change this traditional means of joining clubs. The system provides a unique way for users by simply choosing a preferred relation to the certain club. Currently, the user are allowed to choose relations as “Following” which will be marked as potential member, “Participating” as the causal member, “Joined” as the loyalty member of the club. Through this system, all users can join multiple clubs according to personal interests easily. At meantime the scale of each organization can be enlarged significantly.
 
 
-----------
 
 
 ### Target audience
@@ -149,10 +134,9 @@ Name - a representative of organisers
 ![Persona 3](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona3.png "Persona 3")
 
 
-----------
 
 
-### Expected outcomes
+### Expected outcomes - to read
 If our product was fully developed and widely used by UQ students, a new club and event operating mode would be provided. Firstly, all users will be using our app as the priority approach receiving events information according to their customised interests filter. Also, UQ students are able to find out all the basic information about all the student clubs and societies including name, previous events, leadership, regulation and description of the organization etc... Users now have a simple way find out which clubs to join in by their preference without the limitation of time and location, and don’t have to worry missing the Market Day which is the major time for participating organizations. 
 
 Additionally, the system are able to import the data of your friend list in the facebook, then users can see their friends name under certain event section. What’s more, users can make new friends that sharing the same interests and had participated same events by watching their personal profile and linking back to their facebook. The system itself provides a reward system to all users by giving special badges and levels according to the contributions they made to the club. Thus, the motivation of participating the club activities can be increased. As for organizers, by using this app, they are now able to publish a future event or activity and receive feedbacks from users. So they can make adjustment to the event which prevents potential commercial cost and increase the quality of the event itself. Also, they are able to present their organizations to the potential members by fulfilling the description and other essential information about the organization itself which save the time constructing redundant club website or booking places especially for propagating the club.
@@ -161,21 +145,18 @@ All in all, the application can not only simplify the process of participating c
 
 
 
-----------
-
 
 ### Competitor analysis - needs improvement
-Besides what is explained in the [social media honeycomb model](#literature-review)., the differences between our project and other existing platforms (Facebook and Slack) are listed below.
+Besides what is explained in the [social media honeycomb model](#literature-review), the differences between our project and other existing platforms (Facebook and Slack) are listed below.
 ![Competitor Analysis](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/competitoranalysis.png "Competitor Analysis")
 
 
-----------
 
 
 ## Team
 
 ### Members
-| FULL NAME          | PREFERRED NAME | STUDENT NO. | COURSE CODE | MAJOR                              | ROLE                   | EXPERTISE                                                                                      |
+| FULL NAME          | PREFERRED NAME | STUDENT NO. | COURSE CODE | MAJOR                              | ROLE                   | EXPERIENCE                                                                                     |
 |---------------|----------------|-------------|-------------|------------------------------------|------------------------|------------------------------------------------------------------------------------------------|
 | Chunnan Zheng | Nan            | 44097938    | DECO7350    | Master of Interaction Design       | Team leader & Designer | He has previous experience in studios and is good at the whole design process and project management. |
 | Desheng Ban   | Danson         | 44017392    | DECO7350    | Master of Interaction Design       | Designer, Transport & Meeting Management  | He is good at the front-end development and handcraft.                                         |
@@ -184,14 +165,12 @@ Besides what is explained in the [social media honeycomb model](#literature-revi
 | Yifan Lu      | Alvin          | 44106782    | DECO3500    | Bachelor of Information Technology | Developer              | He has many software development experiences.                                                  |
 
 
-----------
 
 
 ### Decision-making
 Everyone has the right to make a decision. Generally, we use a fair method, voting, to make a decision after thorough discussion. To ensure efficiency and quality of discussion, we have regular meetings every week. Each member should participate in meetings, discussion, data collection and analysis. During the meeting, we will review the previous work and discuss new tasks. Everyone should talk about their own ideas and list them on the whiteboard. Then we choose the most suitable one according to the project requirements. If there are two ideas meet the requirements at the same time, we will conduct A/B tests to examine both of them. Plus, we would ask the teaching staff for suggestions. 
 
 
-----------
 
 
 ### Conflict-solving
@@ -200,14 +179,12 @@ We cannot ensure that everyone has the exactly equivalent workload. However, we 
 We will try our best to avoid the conflicts. The regular meeting and decision-making method provide a good way to express the personal idea. If a conflict happens, we will give members enough time to clarify their thought. Group member will together analyse the reason and problem of the conflict. If a big conflict happens in our group, we will ask other groups to involve to coordinate. Otherwise, we will look for help from the teaching staff. However, we will as far as possible avoid the conflict. 
 
 
-----------
 
 
 ### Design approaches - needs improvement
 StackEdit stores your documents in your browser, which means all your documents are automatically saved locally and are accessible **offline!**
 
 
-----------
 
 ## Communication
 
@@ -215,7 +192,6 @@ StackEdit stores your documents in your browser, which means all your documents 
 The team has a regular 2-hour meeting at the workshop on Tuesday afternoon. Since team members have signed onto different practical sessions, we plan to attend the second half of P01 and the first half of P02 on Wednesdays, which is another two hour. If needed, extra meeting or working time will be discussed according to the team members’ available time.
 
 
-----------
 
 
 ### Platforms for communication
@@ -230,7 +206,6 @@ The team has set up a Github repository, a Slack channel, a Google Drive folder,
 : A slack channel has also been set up as a supplementary approach to collaboration. Slack channel: #deco3500-clubhub
 
 
-----------
 
 
 ### File management
@@ -243,7 +218,6 @@ For example, photos of the brainstorming process should be named as “Brainstor
 Nan is in charge of checking all file names on all platforms to keep them consistent.
 
 
-----------
 
 
 ### Milestones
@@ -333,11 +307,9 @@ https://github.com/deco3500-2017/TeamBeyondBeingThere/milestones?direction=asc&s
 1. Demonstrate the final prototype
 
 
-----------
 ### Task allocation - needs improvement
 ![Task allocation](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/tasks.png "Task allocation")
 
-----------
 
 
 ## Changes made based on the feedback from Pitch
@@ -349,7 +321,6 @@ Based on the feedback from the teaching staff, we can see the main focus of our 
 Some features of our concept were similar to, but different from, Facebook Page and events. We added a section in the proposal to compare our concept to Facebook. Please refer to [Competitor analysis](#competitor-analysis).
 
 
-----------
 
 
 ## Tags
@@ -362,7 +333,6 @@ Some features of our concept were similar to, but different from, Facebook Page 
 \# mobile
 
 
-----------
 
 
 # References
