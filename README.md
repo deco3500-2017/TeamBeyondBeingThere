@@ -1,3 +1,52 @@
+**Table of Contents**
+
+- [Proposal](#)
+	- [Introduction](#)
+		- [Preliminary research](#)
+			- [Interviews](#)
+			- [Questionnaire](#)
+		- [Literature review](#)
+	- [Concept](#)
+		- [Main features](#)
+		- [Highlights](#)
+			- [Enhanced information transparency](#)
+			- [Make activeness measurable](#)
+			- [Explore a new pathway to joining a club](#)
+			- [Value friendship](#)
+		- [Target audience](#)
+			- [Personas](#)
+		- [Expected outcomes & Vision](#)
+		- [Competitor analysis](#)
+	- [Team](#)
+		- [Members](#)
+		- [Task allocation](#)
+		- [Decision-making](#)
+		- [Conflict-solving](#)
+		- [Design approaches](#)
+	- [Communication](#)
+		- [Regular meeting sessions](#)
+		- [Platforms for communication](#)
+			- [GitHub](#)
+			- [Google Drive](#)
+			- [WeChat](#)
+			- [Slack](#)
+		- [File management](#)
+		- [Milestones](#)
+			- [Week 5 - Empathise - Initial Research](#)
+			- [Week 6 - Ideate - Concept & Proposal](#)
+			- [Week 7 - Design - Concrete Design](#)
+			- [Week 8 - Prototype & Evaluate - Low-Fidelity Prototype](#)
+			- [Week 9 + Mid-Semester Break - Design & Prototype - Iteration](#)
+			- [Week 10 - Evaluate - High-Fidelity Prototype](#)
+			- [Week 11 - Design & Prototype - Iteration](#)
+			- [Week 12 - Finalise - Final Prototype & Promotional Materials](#)
+			- [Week 13 - Demonstrate - Demonstration](#)
+	- [Changes made based on the feedback from Pitch](#)
+			- [Focus on the member’s relationship with clubs](#)
+			- [Differences from Facebook](#)
+	- [Tags](#)
+- [References](#)
+
 # Proposal
 
 ## Introduction
@@ -128,7 +177,7 @@ The app does not offer instant messaging functions like Facebook, but a user can
 
 ### Target audience
 General speaking, the target audience of UQ ClubHub is current students of UQ, including non-members, members, and organisers of UQ clubs and societies. Here are personas created for each type of users. 
-#### Personas - needs improvement
+#### Personas
 Ben Jefferson - a representative of non-members
 ![Persona 1](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona3.png "Persona 1")
 Brian Kiley - a representative of members
@@ -168,7 +217,7 @@ Besides what is explained in the [social media honeycomb model](#literature-revi
 | Yifan Lu      | Alvin          | 44106782    | DECO3500    | Bachelor of Information Technology | Developer              | He has many software development experiences.                                                  |
 
 
-### Task allocation - needs improvement
+### Task allocation
 ![Task allocation](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/tasks.png#1 "Task allocation")
 
 
@@ -187,7 +236,7 @@ We will try our best to avoid the conflicts. The regular meeting and decision-ma
 
 
 
-### Design approaches - needs improvement
+### Design approaches
 StackEdit stores your documents in your browser, which means all your documents are automatically saved locally and are accessible **offline!**
 
 
