@@ -86,7 +86,7 @@ With the rise of social media, it is really convenient for an individual or orga
 
 ![The honeycomb of social media](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/honeycomb.jpg "The honeycomb of social media")
 
-A social media platform focuses on several elements of the honeycomb model. For example, Facebook mostly covers relationships, presence, identity, conversations, and reputation. Whereas in our concept, we focus more on groups, identity, sharing, and reputation.
+A social media platform focuses on several elements of the honeycomb model. For example, Facebook mostly covers relationships, presence, identity, conversations, and reputation. Whereas in our concept, we decided to focus more on groups, identity, sharing, and reputation.
 
 
 
@@ -108,17 +108,20 @@ The main features of the product involve:
 
 
 
-### Highlights - to read
+### Highlights
 #### Enhanced information transparency
-The product offers users an information exchanging and sharing system by providing an integrated platform to help users to expand the way of knowing clubs events and increase the effectiveness of holding various events.
-: The the core functionality will be novel integrated event information systems for both organizers and other students. For organizers, at the stage of planning of a future event, the platform will publish the general basic detail of it and collect feedbacks from other users for opinions. Then the organizers are able to use the data to change and adapt the event and activity. This can significantly prevent or solve the potential situations of holding an activity that no one interested to come or the event which can be a time and financial waste for the organization. As for students who are interested joining a club or event, this platform will exist as the official means of publishing related events information which provides related detailed information of related events according to the users preferences. Thus, the former situation that members can’t receive events’ notifications or receiving duplicate information from various media approaches will be solved. 
+The product offers users an integrated platform of exchanging and sharing information associated with clubs and events. By such means, information becomes more transparent to potential and exisiting members, which helps them to make better decisions and be aware of surronding events. 
+The concept is useful for both organisers and members. For organisers, at the stage of planning of a future event, the platform will allow them to collect feedback from members. Then, the organisers are able to use the information to adjust the event for better outcomes. This can significantly avoid holding an event that no one is interested to come or a waste of time and time for the club. For students who are interested in attending a club or event, this platform will exist as the official means of publishing related events information which provides related detailed information of events according to the users preferences. Thus, the problems that members cannot timely receive notification from clubs and receive duplicated information from various social media will be solved. 
 ####  Make activeness measurable
-Providing an activeness evaluation system and corresponding  rewarding system for all participants to stimulate members’ motivation.
-: Additionally, the product provides a new activeness evaluation system that will give different valuation on members in different clubs based on their contribution to the clubs such as attending an event and clubs activities arrangements etc… The valuation of activeness will be showed in form of levels. According to the “level” in certain club and student society, different image frame and unique badge will be given as system special identity rewards and  the organizers can personalize their own rewards based on that as well. This will positively encourage all members in the clubs to participant and support related events and provide organizers a general view of member activities. 
+UQ ClubHub provides an activeness evaluation system and a corresponding rewarding system for all participants to stimulate members’ motivation.
+The activeness evaluation system will give different valuation to members in different clubs based on their contributions to the clubs such as attending an event and being a volunteer, etc. The valuation of activeness will be showed in the form of "level"s. According to the “level” in a certain club, different badges will be awarded as special identity rewards. This will positively encourage all members in the clubs to participant in and support related events. 
 #### Explore a new pathway to joining a club 
-The product changes the traditional mode for students to join clubs. 
+The traditional mode for students to join clubs relys too much on the Markey Day, and students join a club without holistic understanding of the club and the events it holds.
 ![A new mode to join a club](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/newmode.png "A new mode to join a club")
-At last, after analysis of the data received from questionnaires, over ninety percent of the students receive clubs information from market day which leads to that fact that they will need to decide whether to join the club or not without attending any related events and activities. To change this traditional means of joining clubs. The system provides a unique way for users by simply choosing a preferred relation to the certain club. Currently, the user are allowed to choose relations as “Following” which will be marked as potential member, “Participating” as the causal member, “Joined” as the loyalty member of the club. Through this system, all users can join multiple clubs according to personal interests easily. At meantime the scale of each organization can be enlarged significantly.
+To change this current means of joining clubs, the app provides a unique way for users by allowing them to choose to “follow” a club as a potential member, “participate” in an event as a causal member of the club, or “join” the club as a loyalty member. Via UQ ClubHub, all users define their relationships with multiple clubs according to their personal interests easily.
+#### Value friendship
+Users can become friends with other ones in UQ ClubHub, or import their existing social relationship from other social media, such as Facebook.
+The app does not offer instant messaging functions like Facebook, but a user can see his or her friends in an event or a club. Barriers and worries can be reduced by being aware of companions, and motivation is increased.
 
 
 
@@ -126,27 +129,27 @@ At last, after analysis of the data received from questionnaires, over ninety pe
 ### Target audience
 General speaking, the target audience of UQ ClubHub is current students of UQ, including non-members, members, and organisers of UQ clubs and societies. Here are personas created for each type of users. 
 #### Personas - needs improvement
-Name - a representative of non-members
-![Persona 1](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona1.png "Persona 1")
-Name - a representative of members
+Ben Jefferson - a representative of non-members
+![Persona 1](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona3.png "Persona 1")
+Brian Kiley - a representative of members
 ![Persona 2](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona2.png "Persona 2")
-Name - a representative of organisers
-![Persona 3](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona3.png "Persona 3")
+Matthew Alexander - a representative of organisers
+![Persona 3](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona1.png "Persona 3")
 
 
 
 
-### Expected outcomes - to read
-If our product was fully developed and widely used by UQ students, a new club and event operating mode would be provided. Firstly, all users will be using our app as the priority approach receiving events information according to their customised interests filter. Also, UQ students are able to find out all the basic information about all the student clubs and societies including name, previous events, leadership, regulation and description of the organization etc... Users now have a simple way find out which clubs to join in by their preference without the limitation of time and location, and don’t have to worry missing the Market Day which is the major time for participating organizations. 
+### Expected outcomes & Vision
+At the end of the semester, the team shall be able to finish a high-fidelity interactive prototype that meets the basic usability requirements and is testable to collect the target audience's responses to the concept. Throughout the rest of the semester, we are going to keep iterating the prototype and the concept to meet students' goals and make more of them regard the concept as helpful.
 
-Additionally, the system are able to import the data of your friend list in the facebook, then users can see their friends name under certain event section. What’s more, users can make new friends that sharing the same interests and had participated same events by watching their personal profile and linking back to their facebook. The system itself provides a reward system to all users by giving special badges and levels according to the contributions they made to the club. Thus, the motivation of participating the club activities can be increased. As for organizers, by using this app, they are now able to publish a future event or activity and receive feedbacks from users. So they can make adjustment to the event which prevents potential commercial cost and increase the quality of the event itself. Also, they are able to present their organizations to the potential members by fulfilling the description and other essential information about the organization itself which save the time constructing redundant club website or booking places especially for propagating the club.
+If our concept was fully developed and widely used by UQ students, a new club and event operating mode would be created. Users will be offered a simple way to find out which clubs to join and which events to participate in by their preferences without the limitation of time and space, and do not have to be worried about missing the Market Day which is the key node of attending clubs and events at present. 
 
-All in all, the application can not only simplify the process of participating clubs and arranging club events for all users but also enhance the connection between the organizations and club members which can significantly stimulate the overall UQ students organization development.
-
-
+All in all, the application can not only simplify the process of participating clubs and arranging club events for all users but also enhance the connections between the club and its members, which can significantly promote the development of UQ social clubs.
 
 
-### Competitor analysis - needs improvement
+
+
+### Competitor analysis
 Besides what is explained in the [social media honeycomb model](#literature-review), the differences between our project and other existing platforms (Facebook and Slack) are listed below.
 ![Competitor Analysis](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/competitoranalysis.png "Competitor Analysis")
 
