@@ -181,7 +181,7 @@ General speaking, the target audience of UQ ClubHub is current students of UQ, i
 Ben Jefferson - a representative of non-members
 ![Persona 1](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona1.png#2 "Persona 1")
 Brian Kiley - a representative of members
-![Persona 2](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona2.png#2 "Persona 2")
+![Persona 2](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona2.png#3 "Persona 2")
 Matthew Alexander - a representative of organisers
 ![Persona 3](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona3.png#2 "Persona 3")
 
