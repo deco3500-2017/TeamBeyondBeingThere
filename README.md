@@ -237,7 +237,14 @@ We will try our best to avoid the conflicts. The regular meeting and decision-ma
 
 
 ### Design approaches
-StackEdit stores your documents in your browser, which means all your documents are automatically saved locally and are accessible **offline!**
+Empathy: In this stage, we use literature review, questionnaire, interview and discussion as initial research methods. Firstly, for the background research, we do academic research to find some related papers to support our concept. Then, we use a questionnaire and interviews to collect data and analyse it to identify the aims, purposes of the project and initial user requirements. The questionnaire mainly includes three kinds of groups: the organiser of a club or society, members of a club, students who never joined a club. These people provide different information for us to analyse. We discussed the idea with the teaching staff to get some feedback.  
+
+Design: In this stage, Questionnaire, brainstorming, related products analysis and academic research are used to support conceptual design. 
+ 
+Prototype: In this stage, Sketch, InVision and other design tools, such as PS and AI will be used to build prototypes for the concept. At first, we will use sketches the basic wireframes. The wireframes mainly include the layout of each screen, some pseudo content and the interaction flow. Based on the wireframes, we will test whether the target audience accepts the idea, which features works and which not. Later on, we will use Sketch and InVision (including Craft) to design a digital prototype with higher fidelity.
+ 
+Iteration: The iteration process includes concept iteration and prototype iteration. The concept will be iterated according to the feedback we collect from representative users and the concept criteria. The criteria come from the course requirements, usability requirements, and the expected outcomes of the project. The prototype iteration, as the name suggests, is changes made to prototypes according to the user test and the user’s feedback. In the user test, observation, questionnaire and interview methods will be used to collect feedback. We will also ask participants to think aloud when they interact with the prototype. The interview focuses more on user experience issues.
+
 
 
 
