@@ -229,85 +229,85 @@ https://github.com/deco3500-2017/TeamBeyondBeingThere/milestones?direction=asc&s
 
 #### Week 5 - Empathise - Initial Research
 > - Tasks:
-1. Design and conduct an online questionnaire to collect the target user’s opinions on the problem.
-2. Brainstorm to identify the problem space and ideate the initial idea.
-3. Conduct academic research
+> 1. Design and conduct an online questionnaire to collect the target user’s opinions on the problem.
+> 2. Brainstorm to identify the problem space and ideate the initial idea.
+> 3. Conduct academic research
 > - Deliverables:
-1. At least 50 responses to the questionnaire should be collected
-2. Determined the form of the solution
-3. A list of main features of the design
-4. A list of findings of academic research
+> 1. At least 50 responses to the questionnaire should be collected
+> 2. Determined the form of the solution
+> 3. A list of main features of the design
+> 4. A list of findings of academic research
 > - Resources:
-1. Access to prospective users
+> 1. Access to prospective users
 #### Week 6 - Ideate - Concept & Proposal
 > - Tasks:
-1. Gain feedback from peers in the workshop
-2. Refine personas
-3. Proposal writing
+> 1. Gain feedback from peers in the workshop
+> 2. Refine personas
+> 3. Proposal writing
 > - Deliverables:
-1. A refined list of main features
-2. Refined personas
-3. Proposal
+> 1. A refined list of main features
+> 2. Refined personas
+> 3. Proposal
 #### Week 7 - Design - Concrete Design
 > - Tasks:
-1. Turn conceptual design into concrete design
-2. Design the interaction flow
-3. Sketch the main screens 
-4. Determine the interface theme, including color scheme, font, etc.
+> 1. Turn conceptual design into concrete design
+> 2. Design the interaction flow
+> 3. Sketch the main screens 
+> 4. Determine the interface theme, including color scheme, font, etc.
 > - Deliverables:
-1. A diagram of the interaction flow
-2. Sketches of the main screens
-3. UI guidelines
+> 1. A diagram of the interaction flow
+> 2. Sketches of the main screens
+> 3. UI guidelines
 #### Week 8 - Prototype & Evaluate - Low-Fidelity Prototype
 > - Tasks:
-1. Prototype in low fidelity
-2. Invite users to test the initial concept with the prototype
-3. Prepare for the report back in workshop
+> 1. Prototype in low fidelity
+> 2. Invite users to test the initial concept with the prototype
+> 3. Prepare for the report back in workshop
 > - Deliverables:
-1. A low-fidelity prototype
-2. User test protocol, including a questionnaire
-3. User test report (informal)
+> 1. A low-fidelity prototype
+> 2. User test protocol, including a questionnaire
+> 3. User test report (informal)
 > - Resources:
-1. Time, place to test
-2. User test participants (n>5)
+> 1. Time, place to test
+> 2. User test participants (n>5)
 #### Week 9 + Mid-Semester Break - Design & Prototype - Iteration
 > - Tasks:
-1. Make changes based on the outcomes of the previous user test
-2. Prototype in high fidelity
+> 1. Make changes based on the outcomes of the previous user test
+> 2. Prototype in high fidelity
 > - Deliverables:
-1. A high-fidelity prototype with interactivity
+> 1. A high-fidelity prototype with interactivity
 > - Resources:
-1. Access to Sketch, InVision and Craft.
+> 1. Access to Sketch, InVision and Craft.
 #### Week 10 - Evaluate - High-Fidelity Prototype
 > - Tasks:
-1. Test the usability of the high-fidelity prototype
-2. Prepare for the report back in workshop
+> 1. Test the usability of the high-fidelity prototype
+> 2. Prepare for the report back in workshop
 > - Deliverables:
-1. User test protocol, including a questionnaire
-2. User test report (informal)
+> 1. User test protocol, including a questionnaire
+> 2. User test report (informal)
 > - Resources:
-1. Time, place to test
-2. User test participants (n>5)
+> 1. Time, place to test
+> 2. User test participants (n>5)
 #### Week 11 - Design & Prototype - Iteration
 > - Tasks:
-1. Make changes based on the outcomes of the previous user test
-2. Start to design a conference paper
+> 1. Make changes based on the outcomes of the previous user test
+> 2. Start to design a conference paper
 > - Deliverables:
-1. Refined prototype
+> 1. Refined prototype
 #### Week 12 - Finalise - Final Prototype & Promotional Materials
 > - Tasks:
-1. Finish all remaining tasks
-2. Prepare for the report back in workshop
-3. Prepare promotional materials for the final demonstration, such as flyers, lollies, etc.
+> 1. Finish all remaining tasks
+> 2. Prepare for the report back in workshop
+> 3. Prepare promotional materials for the final demonstration, such as flyers, lollies, etc.
 > - Deliverables:
-1. Conference poster
-2. Other promotional materials
-3. Final prototype
+> 1. Conference poster
+> 2. Other promotional materials
+> 3. Final prototype
 > - Resources:
-1. Budget for the promotional materials
+> 1. Budget for the promotional materials
 #### Week 13 - Demonstrate - Demonstration
 > - Tasks:
-1. Demonstrate the final prototype
+> 1. Demonstrate the final prototype
 
 
 ### Task allocation - needs improvement
