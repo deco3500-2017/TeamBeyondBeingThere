@@ -91,7 +91,7 @@ We first conducted interviews within our team to get a better understanding of s
  4. One of his tasks was to inform candidates of the time and place to be interviewed. A typical process how a candidate was informed is illustrated below:
 
 > The process of a candidate being informed of recruitment and interview information
-> ![The process of a candidate being informed of recruitment and interview information](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/danson.png#1 "The process of a candidate being informed of recruitment and interview information")
+> ![The process of a candidate being informed of recruitment and interview information](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/danson.png#2 "The process of a candidate being informed of recruitment and interview information")
 
 
 #### Questionnaire
@@ -179,11 +179,11 @@ The app does not offer instant messaging functions like Facebook, but a user can
 General speaking, the target audience of UQ ClubHub is current students of UQ, including non-members, members, and organisers of UQ clubs and societies. Here are personas created for each type of users. 
 #### Personas
 Ben Jefferson - a representative of non-members
-![Persona 1](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona3.png "Persona 1")
+![Persona 1](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona3.png#1 "Persona 1")
 Brian Kiley - a representative of members
-![Persona 2](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona2.png "Persona 2")
+![Persona 2](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona2.png#1 "Persona 2")
 Matthew Alexander - a representative of organisers
-![Persona 3](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona1.png "Persona 3")
+![Persona 3](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/persona1.png#1 "Persona 3")
 
 
 
