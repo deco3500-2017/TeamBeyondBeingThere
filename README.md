@@ -200,7 +200,7 @@ All in all, the application can not only simplify the process of joining clubs a
 
 ### Competitor analysis
 Besides what is explained in the [social media honeycomb model](#literature-review), the differences between our project and other existing platforms (Facebook and Slack) are listed below.
-![Competitor Analysis](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/competitoranalysis.png "Competitor Analysis")
+![Competitor Analysis](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/competitoranalysis.png#1 "Competitor Analysis")
 
 
 
