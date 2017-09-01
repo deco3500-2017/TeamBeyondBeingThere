@@ -19,14 +19,14 @@ We first conducted interviews within our team to get a better understanding of s
  1. Even though Tony joined the club and attended regular boxing classes, he felt lacking communication with other participants, most of whom were UQ students.
  2. Tony knew the Boxing club regularly held other events, such as welcome BBQ, but he did not attend it. Because he had no idea about where and when it would be held.
  3. The main approaches that Tony got news from the club were Facebook and regular classes.
- 4. Tony would continue to be a member of Boxing Club, because he thought he could build his body and learn boxing skills.
+ 4. Tony would continue to be a member of Boxing Club because he thought he could build his body and learn boxing skills.
  5. In a boxing class, members were paired. But Tony did not make friends with his partners, potentially because he could not exchange contact details in the class.
  6. He made friends with other members (not his partners) and maintained relationships in WeChat (a popular instant messaging app in China).
 
 
 
 
->Danson has two roles. First we interviewed Danson as a potential member of UQ Beer Club. He was interested in the activities (we call them events in the rest of the proposal) that the club held, but he did not join it. We found:
+>Danson has two roles. First， we interviewed Danson as a potential member of UQ Beer Club. He was interested in the activities (we call them events in the rest of the proposal) that the club held, but he did not join it. We found:
 >
  1. He was interested in the events because he loved beer. He knew there was a Beer Club at UQ, but did not participate in any of the events it held.
  2. He had no friends to go together with him.
@@ -39,10 +39,10 @@ We first conducted interviews within our team to get a better understanding of s
  1. His main job was to recruit new committee members for the society.
  2. He found it hard to keep a balance between study and society jobs.
  3. He needed some motivation because he repeated to do similar tasks.
- 4. One of his task was to inform candidates of the time and place to be interviewed. A typical process how a candidate was informed is illustrated below:
+ 4. One of his tasks was to inform candidates of the time and place to be interviewed. A typical process how a candidate was informed is illustrated below:
 
 > The process of a candidate being informed of recruitment and interview information
-> ![The process of a candidate being informed of recruitment and interview information](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/danson.png "The process of a candidate being informed of recruitment and interview information")
+> ![The process of a candidate being informed of recruitment and interview information](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/danson.png#1 "The process of a candidate being informed of recruitment and interview information")
 
 
 #### Questionnaire
@@ -53,7 +53,7 @@ Later on, we designed and distributed an online questionnaire and collected 64 r
  1. 42% respondents have never joined a club.
  2. 18% of the potential members are not interested in clubs.
  3. They expect an active social club that matches their interests and have some free events.
- 4. Activities they like at UQ are: (1) freebies (2) Market Day (3) study (4) sports.
+ 4. Activities they like at UQ are (1) freebies (2) Market Day (3) study (4) sports.
 
 
 >For existing members:
@@ -62,7 +62,7 @@ Later on, we designed and distributed an online questionnaire and collected 64 r
  2. They rate the activeness of the club they join as average.
  3. 25% of existing members have never participated in any event.
  4. Main motivations of joining a club are making friends and personal interests.
- 5. 61% of them get latest news from clubs via social media, such as Facebook.
+ 5. 61% of them get the latest news from clubs via social media, such as Facebook.
  6. They care about the time, place of the event, whether it is free, whether it is interesting, whether their friends attend, the outcomes, and communication.
  7. It is hard for them to make decisions to participate.
  8. Some of them find disconnected from the club.
@@ -80,7 +80,7 @@ Later on, we designed and distributed an online questionnaire and collected 64 r
 
 ### Literature review
 
-According to the research about the relation between the members and organisations, we found out that members would treasure the connection between the organisation and themselves which commitments and rewards are traded at the same level (Ren-Tao, 2011). To adapt this theory in our concept, we decided to made a novel system which allows the system or organisations themselves to reward members according to the attributes they conducted. In this way, users’ motivation can be stimulated significantly, which can improve the current situation that organisations lack active members to participate in events and perform certain tasks. 
+According to the research about the relation between the members and organisations, we found out that members would treasure the connection between the organisation and themselves which commitments and rewards are traded at the same level (Ren-Tao, 2011). To adapt this theory to our concept, we decided to make a novel system which allows the system or organisations themselves to reward members according to the attributes they conducted. In this way, users’ motivation can be stimulated significantly, which can improve the current situation that organisations lack active members to participate in events and perform certain tasks. 
 
 With the rise of social media, it is really convenient for an individual or organization to publicise and advertise content for their certain purposes. They no longer only rely on traditional marketing and public relations. Kietzmann et al. claim a framework of seven functional blocks to explain each important part of social media, which includes identity, conversations, sharing, presence, relationships, reputation, and groups (Kietzmann et al., 2011).
 
@@ -110,15 +110,15 @@ The main features of the product involve:
 
 ### Highlights
 #### Enhanced information transparency
-The product offers users an integrated platform of exchanging and sharing information associated with clubs and events. By such means, information becomes more transparent to potential and exisiting members, which helps them to make better decisions and be aware of surronding events. 
-The concept is useful for both organisers and members. For organisers, at the stage of planning of a future event, the platform will allow them to collect feedback from members. Then, the organisers are able to use the information to adjust the event for better outcomes. This can significantly avoid holding an event that no one is interested to come or a waste of time and time for the club. For students who are interested in attending a club or event, this platform will exist as the official means of publishing related events information which provides related detailed information of events according to the users preferences. Thus, the problems that members cannot timely receive notification from clubs and receive duplicated information from various social media will be solved. 
+The product offers users an integrated platform for exchanging and sharing information associated with clubs and events. By such means, information becomes more transparent to potential and existing members, which helps them to make better decisions and be aware of surrounding events. 
+The concept is useful for both organisers and members. For organisers, at the stage of planning of a future event, the platform will allow them to collect feedback from members. Then, the organisers are able to use the information to adjust the event for better outcomes. This can significantly avoid holding an event that no one is interested to come or a waste of time and time for the club. For students who are interested in attending a club or event, this platform will exist as the official means of publishing related events information which provides related detailed information of events according to the user's preferences. Thus, the problems that members cannot timely receive notification from clubs and receive duplicated information from various social media will be solved. 
 ####  Make activeness measurable
 UQ ClubHub provides an activeness evaluation system and a corresponding rewarding system for all participants to stimulate members’ motivation.
-The activeness evaluation system will give different valuation to members in different clubs based on their contributions to the clubs such as attending an event and being a volunteer, etc. The valuation of activeness will be showed in the form of "level"s. According to the “level” in a certain club, different badges will be awarded as special identity rewards. This will positively encourage all members in the clubs to participant in and support related events. 
+The activeness evaluation system will give a different valuation to members in different clubs based on their contributions to the clubs such as attending an event and being a volunteer, etc. The valuation of activeness will be shown in the form of "level"s. According to the “level” in a certain club, different badges will be awarded as special identity rewards. This will positively encourage all members in the clubs to participant in and support related events. 
 #### Explore a new pathway to joining a club 
-The traditional mode for students to join clubs relys too much on the Markey Day, and students join a club without holistic understanding of the club and the events it holds.
-![A new mode to join a club](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/newmode.png "A new mode to join a club")
-To change this current means of joining clubs, the app provides a unique way for users by allowing them to choose to “follow” a club as a potential member, “participate” in an event as a causal member of the club, or “join” the club as a loyalty member. Via UQ ClubHub, all users define their relationships with multiple clubs according to their personal interests easily.
+The traditional mode for students to join clubs relies too much on the Markey Day, and students join a club without a holistic understanding of the club and the events it holds.
+![A new mode to join a club](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/newmode.png#1 "A new mode to join a club")
+To change this current means of joining clubs, the app provides a unique way for users by allowing them to choose to “follow” a club as a potential member, “participate” in an event as a casual member of the club, or “join” the club as a loyalty member. Via UQ ClubHub, all users define their relationships with multiple clubs according to their personal interests easily.
 #### Value friendship
 Users can become friends with other ones in UQ ClubHub, or import their existing social relationship from other social media, such as Facebook.
 The app does not offer instant messaging functions like Facebook, but a user can see his or her friends in an event or a club. Barriers and worries can be reduced by being aware of companions, and motivation is increased.
@@ -144,7 +144,7 @@ At the end of the semester, the team shall be able to finish a high-fidelity int
 
 If our concept was fully developed and widely used by UQ students, a new club and event operating mode would be created. Users will be offered a simple way to find out which clubs to join and which events to participate in by their preferences without the limitation of time and space, and do not have to be worried about missing the Market Day which is the key node of attending clubs and events at present. 
 
-All in all, the application can not only simplify the process of participating clubs and arranging club events for all users but also enhance the connections between the club and its members, which can significantly promote the development of UQ social clubs.
+All in all, the application can not only simplify the process of joining clubs and holding club events for all users but also enhance the connections between the club and its members, which can significantly promote the development of UQ social clubs.
 
 
 
@@ -168,6 +168,9 @@ Besides what is explained in the [social media honeycomb model](#literature-revi
 | Yifan Lu      | Alvin          | 44106782    | DECO3500    | Bachelor of Information Technology | Developer              | He has many software development experiences.                                                  |
 
 
+### Task allocation - needs improvement
+![Task allocation](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/tasks.png#1 "Task allocation")
+
 
 
 ### Decision-making
@@ -177,9 +180,9 @@ Everyone has the right to make a decision. Generally, we use a fair method, voti
 
 
 ### Conflict-solving
-We cannot ensure that everyone has the exactly equivalent workload. However, we will allocate task to each member fairly according to the project plan. If someone performs poorly or cannot finish the personal task on time, our group will talk with this issue. If necessary, a warning will be given. If this situation happens more than three times, we will talk to tutors and lecturers, in case we cannot finish the project on time. During the meeting, each member needs to report what has been completed, what the team member is working on and the future plan. This is a kind of way to supervise group members with a positive attitude in the project progress.  
+We cannot ensure that everyone has the exact equivalent workload. However, we will allocate tasks to each member fairly according to the project plan. If someone performs poorly or cannot finish the personal task on time, our group will talk about this issue. If necessary, a warning will be given. If this situation happens more than three times, we will talk to tutors and lecturers, in case we cannot finish the project on time. During the meeting, each member needs to report what has been completed, what the team member is working on and the future plan. This is a kind of way to supervise group members with a positive attitude in the project progress.  
  
-We will try our best to avoid the conflicts. The regular meeting and decision-making method provide a good way to express the personal idea. If a conflict happens, we will give members enough time to clarify their thought. Group member will together analyse the reason and problem of the conflict. If a big conflict happens in our group, we will ask other groups to involve to coordinate. Otherwise, we will look for help from the teaching staff. However, we will as far as possible avoid the conflict. 
+We will try our best to avoid the conflicts. The regular meeting and decision-making method provide a good way to express the personal idea. If a conflict happens, we will give members enough time to clarify their thought. Group members will together analyse the reason and problem of the conflict. If a big conflict happens in our group, we will ask other groups to involve to coordinate. Otherwise, we will look for help from the teaching staff. However, we will as far as possible avoid the conflict. 
 
 
 
@@ -214,7 +217,7 @@ A slack channel has also been set up as a supplementary approach to collaboratio
 ### File management
 In the Google Drive folder and the Github repository, files should be clearly classified and stored in folders. All names of files and folders should be understandable, and no file should remain “untitled”. Spaces are allowed to be used in file names, if necessary. 
 
-Other rules involve: (1) Upper- and lower-cases should be properly used in file names; (2) Index number should be involved in brackets. 
+Other rules involve (1) Upper- and lower-cases should be properly used in file names; (2) Index number should be involved in brackets. 
 
 For example, photos of the brainstorming process should be named as “Brainstorming (1).jpg” to “Brainstorming (3).jpg”.
 
@@ -253,7 +256,7 @@ https://github.com/deco3500-2017/TeamBeyondBeingThere/milestones?direction=asc&s
 > 1. Turn conceptual design into concrete design
 > 2. Design the interaction flow
 > 3. Sketch the main screens 
-> 4. Determine the interface theme, including color scheme, font, etc.
+> 4. Determine the interface theme, including colour scheme, font, etc.
 > - Deliverables:
 > 1. A diagram of the interaction flow
 > 2. Sketches of the main screens
@@ -310,15 +313,12 @@ https://github.com/deco3500-2017/TeamBeyondBeingThere/milestones?direction=asc&s
 > 1. Demonstrate the final prototype
 
 
-### Task allocation - needs improvement
-![Task allocation](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/tasks.png "Task allocation")
-
 
 
 ## Changes made based on the feedback from Pitch
 
 #### Focus on the member’s relationship with clubs
-Based on the feedback from the teaching staff, we can see the main focus of our concept was not clearly conveyed. In our pitch, we wanted to use the concept to improve the member’s relationships with both the club and other members. This was because one of the reasons why students wanted to join a club was to meet friends. Therefore, although the main focus of our concept was to enhance the social connection between the member and the club, we added some features to empower members to connect one another. However, it made the main focus ambiguous. The audience of our pitch were more curious about the supplementary features than the main features. So after receiving the feedback, we removed the feature which supported communication among members to emphasize the main feature. 
+Based on the feedback from the teaching staff, we can see the main focus of our concept was not clearly conveyed. In our pitch, we wanted to use the concept to improve the member’s relationships with both the club and other members. This was because one of the reasons why students wanted to join a club was to meet friends. Therefore, although the main focus of our concept was to enhance the social connection between the member and the club, we added some features to empower members to connect one another. However, it made the main focus ambiguous. The audience of our pitch was more curious about the supplementary features than the main features. So after receiving the feedback, we removed the feature which supported communication among members to emphasize the main feature. 
 
 #### Differences from Facebook
 Some features of our concept were similar to, but different from, Facebook Page and events. We added a section in the proposal to compare our concept to Facebook. Please refer to [Competitor analysis](#competitor-analysis).
