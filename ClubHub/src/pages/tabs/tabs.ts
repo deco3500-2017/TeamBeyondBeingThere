@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { EventPage } from '../about/event';
-import { ProfilePage } from '../contact/profile';
+import { EventPage } from '../event/event';
+import { ProfilePage } from '../profile/profile';
 import { ClubPage } from '../club/club';
 import { HomePage } from '../home/home';
 
