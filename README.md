@@ -369,7 +369,7 @@ The main achievements that the team has finished involve two different designs f
 #### Sketches
 First, the team broke the concept down to 5 main screens of the app and each member was in charge of designing one screen. The screens consisted of the (1) home screen, (2) event screen, (3) club screen, (4) user screen, and (5) filter screen. Correspondingly, members in charge were (1) Peter, (2) Danson, (3) Tony, (4) Nan, and (5) Alvin. Before doing tasks individually, the team converted the user's requirements into design specifications for each screen together. 
 
-![design specifications for each screen](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/Wk8_process_1.jpeg#3 "design specifications for each screen")
+![design specifications for each screen](TeamBeyondBeingThere/Design Process/Week 8 - A-B test/Photos and screenshots/Wk8_process_1.jpeg "design specifications for each screen")
 
 
 #### Peer critiques
