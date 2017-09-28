@@ -369,7 +369,7 @@ The main achievements that the team has finished involve two different designs f
 #### Sketches
 First, the team broke the concept down to 5 main screens of the app and each member was in charge of designing one screen. The screens consisted of the (1) home screen, (2) event screen, (3) club screen, (4) user screen, and (5) filter screen. Correspondingly, members in charge were (1) Peter, (2) Danson, (3) Tony, (4) Nan, and (5) Alvin. Before doing tasks individually, the team converted the user's requirements into design specifications for each screen together. 
 
-![design specifications for each screen](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/Wk8_process_1.jpeg "design specifications for each screen")
+![design specifications for each screen](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/Wk8_process_1.jpeg#1 "design specifications for each screen")
 
 
 #### Peer critiques
@@ -377,11 +377,11 @@ Two rounds of peer critiques were conducted in the team's regular meetings.
 
 In the first round of critique, group members gave each other opinions on the overall design of each screen, and decided to explore the possibilities of the design of each screen by sketching two different types of design and test the design by running an A/B test.
 
-![first round sketches](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/Wk8_process_2.jpeg "first round sketches")
+![first round sketches](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/Wk8_process_2.jpeg#1 "first round sketches")
 
 In the second round of critique, more details of the design of each screen were looked into and examined. Decisions on changes were made to prepare for the A/B test.
 
-![second round sketches](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/Wk8_process_3.jpeg "second round sketches")
+![second round sketches](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/Wk8_process_3.jpeg#1 "second round sketches")
 
 
 #### A/B test
@@ -390,7 +390,7 @@ Finally, the team as a whole has finished a paper prototype and run an A/B test 
 Time: 12:00-15:00, 14 Sep, 2017  (30 mins for each)
 Place: Room 108, Building 78
 
-![photos and screenshots of user tests](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/Wk8_process_4.jpeg "photos and screenshots of user tests")
+![photos and screenshots of user tests](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/Wk8_process_4.jpeg#1 "photos and screenshots of user tests")
 
 Notes taken in the testing session can be found at the team repository at:
 TeamBeyondBeingThere/Design Process/Week 8 - A-B test/Testing session feedback.docx
