@@ -369,7 +369,7 @@ The main achievements that the team has finished involve two different designs f
 #### Sketches
 First, the team broke the concept down to 5 main screens of the app and each member was in charge of designing one screen. The screens consisted of the (1) home screen, (2) event screen, (3) club screen, (4) user screen, and (5) filter screen. Correspondingly, members in charge were (1) Peter, (2) Danson, (3) Tony, (4) Nan, and (5) Alvin. Before doing tasks individually, the team converted the user's requirements into design specifications for each screen together. 
 
-![design specifications for each screen](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/Wk8_process_1.jpeg#1 "design specifications for each screen")
+![design specifications for each screen](https://s3-ap-southeast-2.amazonaws.com/nanzheng.design/sociaomobilecomputing/Wk8_process_1.jpeg#2 "design specifications for each screen")
 
 
 #### Peer critiques
@@ -398,7 +398,7 @@ TeamBeyondBeingThere/Design Process/Week 8 - A-B test/Testing session feedback.d
 ### Issues
 
 #### Exploring possibilities v.s. Unifying designs
-The team did not want to limit the design at the early stage, so all members were involved in the initial design phase. But the problem was that all designs look extremely different and the app then lacked consistency and hard to learn and use, as confirmed in the A/B test. 
+The team did not want to limit the design at the early stage, so all members were involved in the initial design phase. But the problem was that all designs look extremely different and the app then lacked consistency and was hard to learn and use, as confirmed in the A/B test. 
 
 To solve the problem, the team will work individually after the A/B test to best utilise each member's abilities. One or two will work on the interaction and interface design, and others will work on the development of the prototype and facilitating user tests. By limiting the quantity of members working on the same task, it is more likely that the design is consistent and unified. Also, the A/B test and the feedback from it can make every member of the team get a coherent understanding of the user's requirements. 
 
@@ -419,17 +419,17 @@ As planned earlier, the team will finish concrete design of the concept and buil
 ### Task allocation for the next two (or three, including mid-semester break) weeks
 
 #### Nan
-Responsibilities: Unifying all designs, interaction design, basic structure of app
-Expected outcomes: Wireframes of all main screens
+> Responsibilities: Unifying all designs, interaction design, basic structure of app
+> Expected outcomes: Wireframes of all main screens
 #### Peter
-Responsibilities: User interface design
-Expected outcomes: Detailed UI in Sketch formats
+> Responsibilities: User interface design
+> Expected outcomes: Detailed UI in Sketch formats
 #### Alvin
-Responsibilities: Back-end development
-Expected outcomes: Having a basic understanding of the ionic framework, outcomes of the evaluation of the feasibility of applying the technique
+> Responsibilities: Back-end development
+> Expected outcomes: Having a basic understanding of the ionic framework, outcomes of the evaluation of the feasibility of applying the technique
 #### Tony
-Responsibilities: Front-end development
-Expected outcomes: Basic structure of the app in the ionic editor (together with Danson)
+> Responsibilities: Front-end development
+> Expected outcomes: Basic structure of the app in the ionic editor (together with Danson)
 #### Danson
-Responsibilities: Front-end development
-Expected outcomes: Basic structure of the app in the ionic editor (together with Tony)
+> Responsibilities: Front-end development
+> Expected outcomes: Basic structure of the app in the ionic editor (together with Tony)
