@@ -7,6 +7,7 @@ import {ClubTabsPage} from './clubTabs/clubTabs';
   selector: 'page-about',
   templateUrl: 'club.html'
 })
+
 export class ClubPage {
   rootClubPage:any=ClubTabsPage;
   

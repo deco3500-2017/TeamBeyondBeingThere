@@ -1,3 +1,7 @@
+<!doctype html>
+<html ng-app>
+<body>
+
 <ion-header>
   <ion-navbar>
     <ion-title>
@@ -8,12 +12,14 @@
 
 <ion-content class="card-background-page">
 
-  <ion-card>
-    <img class="event-image" src="../assets/icon/favicon.ico"/>
-    <div class="card-title">BBQ</div>
-    <div class="card-subtitle">41 Listings</div>
-  </ion-card>
-
+    <ion-card (click)="openPage()">
+      <img class="event-image" src="../assets/icon/favicon.ico"/>
+      <div class="card-title">
+        <div ng-controller="card-title">hahahaha</div>
+      </div>
+      <div class="card-subtitle">41 Listings</div>
+    </ion-card>
+  
   <ion-card>
     <img class="event-image" src="../assets/icon/favicon.ico"/>
     <div class="card-title">Table Game</div>
@@ -31,5 +37,8 @@
     <div class="card-title">MarketDay</div>
     <div class="card-subtitle">28 Listings</div>
   </ion-card>
-
+  
 </ion-content>
+  
+</body>
+</html>
