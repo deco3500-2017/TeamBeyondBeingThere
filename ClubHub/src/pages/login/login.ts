@@ -3,6 +3,8 @@ import { IonicPage, NavController, AlertController} from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { LoggedinPage } from '../loggedin/loggedin';
 
+
+
 /**
  * Generated class for the LoginPage page.
  *
@@ -17,13 +19,10 @@ import { LoggedinPage } from '../loggedin/loggedin';
 })
 export class LoginPage {
 
-	@ViewChild('studentnumber') snumber;
+	@ViewChild('emailaddress') eaddress;
 	@ViewChild('password') password;
 
-  rootPage
-
-
-  constructor(private fire:AngularFireAuth, public navCtrl: NavController, public alertCtrl: AlertController) {
+  constructor(private fire:AngularFireAuth,public navCtrl: NavController, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -42,8 +41,8 @@ export class LoginPage {
 
 
   signin(){
-  	console.log(this.snumber.value, this.password.value);
-    this.fire.auth.signInWithEmailAndPassword(this.snumber.value,this.password.value)
+  	console.log(this.eaddress.value, this.password.value);
+    this.fire.auth.signInWithEmailAndPassword(this.eaddress.value,this.password.value)
     .then(data=>{
       this.alert("Successed! You are logged in!");
       this.navCtrl.setRoot(LoggedinPage);

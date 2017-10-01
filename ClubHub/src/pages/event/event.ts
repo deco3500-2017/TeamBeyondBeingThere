@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { EventDetailPage } from './eventDetail/eventDetail'
+import { EventDetailPage } from './eventDetail/eventDetail';
+import { ProfilePage } from '../profile/profile';
 
 @Component({
   selector: 'page-about',
@@ -8,11 +9,13 @@ import { EventDetailPage } from './eventDetail/eventDetail'
 })
 
 export class EventPage {
+  userInfo:{};
 
-
-  constructor(public navCtrl: NavController) {
-  	
+  constructor(public navCtrl: NavController,public userService:ProfilePage) {
   }
+
+  
+  //this.userInfo=userService.facebook;
 
   openPage(){
   	this.navCtrl.push(EventDetailPage);

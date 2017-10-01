@@ -25232,3 +25232,16 @@ ion-navbar.toolbar {
   margin-left: 30%;
   color: black;
 }
+
+page-contact {
+  /*
+	#topButton{
+	display: flex;
+	flex-direction:cross;
+	}
+
+	#topButton button{
+	flex:1;
+	}
+*/
+}

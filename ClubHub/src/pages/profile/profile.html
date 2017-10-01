@@ -7,6 +7,18 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button full color="light" (click)='openLoginPage()'>Sign in</button>
-  <button ion-button full color="light" (click)='openRegisterPage()'>Sign up</button>
+	<div id='topButton'>
+
+	  <button ion-button color="primary" 
+	  (click)='openLoginPage()' *ngIf='!facebook.loggedIn'>Sign in</button>
+	  <button ion-button color="primary" 
+	  (click)='openRegisterPage()' *ngIf='!facebook.loggedIn'>Sign up</button>
+
+	  <button ion-button color="primary" 
+	  (click)='loginWithFacebook()' *ngIf='!facebook.loggedIn'>Sign in with facebook</button>
+
+	  <button ion-button color="primary" 
+	  (click)='logout()' *ngIf='facebook.loggedIn'>Log out</button>
+
+	</div>
 </ion-content>

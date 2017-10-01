@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, AlertController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 
 
@@ -17,23 +17,37 @@ import { AngularFireAuth } from 'angularfire2/auth';
 })
 export class RegisterPage {
 
-  @ViewChild('useremail') uemail;
+  @ViewChild('fbaccount') fbaccount;
   @ViewChild('password') password;
 
-  constructor(private fire:AngularFireAuth,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private fire:AngularFireAuth,public navCtrl: NavController, private alertCtrl:AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterPage');
   }
 
+
+
+  alert(message: string){
+    this.alertCtrl.create({
+      title:'Information',
+      subTitle: message,
+      buttons: ['OK'],
+    }).present();
+  }
+
+
+
   signup(){
-  	this.fire.auth.createUserWithEmailAndPassword(this.uemail.value,this.password.value)
+  	this.fire.auth.createUserWithEmailAndPassword(this.fbaccount.value,this.password.value)
     .then(data =>{
       console.log('got data ', data);
+      this.alert('You have signed up successfully!')
     })
     .catch(error =>{
       console.log('got an error ',error);
+      this.alert(error.message);
     });
   }
 }
