@@ -5,6 +5,7 @@ import { ProfilePage } from '../profile/profile';
 
 @Component({
   selector: 'page-about',
+  providers:[ProfilePage],
   templateUrl: 'event.html',
 })
 
@@ -12,10 +13,11 @@ export class EventPage {
   userInfo:{};
 
   constructor(public navCtrl: NavController,public userService:ProfilePage) {
+  	this.userInfo=userService.facebook;
   }
 
   
-  //this.userInfo=userService.facebook;
+  
 
   openPage(){
   	this.navCtrl.push(EventDetailPage);

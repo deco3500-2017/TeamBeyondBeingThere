@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { LoginPage } from '../pages/login/login';
-import { LoggedinPage } from '../pages/loggedin/loggedin';
+import { EntryPage } from '../pages/entry/entry';
 import { RegisterPage } from '../pages/register/register';
 import { EventPage } from '../pages/event/event';
 import { EventDetailPage } from '../pages/event/eventDetail/eventDetail';
@@ -47,9 +46,10 @@ const firebaseAuth = {
     AllClubsPage,
     ClubTabsPage,
     EventDetailPage,
-    LoginPage,
+
     RegisterPage,
-    LoggedinPage,
+
+    EntryPage,
   ],
 
 
@@ -75,9 +75,9 @@ const firebaseAuth = {
     AllClubsPage,
     ClubTabsPage,
     EventDetailPage,
-    LoginPage,
+
     RegisterPage,
-    LoggedinPage,
+    EntryPage,
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,34 @@
+page-entry {
+	.button{
+		margin:0px;
+	}
+
+	.view{
+
+	}
+
+	#imageContainer{
+		position:relative;
+		text-align:center;
+		top:30%;
+	}
+
+
+	#container{
+		position:relative;
+		text-align:center;
+	}
+
+	#line1{
+		font-size:14px;
+		color:#444444;
+		line-height:24px;
+		text-align:center;
+	}
+
+	.view .scroll-content{
+    	overflow: hidden;
+  	}
+}
+
+

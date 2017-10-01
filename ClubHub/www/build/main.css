@@ -25199,6 +25199,32 @@ ion-navbar.toolbar {
   }
 }
 
+page-entry .button {
+  margin: 0px;
+}
+
+page-entry #imageContainer {
+  position: relative;
+  text-align: center;
+  top: 30%;
+}
+
+page-entry #container {
+  position: relative;
+  text-align: center;
+}
+
+page-entry #line1 {
+  font-size: 14px;
+  color: #444444;
+  line-height: 24px;
+  text-align: center;
+}
+
+page-entry .view .scroll-content {
+  overflow: hidden;
+}
+
 .card-background-page ion-card {
   position: relative;
   text-align: center;
@@ -25233,15 +25259,21 @@ ion-navbar.toolbar {
   color: black;
 }
 
-page-contact {
-  /*
-	#topButton{
-	display: flex;
-	flex-direction:cross;
-	}
+page-contact #userimg {
+  float: right;
+  width: 60px;
+  height: 60px;
+  right: 0;
+}
 
-	#topButton button{
-	flex:1;
-	}
-*/
+page-contact img {
+  border-radius: 50%;
+}
+
+page-contact #username {
+  float: left;
+}
+
+page-contact .button {
+  margin: 0px;
 }

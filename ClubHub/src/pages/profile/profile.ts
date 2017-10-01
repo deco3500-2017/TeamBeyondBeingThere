@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController,AlertController } from 'ionic-angular';
-import { LoginPage } from '../login/login';
 import { RegisterPage } from '../register/register';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { LoggedinPage } from '../loggedin/loggedin';
+import { EntryPage } from '../entry/entry';
 
 import firebase from 'firebase'; 
 
@@ -16,23 +15,21 @@ export class ProfilePage {
 
   facebook={
     loggedIn:false,
-    name:null,
+    name:"anonymous",
     email:null,
     profilePicture:null,
   }
 
-
-
   constructor(private fire:AngularFireAuth,public navCtrl: NavController,private alertCtrl: AlertController) {
-
-  }
-
-  openLoginPage(){
-  	this.navCtrl.push(LoginPage);
-  }
-
-  openRegisterPage(){
-  	this.navCtrl.push(RegisterPage);
+    if(fire.auth.currentUser.email.length==0){
+      this.facebook.loggedIn=false;
+    }else{
+      this.facebook.email=fire.auth.currentUser.email;
+      this.facebook.loggedIn=true;
+      this.facebook.name=fire.auth.currentUser.displayName;
+      this.facebook.profilePicture=fire.auth.currentUser.photoURL;
+    }
+    
   }
 
   loginWithFacebook(){
@@ -57,6 +54,9 @@ export class ProfilePage {
       console.log(res);
       this.alert('You have logged out');
       this.facebook.loggedIn = false;
+      this.facebook.name="anonymous";
+      this.facebook.email=null;
+      this.facebook.profilePicture=null;
     })
     .catch(error =>{
       console.log(error);
