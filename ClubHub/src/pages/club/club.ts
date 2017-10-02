@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { App,NavController } from 'ionic-angular';
 
-import {ClubTabsPage} from './clubTabs/clubTabs';
+import {ClubTabsPage} from '../tabs/clubTabs/clubTabs';
 
 @Component({
   selector: 'page-about',
@@ -11,7 +11,7 @@ import {ClubTabsPage} from './clubTabs/clubTabs';
 export class ClubPage {
   rootClubPage:any=ClubTabsPage;
   
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public app:App) {
   }
 
 }

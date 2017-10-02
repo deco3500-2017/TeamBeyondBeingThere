@@ -25260,18 +25260,26 @@ page-entry .view .scroll-content {
 }
 
 page-contact #userimg {
+  position: relative;
   float: right;
-  width: 60px;
-  height: 60px;
-  right: 0;
+  width: 40px;
+  height: 40px;
 }
 
 page-contact img {
+  position: absolute;
   border-radius: 50%;
 }
 
-page-contact #username {
+page-contact #usernameContainer {
+  position: relative;
   float: left;
+  width: 100%;
+}
+
+page-contact #username {
+  position: absolute;
+  left: 0px;
 }
 
 page-contact .button {

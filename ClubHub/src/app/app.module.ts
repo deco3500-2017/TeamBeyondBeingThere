@@ -4,7 +4,6 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { EntryPage } from '../pages/entry/entry';
-import { RegisterPage } from '../pages/register/register';
 import { EventPage } from '../pages/event/event';
 import { EventDetailPage } from '../pages/event/eventDetail/eventDetail';
 import { ProfilePage } from '../pages/profile/profile';
@@ -13,15 +12,19 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ClubPage } from '../pages/club/club';
 import { MyClubsPage } from '../pages/club/myClubs/myClubs';
 import { AllClubsPage } from '../pages/club/allClubs/allClubs';
-import { ClubTabsPage } from '../pages/club/clubTabs/clubTabs';
+import { ClubTabsPage } from '../pages/tabs/clubTabs/clubTabs';
+import { ClubDetailPage } from '../pages/club/club-detail/club-detail';
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { FirebaseServiceProvider } from './../providers/firebase-service/firebase-service';
 
 
 const firebaseAuth = {
@@ -46,15 +49,14 @@ const firebaseAuth = {
     AllClubsPage,
     ClubTabsPage,
     EventDetailPage,
-
-    RegisterPage,
-
+    ClubDetailPage,
     EntryPage,
   ],
 
 
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseAuth),
     AngularFireDatabaseModule, // imports firebase/database, only needed for database features
@@ -75,14 +77,14 @@ const firebaseAuth = {
     AllClubsPage,
     ClubTabsPage,
     EventDetailPage,
-
-    RegisterPage,
     EntryPage,
+    ClubDetailPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    FirebaseServiceProvider,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
   ]
 })
 export class AppModule {}

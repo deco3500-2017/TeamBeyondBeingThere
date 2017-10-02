@@ -1,21 +1,20 @@
-
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Event
+      Event page
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="card-background-page">
-  <div id='events' *ngIf='userInfo.loggedIn'>
-    <ion-card (click)="openPage()">
+
+  <ion-card (click)="openPage()">
       <img class="event-image" src="../assets/icon/favicon.ico"/>
       <div class="card-title">
         <div ng-controller="card-title">hahahaha</div>
       </div>
       <div class="card-subtitle">41 Listings</div>
-    </ion-card>
+  </ion-card>
   
   <ion-card>
     <img class="event-image" src="../assets/icon/favicon.ico"/>
@@ -34,8 +33,7 @@
     <div class="card-title">MarketDay</div>
     <div class="card-subtitle">28 Listings</div>
   </ion-card>
-</div>
-  
+
 </ion-content>
   
 

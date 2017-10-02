@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController,AlertController } from 'ionic-angular';
-import { RegisterPage } from '../register/register';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { EntryPage } from '../entry/entry';
 
 import firebase from 'firebase'; 
 

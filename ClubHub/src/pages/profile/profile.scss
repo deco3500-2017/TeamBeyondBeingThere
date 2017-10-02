@@ -1,17 +1,26 @@
 page-contact {
 	#userimg{
+		position:relative;
 		float:right;
-	 	width:60px;
-	 	height:60px;
-	 	right:0;
+	 	width:40px;
+	 	height:40px;
 	}
 
 	img{
+		position:absolute;
 		border-radius:50%;
 	}
 
-	#username{
+	#usernameContainer{
+		position:relative;
 		float:left;
+		width:100%;
+		
+	}
+
+	#username{
+		position:absolute;
+		left:0px;
 	}
 
 	.button{

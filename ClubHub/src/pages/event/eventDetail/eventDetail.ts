@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { FirebaseServiceProvider } from '../../../providers/firebase-service/firebase-service';
+import { FirebaseListObservable } from 'angularfire2/database';
+
 
 
 @Component({
@@ -8,11 +11,8 @@ import { NavController } from 'ionic-angular';
 })
 
 export class EventDetailPage {
-	
 
-  constructor(public navCtrl: NavController) {
-  	
+  	events: FirebaseListObservable<any[]>;
+  	constructor(public navCtrl: NavController, public firebaseService:FirebaseServiceProvider) {
   }
-
-
 }

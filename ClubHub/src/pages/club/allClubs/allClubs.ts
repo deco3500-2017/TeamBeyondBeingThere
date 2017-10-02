@@ -1,15 +1,25 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { App,NavController } from 'ionic-angular';
+import { ClubDetailPage } from '../club-detail/club-detail';
+import { ClubPage } from '../../club/club';
+
 
 
 @Component({
-  templateUrl: 'allClubs.html'
+  templateUrl: 'allClubs.html',
+  selector: 'page-about',
 })
 
 export class AllClubsPage {
 
-  constructor(public navCtrl: NavController) {
-
+	
+  constructor(public navCtrl: NavController,private app:App) {
+  	
   }
 
+	gotoClubDetail(){
+		this.app.getRootNav().push(ClubDetailPage);
+	}
+
+	
 }

@@ -1,26 +1,25 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { EventDetailPage } from './eventDetail/eventDetail';
-import { ProfilePage } from '../profile/profile';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 @Component({
   selector: 'page-about',
-  providers:[ProfilePage],
   templateUrl: 'event.html',
 })
 
 export class EventPage {
-  userInfo:{};
-
-  constructor(public navCtrl: NavController,public userService:ProfilePage) {
-  	this.userInfo=userService.facebook;
+  
+  
+  constructor(public navCtrl: NavController,public fire:AngularFireAuth) {
+    	
   }
 
   
   
 
   openPage(){
-  	this.navCtrl.push(EventDetailPage);
+  	this.navCtrl.push(EventDetailPage,);
   }
 
 }
