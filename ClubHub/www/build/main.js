@@ -86,7 +86,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 TabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="ios-home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Event" tabIcon="ios-list"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Club" tabIcon="ios-star"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Profile" tabIcon="ios-contact"></ion-tab>\n</ion-tabs>\n\n\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/tabs/tabs.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="ios-home"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Event" tabIcon="ios-list"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Club" tabIcon="ios-star"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Profile" tabIcon="ios-contact"></ion-tab>\n\n</ion-tabs>\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\tabs.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], TabsPage);
@@ -154,7 +154,7 @@ var ClubDetailPage = (function () {
 ClubDetailPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-club-detail',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/club/club-detail/club-detail.html"*/'<!--\n  Generated template for the ClubDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>clubDetail</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n\n<ion-list>\n	<ion-item>\n		<ion-label>Event name</ion-label>\n			<ion-input type="text" [(ngModel)]="event.name" placeholder="Event Name" required>Event Name</ion-input>\n	</ion-item>\n	<ion-item>\n		<ion-label>Event Fee</ion-label>\n		<ion-input type="number" placeholder="Event Fee"></ion-input>\n	</ion-item>\n	<ion-item>\n		<ion-label>Event Description</ion-label>\n		<ion-textarea type="text" [(ngModel)]="event.description" placeholder="Event Description"></ion-textarea>\n	</ion-item>\n	<ion-item>\n		<ion-input type="text" [(ngModel)]="event.location" placeholder="Event Location"></ion-input>\n	</ion-item>\n	<ion-item>\n		<ion-input type="email" [(ngModel)]="event.contactEmail" placeholder="Contact Email"></ion-input>\n	</ion-item>\n	<ion-item>\n      	<ion-label>Event Start Date</ion-label>\n      	<ion-datetime displayFormat="MMM DD, YYYY" min="2017" max="2020" [(ngModel)]="event.startDate"></ion-datetime> \n	</ion-item>\n\n	<ion-item>\n		<ion-label>Event Start Time</ion-label>\n      	<ion-datetime displayFormat="hh:mm A" [(ngModel)]="event.startTime"></ion-datetime>\n	</ion-item>\n\n	<ion-item>\n      	<ion-label>Event End Date</ion-label>\n      	<ion-datetime displayFormat="MMM DD, YYYY" min="2017" max="2020" [(ngModel)]="event.endDate"></ion-datetime>\n    </ion-item>\n    <ion-item>\n      	<ion-label>Event End Time</ion-label>\n      	<ion-datetime displayFormat="hh:mm A" [(ngModel)]="event.endTime"></ion-datetime>\n    </ion-item>\n	<ion-item>\n	    <ion-label>Tags</ion-label>\n	    <ion-select [(ngModel)]="tags" multiple="true" cancelText="Cancel" okText="Okay!" slide="false">\n	      <ion-option value="sports" >sports</ion-option>\n	      <ion-option value="academic">academic</ion-option>\n	      <ion-option value="musical" >musical</ion-option>\n	    </ion-select>\n  	</ion-item>\n</ion-list>\n\n\n\n<ion-list>\n	<ion-item-sliding *ngFor="let event of events | async">\n  		<ion-item>\n  			{{event.name}}\n  		</ion-item>\n  		<ion-item-options side="right">\n  			<button ion-button color="danger" icon-only (click)=\'removeEvent(event.$key)\'>\n  				<ion-icon name="trash"></ion-icon>\n  			</button>\n  		</ion-item-options>\n	</ion-item-sliding>\n</ion-list>\n\n<button ion-button full (click)=\'addEvent()\'> create new event</button>\n</ion-content>\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/club/club-detail/club-detail.html"*/,
+        selector: 'page-club-detail',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\club-detail\club-detail.html"*/'<!--\n\n  Generated template for the ClubDetailPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>clubDetail</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n\n\n<ion-list>\n\n	<ion-item>\n\n		<ion-label>Event name</ion-label>\n\n			<ion-input type="text" [(ngModel)]="event.name" placeholder="Event Name" required>Event Name</ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label>Event Fee</ion-label>\n\n		<ion-input type="number" placeholder="Event Fee"></ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label>Event Description</ion-label>\n\n		<ion-textarea type="text" [(ngModel)]="event.description" placeholder="Event Description"></ion-textarea>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-input type="text" [(ngModel)]="event.location" placeholder="Event Location"></ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-input type="email" [(ngModel)]="event.contactEmail" placeholder="Contact Email"></ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n      	<ion-label>Event Start Date</ion-label>\n\n      	<ion-datetime displayFormat="MMM DD, YYYY" min="2017" max="2020" [(ngModel)]="event.startDate"></ion-datetime> \n\n	</ion-item>\n\n\n\n	<ion-item>\n\n		<ion-label>Event Start Time</ion-label>\n\n      	<ion-datetime displayFormat="hh:mm A" [(ngModel)]="event.startTime"></ion-datetime>\n\n	</ion-item>\n\n\n\n	<ion-item>\n\n      	<ion-label>Event End Date</ion-label>\n\n      	<ion-datetime displayFormat="MMM DD, YYYY" min="2017" max="2020" [(ngModel)]="event.endDate"></ion-datetime>\n\n    </ion-item>\n\n    <ion-item>\n\n      	<ion-label>Event End Time</ion-label>\n\n      	<ion-datetime displayFormat="hh:mm A" [(ngModel)]="event.endTime"></ion-datetime>\n\n    </ion-item>\n\n	<ion-item>\n\n	    <ion-label>Tags</ion-label>\n\n	    <ion-select [(ngModel)]="tags" multiple="true" cancelText="Cancel" okText="Okay!" slide="false">\n\n	      <ion-option value="sports" >sports</ion-option>\n\n	      <ion-option value="academic">academic</ion-option>\n\n	      <ion-option value="musical" >musical</ion-option>\n\n	    </ion-select>\n\n  	</ion-item>\n\n</ion-list>\n\n\n\n\n\n\n\n<ion-list>\n\n	<ion-item-sliding *ngFor="let event of events | async">\n\n  		<ion-item>\n\n  			{{event.name}}\n\n  		</ion-item>\n\n  		<ion-item-options side="right">\n\n  			<button ion-button color="danger" icon-only (click)=\'removeEvent(event.$key)\'>\n\n  				<ion-icon name="trash"></ion-icon>\n\n  			</button>\n\n  		</ion-item-options>\n\n	</ion-item-sliding>\n\n</ion-list>\n\n\n\n<button ion-button full (click)=\'addEvent()\'> create new event</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\club-detail\club-detail.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_firebase_service_firebase_service__["a" /* FirebaseServiceProvider */]])
 ], ClubDetailPage);
@@ -247,7 +247,7 @@ var EventPage = (function () {
 }());
 EventPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/event/event.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Event page\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="card-background-page">\n\n  <ion-card (click)="openPage()">\n      <img class="event-image" src="../assets/icon/favicon.ico"/>\n      <div class="card-title">\n        <div ng-controller="card-title">hahahaha</div>\n      </div>\n      <div class="card-subtitle">41 Listings</div>\n  </ion-card>\n  \n  <ion-card>\n    <img class="event-image" src="../assets/icon/favicon.ico"/>\n    <div class="card-title">Table Game</div>\n    <div class="card-subtitle">64 Listings</div>\n  </ion-card>\n\n  <ion-card>\n    <img class="event-image" src="../assets/icon/favicon.ico"/>\n    <div class="card-title">OutDoor activity</div>\n    <div class="card-subtitle">72 Listings</div>\n  </ion-card>\n\n  <ion-card>\n    <img class="event-image" src="../assets/icon/favicon.ico"/>\n    <div class="card-title">MarketDay</div>\n    <div class="card-subtitle">28 Listings</div>\n  </ion-card>\n\n</ion-content>\n  \n\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/event/event.html"*/,
+        selector: 'page-about',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\event.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Event page\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="card-background-page">\n\n\n\n  <ion-card (click)="openPage()">\n\n      <img class="event-image" src="../assets/icon/favicon.ico"/>\n\n      <div class="card-title">\n\n        <div ng-controller="card-title">hahahaha</div>\n\n      </div>\n\n      <div class="card-subtitle">41 Listings</div>\n\n  </ion-card>\n\n  \n\n  <ion-card>\n\n    <img class="event-image" src="../assets/icon/favicon.ico"/>\n\n    <div class="card-title">Table Game</div>\n\n    <div class="card-subtitle">64 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img class="event-image" src="../assets/icon/favicon.ico"/>\n\n    <div class="card-title">OutDoor activity</div>\n\n    <div class="card-subtitle">72 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img class="event-image" src="../assets/icon/favicon.ico"/>\n\n    <div class="card-title">MarketDay</div>\n\n    <div class="card-subtitle">28 Listings</div>\n\n  </ion-card>\n\n\n\n</ion-content>\n\n  \n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\event.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__["a" /* AngularFireAuth */]])
 ], EventPage);
@@ -285,7 +285,7 @@ var EventDetailPage = (function () {
 }());
 EventDetailPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/event/eventDetail/eventDetail.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>\n			BBQ\n		</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	this is the page that would contains all the info of a event\n</ion-content>\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/event/eventDetail/eventDetail.html"*/,
+        selector: 'page-about',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\eventDetail\eventDetail.html"*/'<ion-header>\n\n	<ion-navbar>\n\n		<ion-title>\n\n			BBQ\n\n		</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n	this is the page that would contains all the info of a event\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\eventDetail\eventDetail.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_firebase_service_firebase_service__["a" /* FirebaseServiceProvider */]])
 ], EventDetailPage);
@@ -319,24 +319,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ProfilePage = (function () {
     function ProfilePage(fire, navCtrl, alertCtrl) {
+        /*
+        if(fire.auth.currentUser.email.length==0){
+          this.facebook.loggedIn=false;
+        }else{
+          
+          this.facebook.email=fire.auth.currentUser.email;
+          this.facebook.loggedIn=true;
+          this.facebook.name=fire.auth.currentUser.displayName;
+          this.facebook.profilePicture=fire.auth.currentUser.photoURL;
+          
+        }
+        */
         this.fire = fire;
         this.navCtrl = navCtrl;
         this.alertCtrl = alertCtrl;
         this.facebook = {
             loggedIn: false,
             name: "anonymous",
-            email: null,
-            profilePicture: null,
+            email: "",
+            profilePicture: "",
         };
-        if (fire.auth.currentUser.email.length == 0) {
-            this.facebook.loggedIn = false;
-        }
-        else {
-            this.facebook.email = fire.auth.currentUser.email;
-            this.facebook.loggedIn = true;
-            this.facebook.name = fire.auth.currentUser.displayName;
-            this.facebook.profilePicture = fire.auth.currentUser.photoURL;
-        }
     }
     ProfilePage.prototype.loginWithFacebook = function () {
         var _this = this;
@@ -382,11 +385,12 @@ var ProfilePage = (function () {
 }());
 ProfilePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/profile/profile.html"*/'<ion-header>\n  <ion-navbar>\n  	<div id=\'usernameContainer\'>\n      		<p id=\'username\'>{{facebook.name}}</p>\n      	</div>\n      	<div id=\'userimg\' >\n      		<img src="{{facebook.profilePicture}}" />\n		</div>\n    <ion-title>\n    	\n      	\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	\n	\n\n	<ion-footer>  	\n		<div class="bottomButton">	  \n			<button ion-button full color="primary" \n	  		(click)=\'loginWithFacebook()\' *ngIf=\'!facebook.loggedIn\'>Sign in with facebook</button>\n	\n		  	<button ion-button full color="primary" \n		  	(click)=\'logout()\' *ngIf=\'facebook.loggedIn\'>Log out</button>\n		</div>\n	</ion-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/profile/profile.html"*/
+        selector: 'page-contact',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\profile\profile.html"*/'<ion-header>\n\n  <ion-navbar>\n\n  	<div id=\'usernameContainer\'>\n\n      		<p id=\'username\'>{{facebook.name}}</p>\n\n      	</div>\n\n      	<div id=\'userimg\' >\n\n      		<img src="{{facebook.profilePicture}}" />\n\n		</div>\n\n    <ion-title>\n\n    	\n\n      	\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n	\n\n	\n\n\n\n	<ion-footer>  	\n\n		<div class="bottomButton">	  \n\n			<button ion-button full color="primary" \n\n	  		(click)=\'loginWithFacebook()\' *ngIf=\'!facebook.loggedIn\'>Sign in with facebook</button>\n\n	\n\n		  	<button ion-button full color="primary" \n\n		  	(click)=\'logout()\' *ngIf=\'facebook.loggedIn\'>Log out</button>\n\n		</div>\n\n	</ion-footer>\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\profile\profile.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object])
 ], ProfilePage);
 
+var _a, _b, _c;
 //# sourceMappingURL=profile.js.map
 
 /***/ }),
@@ -421,7 +425,7 @@ var ClubPage = (function () {
 }());
 ClubPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/club/club.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Club\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<ion-nav [root]="rootClubPage"></ion-nav>\n</ion-content>'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/club/club.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\club.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>\n\n            Club\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n	<ion-nav [root]="rootClubPage"></ion-nav>\n\n</ion-content>'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\club.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */]])
 ], ClubPage);
@@ -458,7 +462,7 @@ var ClubTabsPage = (function () {
     return ClubTabsPage;
 }());
 ClubTabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/tabs/clubTabs/clubTabs.html"*/'<!DOCTYPE html>\n<html>\n<head>\n	<meta charset="utf-8">\n</head>\n<body>\n	<div class="ion-tabs">\n		<ion-tabs tabsPlacement="top" color="primary">\n		<ion-tab [root]="allClubRoot" tabTitle="All Club"></ion-tab>\n		<ion-tab [root]="myClubRoot" tabTitle="My Club"></ion-tab>\n		</ion-tabs>\n	</div>\n</body>\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/tabs/clubTabs/clubTabs.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\clubTabs\clubTabs.html"*/'<!DOCTYPE html>\n\n<html>\n\n<head>\n\n	<meta charset="utf-8">\n\n</head>\n\n<body>\n\n	<div class="ion-tabs">\n\n		<ion-tabs tabsPlacement="top" color="primary">\n\n		<ion-tab [root]="allClubRoot" tabTitle="All Club"></ion-tab>\n\n		<ion-tab [root]="myClubRoot" tabTitle="My Club"></ion-tab>\n\n		</ion-tabs>\n\n	</div>\n\n</body>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\clubTabs\clubTabs.html"*/,
         selector: 'page-about',
     }),
     __metadata("design:paramtypes", [])
@@ -493,7 +497,7 @@ var MyClubsPage = (function () {
     return MyClubsPage;
 }());
 MyClubsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/club/myClubs/myClubs.html"*/'<ion-content>\n</ion-content>\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/club/myClubs/myClubs.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\myClubs\myClubs.html"*/'<ion-content>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\myClubs\myClubs.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
 ], MyClubsPage);
@@ -533,7 +537,7 @@ var AllClubsPage = (function () {
     return AllClubsPage;
 }());
 AllClubsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/club/allClubs/allClubs.html"*/'<ion-content>\n<ion-list></ion-list>\n\n<button ion-button full (click)=\'gotoClubDetail()\'>go to detail page</button>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/club/allClubs/allClubs.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\allClubs\allClubs.html"*/'<ion-content>\n\n<ion-list></ion-list>\n\n\n\n<button ion-button full (click)=\'gotoClubDetail()\'>go to detail page</button>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\allClubs\allClubs.html"*/,
         selector: 'page-about',
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */]])
@@ -569,7 +573,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>ClubHub</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2></h2>\n  <p>\n\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>ClubHub</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h2></h2>\n\n  <p>\n\n\n\n  </p>\n\n  <p>\n\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n\n    update any existing page or create new pages.\n\n  </p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
 ], HomePage);
@@ -653,7 +657,7 @@ var EntryPage = (function () {
 EntryPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-entry',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/entry/entry.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>UQ ClubHub</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content no-bounce padding class=\'view\'>\n	<div id=\'imageContainer\'>\n	<img src="../../assets/icon/clubHub.png" height="100px" width="100px" />\n	</div>\n<ion-footer>\n	<div id="container">\n		<p id=\'line1\' >Have a great time!</p>\n	</div>\n\n	<div id=\'bottomButton\'>	\n	  	<button ion-button full color=\'primary\'(click)=\'loginWithFacebook()\'>\n	  	  Sign in with facebook\n	  	</button> \n	</div>\n</ion-footer>		\n\n	\n</ion-content>\n\n\n\n\n\n\n\n\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/pages/entry/entry.html"*/,
+        selector: 'page-entry',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\entry\entry.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>UQ ClubHub</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content no-bounce padding class=\'view\'>\n\n	<div id=\'imageContainer\'>\n\n	<img src="../../assets/icon/clubHub.png" height="100px" width="100px" />\n\n	</div>\n\n<ion-footer>\n\n	<div id="container">\n\n		<p id=\'line1\' >Have a great time!</p>\n\n	</div>\n\n\n\n	<div id=\'bottomButton\'>	\n\n	  	<button ion-button full color=\'primary\'(click)=\'loginWithFacebook()\'>\n\n	  	  Sign in with facebook\n\n	  	</button> \n\n	</div>\n\n</ion-footer>		\n\n\n\n	\n\n</ion-content>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\entry\entry.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
 ], EntryPage);
@@ -839,7 +843,7 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere 15.27.36/ClubHub/src/app/app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\app\app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);

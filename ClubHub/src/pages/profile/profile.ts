@@ -14,19 +14,24 @@ export class ProfilePage {
   facebook={
     loggedIn:false,
     name:"anonymous",
-    email:null,
-    profilePicture:null,
+    email:"",
+    profilePicture:"",
   }
 
   constructor(private fire:AngularFireAuth,public navCtrl: NavController,private alertCtrl: AlertController) {
+    
+    /*
     if(fire.auth.currentUser.email.length==0){
       this.facebook.loggedIn=false;
     }else{
+      
       this.facebook.email=fire.auth.currentUser.email;
       this.facebook.loggedIn=true;
       this.facebook.name=fire.auth.currentUser.displayName;
       this.facebook.profilePicture=fire.auth.currentUser.photoURL;
+      
     }
+    */
     
   }
 
