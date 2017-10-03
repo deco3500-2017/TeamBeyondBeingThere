@@ -17,6 +17,8 @@ import { ClubDetailPage } from '../pages/club/club-detail/club-detail';
 
 
 
+
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -51,6 +53,7 @@ const firebaseAuth = {
     EventDetailPage,
     ClubDetailPage,
     EntryPage,
+
   ],
 
 
@@ -79,6 +82,7 @@ const firebaseAuth = {
     EventDetailPage,
     EntryPage,
     ClubDetailPage,
+
   ],
   providers: [
     StatusBar,

@@ -1,29 +1,124 @@
 page-contact {
-	#userimg{
+	.segment-ios .segment-button:first-of-type {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0px;
+    margin-right: 0;
+}
+
+.segment-ios .segment-button:last-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+    border-left-width: 0;
+}
+
+.segment-ios-dark .segment-button {
+    border-bottom:none;
+    border-left:none;
+    border-right:none;
+    color:#999999;
+    font-size:14px;
+}
+
+
+.segment-ios .segment-button{
+	height:4.0rem;
+	line-height:4.0rem;
+	text-align:center;
+}
+
+.segment-ios-dark .segment-button.segment-activated {
+	color:#ed3269;
+    background-color: #fff;
+    border-bottom:3px solid #ed3269;
+    font-weight: bold;
+}
+
+ion-slides {
+	height:300px;
+	position: absolute;
+}
+
+ion-slide{
+	
+	margin:-30px 0;
+}
+
+
+
+
+	#userimgContainer{
 		position:relative;
-		float:right;
-	 	width:40px;
-	 	height:40px;
+		text-align:center;
 	}
 
 	img{
-		position:absolute;
+		width:100px;
+		height:100px;
+		border:5px solid rgba(255,255,255,0.40);
 		border-radius:50%;
+		background:#ffffff;
 	}
 
 	#usernameContainer{
 		position:relative;
-		float:left;
-		width:100%;
+		text-align:center;
 		
 	}
 
+	#useremailContainer{
+		position:relative;
+		text-align:center;
+	}
+
+
 	#username{
-		position:absolute;
-		left:0px;
+		text-transform:captitalize;
+		line-height:1.5;
+		font-size:16px;
+		color:#ffffff;
+		letter-spacing:0;
+
+	}
+
+	#useremail{
+		font-size:14px;
+		color:#ffffff;
+		letter-spacing:0;
+		text-align:center;
 	}
 
 	.button{
 		margin:0px;
+		
 	}
+
+
+
+
+
+
+	.basicinfo{
+		top:10%;
+		opacity:0.9;
+		position:absolute;
+		width:100%;
+		height:32%;
+		background-image:linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 90%);
+	}
+
+	.profileSubTabs{
+		top:42%;
+		position:absolute;
+		width:100%;
+		height:300px;
+		background:#ffffff;
+
+	}
+
+
 }

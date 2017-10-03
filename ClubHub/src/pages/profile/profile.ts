@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController,AlertController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 
+
 import firebase from 'firebase'; 
 
 
@@ -10,6 +11,22 @@ import firebase from 'firebase';
   templateUrl: 'profile.html'
 })
 export class ProfilePage {
+  items:any={
+    'events':[
+        {
+          name:"BBQ",
+          time:"tommorrow",
+        },
+        {
+          name:"Play",
+          time:"today",
+        }
+    ],
+  }
+
+  getEvent(typename: any){
+    return this.items[typename];
+  }
 
   facebook={
     loggedIn:false,
@@ -18,8 +35,7 @@ export class ProfilePage {
     profilePicture:"",
   }
 
-  constructor(private fire:AngularFireAuth,public navCtrl: NavController,private alertCtrl: AlertController) {
-    
+  constructor(private fire:AngularFireAuth,public navCtrl: NavController,private alertCtrl: AlertController) {   
     /*
     if(fire.auth.currentUser.email.length==0){
       this.facebook.loggedIn=false;
@@ -29,10 +45,9 @@ export class ProfilePage {
       this.facebook.loggedIn=true;
       this.facebook.name=fire.auth.currentUser.displayName;
       this.facebook.profilePicture=fire.auth.currentUser.photoURL;
-      
     }
     */
-    
+
   }
 
   loginWithFacebook(){
@@ -76,4 +91,13 @@ export class ProfilePage {
       buttons: ['OK'],
     }).present();
   }
+
+
+
+dosomething(){
+  console.log("worked");
+}
+
+
+
 }

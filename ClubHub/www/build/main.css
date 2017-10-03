@@ -25259,29 +25259,109 @@ page-entry .view .scroll-content {
   color: black;
 }
 
-page-contact #userimg {
+page-contact .segment-ios .segment-button:first-of-type {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0px;
+  margin-right: 0;
+}
+
+page-contact .segment-ios .segment-button:last-of-type {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+  border-left-width: 0;
+}
+
+page-contact .segment-ios-dark .segment-button {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  color: #999999;
+  font-size: 14px;
+}
+
+page-contact .segment-ios .segment-button {
+  height: 4.0rem;
+  line-height: 4.0rem;
+  text-align: center;
+}
+
+page-contact .segment-ios-dark .segment-button.segment-activated {
+  color: #ed3269;
+  background-color: #fff;
+  border-bottom: 3px solid #ed3269;
+  font-weight: bold;
+}
+
+page-contact ion-slides {
+  height: 300px;
+  position: absolute;
+}
+
+page-contact ion-slide {
+  margin: -30px 0;
+}
+
+page-contact #userimgContainer {
   position: relative;
-  float: right;
-  width: 40px;
-  height: 40px;
+  text-align: center;
 }
 
 page-contact img {
-  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 5px solid rgba(255, 255, 255, 0.4);
   border-radius: 50%;
+  background: #ffffff;
 }
 
 page-contact #usernameContainer {
   position: relative;
-  float: left;
-  width: 100%;
+  text-align: center;
+}
+
+page-contact #useremailContainer {
+  position: relative;
+  text-align: center;
 }
 
 page-contact #username {
-  position: absolute;
-  left: 0px;
+  text-transform: captitalize;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+page-contact #useremail {
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
 }
 
 page-contact .button {
   margin: 0px;
+}
+
+page-contact .basicinfo {
+  top: 10%;
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  height: 32%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, #000000));
+  background-image: linear-gradient(-180deg, transparent 0%, #000000 90%);
+}
+
+page-contact .profileSubTabs {
+  top: 42%;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background: #ffffff;
 }
