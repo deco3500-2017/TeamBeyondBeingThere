@@ -1,21 +1,40 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="danger">
     <ion-title>
       Event page
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content class="card-background-page">
+<ion-content padding>
 
   <ion-card (click)="openPage()">
-      <img class="event-image" src="../assets/icon/favicon.ico"/>
-      <div class="card-title">
-        <div ng-controller="card-title">hahahaha</div>
-      </div>
-      <div class="card-subtitle">41 Listings</div>
+      <img class="event-image" src="img/2.jpg"/>
+      <ion-card-content>
+        <ion-card-title>
+          Welcome BBQ 2017
+          </ion-card-title>
+        <p>
+          The most popular industrial group ever, and largely
+          responsible for bringing the music to a mass audience.
+        </p>
+      </ion-card-content>
   </ion-card>
+    
+    <ion-card>
+      <img src="img/1.png"/>
+      <ion-card-content>
+        <ion-card-title>
+          Welcome to UQ 2017
+          </ion-card-title>
+        <p>
+          The most popular industrial group ever, and largely
+          responsible for bringing the music to a mass audience.
+        </p>
+      </ion-card-content>
+    </ion-card>
   
+<!--
   <ion-card>
     <img class="event-image" src="../assets/icon/favicon.ico"/>
     <div class="card-title">Table Game</div>
@@ -33,6 +52,7 @@
     <div class="card-title">MarketDay</div>
     <div class="card-subtitle">28 Listings</div>
   </ion-card>
+-->
 
 </ion-content>
   
