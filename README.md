@@ -1,6 +1,7 @@
 ﻿### Updates
 4 Oct, 2017
-Append stand-up content to the [Week 10]](#week-10) section.
+Append stand-up content to the [Week 10](#week-10) section.
+
 28 Sep, 2017
 Append the [Design Process](#design-process) section to the document, including process documentation till Week 8.
 
