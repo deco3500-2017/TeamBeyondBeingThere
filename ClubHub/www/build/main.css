@@ -25277,6 +25277,7 @@ page-contact .segment-ios .segment-button:last-of-type {
 }
 
 page-contact .segment-ios-dark .segment-button {
+  border-top: none;
   border-bottom: none;
   border-left: none;
   border-right: none;
@@ -25311,29 +25312,6 @@ page-contact ion-slides {
 
 page-contact ion-slide {
   margin: 0;
-}
-
-page-contact #setting {
-  position: absolute;
-}
-
-page-contact .fab-ios {
-  color: #fff;
-  background-color: transparent;
-}
-
-page-contact .fab fab-ios {
-  width: 40px;
-}
-
-page-contact .fab-ios-list {
-  text-align: center;
-}
-
-page-contact .fab-list-active {
-  position: relative;
-  float: right;
-  margin-right: 10px;
 }
 
 page-contact #userimgContainer {
@@ -25404,6 +25382,8 @@ page-contact .colTitle {
 page-contact p.colTitle {
   margin-bottom: 0px;
   padding-bottom: 0px;
+  color: #999999;
+  font-weight: bold;
 }
 
 page-contact .followInfoContent {
@@ -25412,6 +25392,18 @@ page-contact .followInfoContent {
 
 page-contact #slideCol {
   text-align: left;
+}
+
+page-contact .topButton {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 5.5rem;
+}
+
+page-contact .topButton button {
+  border-radius: 5px;
 }
 
 page-contact .basicinfo {

@@ -1,20 +1,11 @@
 <ion-content >
 	<div class="basicinfo">
+ 
 
-	<ion-fab top right>
-    <button ion-fab color="danger"><ion-icon style="font-size:3.0rem" id="setting" name="cog"></ion-icon></button>  
-    <ion-fab-list>
-    <div class="bottomButton">	  
-			<button ion-button color="danger" full (click)='loginWithFacebook()' *ngIf='!facebook.loggedIn' name="logo-facebook">
-			  	<ion-icon name="logo-facebook"></ion-icon>Sign in</button>
-			<button ion-button color="danger" full (click)='logout()' *ngIf='facebook.loggedIn'>Log out</button>
-	</div>
-    </ion-fab-list>
-  </ion-fab>
+    
 
 
-
-	<div id='userimgContainer' >
+		<div id='userimgContainer' >
       		<img src="{{facebook.profilePicture}}" />
 		</div>
 		<div id='usernameContainer'>
@@ -24,7 +15,14 @@
     		<p id='useremail'>{{facebook.email}}</p>
     	</div>
 	</div>
-
+    <div class="topButton">	  
+			<button ion-button color="danger" full (click)='loginWithFacebook()' *ngIf='!facebook.loggedIn'>
+			  	<ion-icon name="logo-facebook"></ion-icon>Log in
+			</button>
+			<button ion-button color="danger" full (click)='logout()' *ngIf='facebook.loggedIn'>
+				<ion-icon name="log-facebook"></ion-icon>Log out
+			</button>
+	</div>
 
 <div class="followInfoContent">
 	<div class = "row">

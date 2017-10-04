@@ -17,6 +17,7 @@ page-contact {
 }
 
 .segment-ios-dark .segment-button {
+	border-top:none;
     border-bottom:none;
     border-left:none;
     border-right:none;
@@ -57,34 +58,6 @@ ion-slide{
 	
 	margin: 0;
 }
-
-
-#setting{
-	position:absolute;
-}
-
-.fab-ios {
-    color: #fff;
-    background-color: transparent ;
-}
-
-.fab fab-ios{
-	width:40px;
-}
-
-.fab-ios-list{
-	text-align:center;
-	
-}
-
-.fab-list-active{
-	position:relative;
-	float:right;
-	margin-right:10px;
-}
-
-
-
 
 
 	#userimgContainer{
@@ -154,19 +127,29 @@ ion-slide{
 	p.colTitle {
 		margin-bottom:0px;
 		padding-bottom:0px;
+		color:#999999;
+		font-weight:bold;
 	}
 
 	.followInfoContent{
 		margin-left:10px;
 	}
 
-
-
 	#slideCol{
 		text-align:left;
 	}
 
+	.topButton{	
+		position:absolute;
+		right:0;
+		margin-top:10px;
+		margin-right:10px;
+		width:5.5rem;
+	}
 
+	.topButton button{
+	border-radius: 5px;
+	}
 
 
 
