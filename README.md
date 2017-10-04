@@ -1,4 +1,6 @@
 ﻿### Updates
+4 Oct, 2017
+Append stand-up content to the [Week 10]](#week-10) section.
 28 Sep, 2017
 Append the [Design Process](#design-process) section to the document, including process documentation till Week 8.
 
@@ -438,3 +440,77 @@ As planned earlier, the team will finish concrete design of the concept and buil
 > Responsibilities: Front-end development
 
 > Expected outcomes: Basic structure of the app in the ionic editor (together with Tony)
+
+## Week 10
+
+### Nan
+
+#### What's done
+1. In the user test (A/B test) on 14 September (Thursday, Week 8), I created the test protocol and invited two participants as representatives of an existing member and an organiser of UQ clubs. I facilitated most of the user tests.
+2. I analysed the outcomes of the user test based on the observation notes and video recordings, and then convert the results into a list of design implications to inform the design.
+The design implications can be viewed at: TeamBeyondBeingThere/Design Process/Week 9 - Design/Design Implications by Nan.docx
+3. I created the wireframes of our concept, unifying all designs of the main screens with respect to the design implications mentioned above.
+![Screenshot of wireframes](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%209%20-%20Design/Wireframes%20by%20Nan%20(Screenshot).png "Screenshot of wireframes")
+
+
+#### Plan for the next two weeks
+1. As the team leader, I will track the whole progress of our project and provide any help if needed.
+2. I will prepare for next test session, including composing the protocol and recruiting participants.
+
+### Peter
+
+#### What's done
+
+1. In the user test (A/B test) on 14 September (Thursday, Week 8), I invited two participants as representatives of people who didn’t joined uq club. 
+2. I analysed the outcomes of the user test based on the observation notes and video recordings, and then collected all of my teammerbers’ notes, then summarize them to a document in google drive.
+3. I created 20pages UI in sketch software.(include all of necessary graph)
+4. I uploaded these UI pages to the canvisflip website where we can use it to create prototype and test it.
+5. I have reviewed the process of our project, and use indesign to create a document.
+
+#### Plan for the next two weeks
+
+1. I will finish the digital prototype and test in week10 practice
+2. I will prepare for next test session, including composing the protocol and recruiting participants.
+3. After test section, I will analysis the outcomes of this test and modify the UI .
+
+### Alvin
+
+#### What's done
+
+1. In the user test (A/B test) on 14 September (Thursday, Week 8), I invited one participant as a student that have not participated any clubs and also conducted interview documentation during the testing session. After that changes had been made to improve the filter design of the app.
+2. Studied AngularJS, Ionic and firebase online by watching tutorial and read through related documentation. The basic structure of the page has been implemented and successfully linked firebase database to the ionic app and performed user authentication using facebook account.
+
+
+#### Plan for the next two weeks
+
+1. Continuously studying Ionic and coding.
+2. By the end of week 10, the profile page will be finished and can retrieve the data from the firebase database about events and clubs.
+3. Further develop the database and set up restriction on the data I/O read and write.
+
+
+### Danson
+
+#### What's done
+
+1. In the user test (A/B test) on 14 September (Thursday, Week 8), I invited one participant as an existing member and an organiser of UQ clubs. 
+2. After the last feedback, I improved the event list page and the event detail page.
+3. Learned the Ionic and JavaScript tutorial for the digital prototype.
+
+#### Plan for the next two weeks
+
+1. Continuously studying the Ionic tutorial.
+2. This week, I am going to coding the event list page and my event page by Ionic.
+3. After this, I will do a basic test of these pages to find the shortage. 
+
+### Tony
+
+#### What's done
+1. In the User test (A/B test) on 14 September, I invited one participant who is a club member and holded for two test sections.
+2. Social network diagram arrangement and the User Interface design for both social diagram and lists.
+3. Learned the Ionic and JavaScript tutorial for the interactive prototype.
+
+#### Plan for the next two weeks
+
+1. Continuously studying the Ionic tutorial.
+2. Create interactive prototype meanly focus on Club section and Filter 
+3. Preparing for usability test on interactive prototype.
