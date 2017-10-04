@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { EventDetailPage } from './eventDetail/eventDetail';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { EventTabsPage } from '../tabs/eventTabs/eventTabs';
 
 @Component({
   selector: 'page-about',
@@ -10,7 +10,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 
 export class EventPage {
   
-  
+  rootEventPage:any=EventTabsPage
   constructor(public navCtrl: NavController,public fire:AngularFireAuth) {
     	
   }
@@ -18,9 +18,7 @@ export class EventPage {
   
   
 
-  openPage(){
-  	this.navCtrl.push(EventDetailPage,);
-  }
+
 
 }
 
