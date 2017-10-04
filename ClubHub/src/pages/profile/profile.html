@@ -1,6 +1,20 @@
 <ion-content >
 	<div class="basicinfo">
-		<div id='userimgContainer' >
+
+	<ion-fab top right>
+    <button ion-fab color="danger"><ion-icon style="font-size:3.0rem" id="setting" name="cog"></ion-icon></button>  
+    <ion-fab-list>
+    <div class="bottomButton">	  
+			<button ion-button color="danger" full (click)='loginWithFacebook()' *ngIf='!facebook.loggedIn' name="logo-facebook">
+			  	<ion-icon name="logo-facebook"></ion-icon>Sign in</button>
+			<button ion-button color="danger" full (click)='logout()' *ngIf='facebook.loggedIn'>Log out</button>
+	</div>
+    </ion-fab-list>
+  </ion-fab>
+
+
+
+	<div id='userimgContainer' >
       		<img src="{{facebook.profilePicture}}" />
 		</div>
 		<div id='usernameContainer'>
@@ -10,6 +24,88 @@
     		<p id='useremail'>{{facebook.email}}</p>
     	</div>
 	</div>
+
+
+<div class="followInfoContent">
+	<div class = "row">
+   		<div class = "col">
+   			<p class= "colContent">2.5k</p>
+   			<p class="colTitle">Follwer</p>
+   			
+   		</div>
+   		<div class = "col">
+   			<p class= "colContent">5</p>
+   			<p class="colTitle">Following</p>
+   			
+   		</div>
+
+
+   		<div class = "col">
+   			<p class= "colContent">3</p>
+   			<p class="colTitle">Club</p>
+   			
+   		</div>
+   		<div class = "col">
+   			<p class= "colContent">4</p>
+   			<p class="colTitle">Event</p>
+   			
+   		</div>
+	</div>
+
+
+
+
+
+
+
+
+		<div class="tagContent">
+		<ion-slides direction="horizontal">
+
+		  <ion-slide class="horizontalSlide">
+		  		<div id="slideRow" class="row">
+			    	<div id="slideCol" class="col">
+			    		#Fashion
+			    	</div>	 
+			    	<div id="slideCol" class="col">
+			    		#Party Animal
+			    	</div>
+
+			    	<div id="slideCol" class="col">
+			    		#Outgoing
+			    	</div>
+
+				</div>
+		    
+		  </ion-slide>
+
+		  <ion-slide class="horizontalSlide">
+		  		<div id="slideRow" class="row">
+		    	<div id="slideCol" class="col">
+		    		#Haha
+		    	</div>	 
+		    	<div id="slideCol" class="col">
+		    		#UQ Student
+		    	</div>
+		    	<div id="slideCol" class="col">
+		    		#Friendly
+		    	</div>
+
+				</div>
+		    
+		  </ion-slide>
+
+
+		</ion-slides>
+	</div>
+
+
+
+
+</div>
+
+
+
 
 	<div class="profileSubTabs">
 	    <ion-segment  [(ngModel)]="segments" color="dark">
@@ -23,51 +119,55 @@
 	        BOOKMARK
 	      </ion-segment-button>
 	    </ion-segment>
-
-
 			
-<div class="subTabContent" [ngSwitch]="segments">
+<div class="subTabContent" [ngSwitch]="segments" >
 
 		<ion-slides pager="false" direction="vertical" >
-		<ion-slide>
+			<ion-slide>
   			<ion-list  style="margin:0">
-  			<ion-item (click)="dosomething()" *ngFor="let sItem of getEvent(segments)">
-    		<ion-thumbnail item-start>
-      			<img src="img/2.jpg">
-    		</ion-thumbnail>
-    		<h2>{{sItem.name}}</h2>
-				<p>The event info</p>
-  			</ion-item>
-  			</ion-list>
-  		</ion-slide>
   		
-
-  		<ion-slide>
-  			<ion-list  style="margin:0">
   			<ion-item (click)="dosomething()" *ngFor="let sItem of getEvent(segments)">
+    		
     		<ion-thumbnail item-start>
       			<img src="img/2.jpg">
     		</ion-thumbnail>
     		<h2>{{sItem.name}}</h2>
 				<p>The event info</p>
-  			</ion-item>
+  			
+  			</ion-item>  		
+  		
   			</ion-list>
-  		</ion-slide>
+  			</ion-slide>
 
 
 
 
-  		<ion-slide>
+
+			<ion-slide>
   			<ion-list  style="margin:0">
+  		
   			<ion-item (click)="dosomething()" *ngFor="let sItem of getEvent(segments)">
+    		
     		<ion-thumbnail item-start>
       			<img src="img/2.jpg">
     		</ion-thumbnail>
     		<h2>{{sItem.name}}</h2>
 				<p>The event info</p>
-  			</ion-item>
+  			
+  			</ion-item>  		
+  		
   			</ion-list>
-  		</ion-slide>
+  			</ion-slide>
+
+
+
+
+
+
+
+
+
+
 
 		</ion-slides>
 	</div>
@@ -83,13 +183,7 @@
 
   	</div>
 	<ion-footer>  	
-		<div class="bottomButton">	  
-			<button ion-button full color="primary" 
-	  		(click)='loginWithFacebook()' *ngIf='!facebook.loggedIn'>Sign in with facebook</button>
-	
-		  	<button ion-button full color="primary" 
-		  	(click)='logout()' *ngIf='facebook.loggedIn'>Log out</button>
-		</div>
+
 	</ion-footer>
 
 	

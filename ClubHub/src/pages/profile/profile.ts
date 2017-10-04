@@ -20,7 +20,19 @@ export class ProfilePage {
         {
           name:"Play",
           time:"today",
-        }
+        },
+        {
+          name:"Play",
+          time:"today",
+        },
+        {
+          name:"Play",
+          time:"today",
+        },       
+        {
+          name:"Play",
+          time:"today",
+        },
     ],
   }
 

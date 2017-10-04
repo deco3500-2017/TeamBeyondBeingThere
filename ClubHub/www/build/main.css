@@ -25297,18 +25297,49 @@ page-contact .segment-ios-dark .segment-button.segment-activated {
   font-weight: bold;
 }
 
+page-contact .segment-md-dark .segment-button.segment-activated {
+  color: #ed3269;
+  background-color: #fff;
+  border-bottom: 3px solid #ed3269;
+  font-weight: bold;
+}
+
 page-contact ion-slides {
-  height: 300px;
+  height: auto;
   position: absolute;
 }
 
 page-contact ion-slide {
-  margin: -30px 0;
+  margin: 0;
+}
+
+page-contact #setting {
+  position: absolute;
+}
+
+page-contact .fab-ios {
+  color: #fff;
+  background-color: transparent;
+}
+
+page-contact .fab fab-ios {
+  width: 40px;
+}
+
+page-contact .fab-ios-list {
+  text-align: center;
+}
+
+page-contact .fab-list-active {
+  position: relative;
+  float: right;
+  margin-right: 10px;
 }
 
 page-contact #userimgContainer {
   position: relative;
   text-align: center;
+  margin-top: 10px;
 }
 
 page-contact img {
@@ -25348,8 +25379,43 @@ page-contact .button {
   margin: 0px;
 }
 
+page-contact .row {
+  height: 32%;
+}
+
+page-contact .col {
+  text-align: left;
+}
+
+page-contact .colContent {
+  font-size: 20px;
+  margin: 0;
+  margin-top: 10px;
+  color: #ed3269;
+  letter-spacing: 0;
+  text-weight: bold;
+}
+
+page-contact .colTitle {
+  font-size: 14px;
+  color: #555555;
+}
+
+page-contact p.colTitle {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+page-contact .followInfoContent {
+  margin-left: 10px;
+}
+
+page-contact #slideCol {
+  text-align: left;
+}
+
 page-contact .basicinfo {
-  top: 10%;
+  top: 0%;
   opacity: 0.9;
   position: absolute;
   width: 100%;
@@ -25358,8 +25424,14 @@ page-contact .basicinfo {
   background-image: linear-gradient(-180deg, transparent 0%, #000000 90%);
 }
 
+page-contact .followInfoContent {
+  top: 32%;
+  position: absolute;
+  width: 100%;
+}
+
 page-contact .profileSubTabs {
-  top: 42%;
+  top: 50%;
   position: absolute;
   width: 100%;
   height: 300px;
