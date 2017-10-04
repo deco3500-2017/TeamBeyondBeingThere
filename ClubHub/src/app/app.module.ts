@@ -2,10 +2,8 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
 import { EntryPage } from '../pages/entry/entry';
 import { EventPage } from '../pages/event/event';
-import { EventDetailPage } from '../pages/event/eventDetail/eventDetail';
 import { ProfilePage } from '../pages/profile/profile';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -14,6 +12,9 @@ import { MyClubsPage } from '../pages/club/myClubs/myClubs';
 import { AllClubsPage } from '../pages/club/allClubs/allClubs';
 import { ClubTabsPage } from '../pages/tabs/clubTabs/clubTabs';
 import { ClubDetailPage } from '../pages/club/club-detail/club-detail';
+import { AllEventsPage } from '../pages/event/allEvents/allEvents';
+import { EventTabsPage } from '../pages/tabs/eventTabs/eventTabs';
+import { MyEventsPage } from '../pages/event/myEvents/myEvents';
 
 
 
@@ -49,9 +50,13 @@ const firebaseAuth = {
     MyClubsPage,
     AllClubsPage,
     ClubTabsPage,
-    EventDetailPage,
     ClubDetailPage,
     EntryPage,
+    AllEventsPage,
+    EventTabsPage,
+    MyEventsPage,
+
+
   ],
 
 
@@ -77,9 +82,13 @@ const firebaseAuth = {
     MyClubsPage,
     AllClubsPage,
     ClubTabsPage,
-    EventDetailPage,
+   
     EntryPage,
     ClubDetailPage,
+
+    EventTabsPage,
+    AllEventsPage,
+    MyEventsPage,
   ],
   providers: [
     StatusBar,
