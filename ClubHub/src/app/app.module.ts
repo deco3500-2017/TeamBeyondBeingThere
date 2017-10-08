@@ -15,6 +15,7 @@ import { ClubDetailPage } from '../pages/club/club-detail/club-detail';
 import { AllEventsPage } from '../pages/event/allEvents/allEvents';
 import { EventTabsPage } from '../pages/tabs/eventTabs/eventTabs';
 import { MyEventsPage } from '../pages/event/myEvents/myEvents';
+import { EventDetailPage } from '../pages/event/eventdetail/eventdetail';
 
 
 
@@ -55,6 +56,7 @@ const firebaseAuth = {
     AllEventsPage,
     EventTabsPage,
     MyEventsPage,
+    EventDetailPage,
 
 
   ],
@@ -89,6 +91,7 @@ const firebaseAuth = {
     EventTabsPage,
     AllEventsPage,
     MyEventsPage,
+    EventDetailPage,
   ],
   providers: [
     StatusBar,

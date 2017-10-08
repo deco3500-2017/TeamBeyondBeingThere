@@ -1,0 +1,49 @@
+<!--
+  Generated template for the eventDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+    
+      <ion-toolbar>
+          <ion-title text-center>BBQ</ion-title>
+        <ion-buttons class="shareicon" end>
+            <ion-icon ios="ios-share" md="md-share" color="light"></ion-icon>
+        </ion-buttons>
+          <ion-buttons class="shareicon" end>
+            <ion-icon ios="ios-bookmark" md="md-bookmark" color="light"></ion-icon>
+        </ion-buttons>
+      </ion-toolbar>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="eventdetail">
+
+  <ion-slides class="slides" pager>
+    <ion-slide *ngFor="let slide of slides">
+      <img [src]="slide.image" class="slide-image"/>
+<!--
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+-->
+    </ion-slide>
+    <ion-slide>
+      <img src="img/1.png" class="slide-image"/>
+<!--
+      <h2 class="slide-title">Ready to Play?</h2>
+      <button ion-button large clear icon-end color="primary">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+-->
+    </ion-slide>
+  </ion-slides>
+    <p class="titlep">Sustainable Fashion Drinks</p>
+    <p class="timep">WED, 26 OCT, 18:00 PM until 21:00 PM BST</p>
+    <p class="eventtags">#Food &nbsp; #Outdoor</p>
+</ion-content>
+

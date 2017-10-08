@@ -15,11 +15,6 @@ export class EventPage {
     	
   }
 
-  
-  
-
-
-
 }
 
 

@@ -7,9 +7,9 @@ webpackJsonp([3],{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__event_event__ = __webpack_require__(242);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_profile__ = __webpack_require__(247);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__club_club__ = __webpack_require__(259);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_profile__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__club_club__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(264);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -49,7 +49,7 @@ TabsPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClubDetailPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_firebase_service_firebase_service__ = __webpack_require__(203);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -133,15 +133,15 @@ webpackEmptyAsyncContext.id = 161;
 
 var map = {
 	"../pages/club/club-detail/club-detail.module": [
-		458,
+		459,
 		2
 	],
 	"../pages/entry/entry.module": [
-		459,
+		460,
 		1
 	],
 	"../pages/register/register.module": [
-		460,
+		461,
 		0
 	]
 };
@@ -167,7 +167,7 @@ module.exports = webpackAsyncContext;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FirebaseServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(204);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -219,7 +219,7 @@ FirebaseServiceProvider = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_eventTabs_eventTabs__ = __webpack_require__(244);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -245,7 +245,7 @@ var EventPage = (function () {
 }());
 EventPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/event.html"*/'<ion-header>\n  <ion-navbar color="danger">\n    <ion-title>\n      Event page\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <ion-nav [root]="rootEventPage"></ion-nav>\n\n\n</ion-content>\n  \n\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/event.html"*/,
+        selector: 'page-about',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/event.html"*/'<ion-header>\n  <ion-navbar color="danger">\n    <ion-title text-center>\n      Event page\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <ion-nav [root]="rootEventPage"></ion-nav>\n\n\n</ion-content>\n  \n\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/event.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */]])
 ], EventPage);
@@ -298,7 +298,7 @@ EventTabsPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyEventsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -317,7 +317,7 @@ var MyEventsPage = (function () {
     return MyEventsPage;
 }());
 MyEventsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/myEvents/myEvents.html"*/'<ion-content>\n</ion-content>\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/myEvents/myEvents.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/myEvents/myEvents.html"*/'<ion-content>\n    hello\n \n   \n\n</ion-content>\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/myEvents/myEvents.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
 ], MyEventsPage);
@@ -332,7 +332,8 @@ MyEventsPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllEventsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eventdetail_eventdetail__ = __webpack_require__(247);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -344,15 +345,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var AllEventsPage = (function () {
     function AllEventsPage(navCtrl, app) {
         this.navCtrl = navCtrl;
         this.app = app;
     }
+    AllEventsPage.prototype.gotoEventDetail = function () {
+        this.app.getRootNav().push(__WEBPACK_IMPORTED_MODULE_2__eventdetail_eventdetail__["a" /* EventDetailPage */]);
+    };
     return AllEventsPage;
 }());
 AllEventsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/allEvents/allEvents.html"*/'<ion-content class="card-background-page">\n<ion-card>\n      <img  src="img/2.jpg"/>\n    \n      <ion-card-content>    \n          <div class="price-background"></div>\n          <div class="event-price" >$ 20</div>\n        <ion-card-title >\n          Welcome BBQ 2017\n          </ion-card-title>\n          <div class="card-subtitle"># Food & Drinks</div>\n          \n        <ion-list>\n          <div ion-item class="first-list">\n            <ion-icon name="pin" item-start></ion-icon>\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n              <p item-end>150m</p>\n            </div>\n            <ion-item>\n                <ion-icon name="bookmark" item-start></ion-icon>\n                <p>19/100 attending</p>\n                <ion-avatar item-end >\n                    <img src="img/picon1.jpeg">\n                </ion-avatar>\n                <ion-avatar item-end >\n                    <img src="img/picon2.jpg">\n                </ion-avatar>\n            </ion-item>\n        </ion-list>\n          \n      </ion-card-content>\n  </ion-card>\n    \n    <ion-card>\n      <img  src="img/1.png"/>\n    \n      <ion-card-content>    \n          <div class="price-background"></div>\n          <div class="event-price" >$ 30</div>\n        <ion-card-title >\n          Welcome BBQ 2017\n          </ion-card-title>\n          <div class="card-subtitle"># Food & Drinks</div>\n          \n        <ion-list>\n          <div ion-item class="first-list">\n            <ion-icon name="pin" item-start></ion-icon>\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n              <p item-end>150m</p>\n            </div>\n            <ion-item>\n                <ion-icon name="bookmark" item-start></ion-icon>\n                <p>19/100 attending</p>\n                <ion-avatar item-end >\n                    <img src="img/picon2.jpg">\n                </ion-avatar>\n                <ion-avatar item-end >\n                    <img src="img/picon3.jpg">\n                </ion-avatar>\n            </ion-item>\n        </ion-list>\n          \n      </ion-card-content>\n  </ion-card>\n    \n    <ion-card>\n      <img  src="img/2.jpg"/>\n    \n      <ion-card-content>    \n          <div class="price-background"></div>\n          <div class="event-price" >$ 20</div>\n        <ion-card-title >\n          Welcome BBQ 2017\n          </ion-card-title>\n          <div class="card-subtitle"># Food & Drinks</div>\n          \n        <ion-list>\n          <div ion-item class="first-list">\n            <ion-icon name="pin" item-start></ion-icon>\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n              <p item-end>150m</p>\n            </div>\n            <ion-item>\n                <ion-icon name="bookmark" item-start></ion-icon>\n                <p>19/100 attending</p>\n                <ion-avatar item-end >\n                    <img src="img/picon3.jpg">\n                </ion-avatar>\n                <ion-avatar item-end >\n                    <img src="img/1.png">\n                </ion-avatar>\n            </ion-item>\n        </ion-list>\n          \n      </ion-card-content>\n  </ion-card>\n    \n    <ion-card>\n      <img  src="img/1.png"/>\n    \n      <ion-card-content>    \n          <div class="price-background"></div>\n          <div class="event-price" >$ 20</div>\n        <ion-card-title >\n          Welcome BBQ 2017\n          </ion-card-title>\n          <div class="card-subtitle"># Food & Drinks</div>\n          \n        <ion-list>\n          <div ion-item class="first-list">\n            <ion-icon name="pin" item-start></ion-icon>\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n              <p item-end>150m</p>\n            </div>\n            <ion-item>\n                <ion-icon name="bookmark" item-start></ion-icon>\n                <p>19/100 attending</p>\n                <ion-avatar item-end >\n                    <img src="img/1.png">\n                </ion-avatar>\n                <ion-avatar item-end >\n                    <img src="img/picon3.jpg">\n                </ion-avatar>\n            </ion-item>\n        </ion-list>\n          \n      </ion-card-content>\n  </ion-card>\n\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/allEvents/allEvents.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/allEvents/allEvents.html"*/'<ion-content class="card-background-page">\n    \n<ion-card>\n      <img  (click)=\'gotoEventDetail()\' src="img/2.jpg"/>\n    \n      <ion-card-content>   \n         \n          <div class="price-background"></div>\n          <div class="event-price" >$ 20</div>\n        <ion-card-title >\n          Welcome BBQ 2017\n          </ion-card-title>\n          <div class="card-subtitle"># Food & Drinks</div>\n          \n        <ion-list>\n          <div ion-item class="first-list">\n            <ion-icon name="pin" item-start></ion-icon>\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n              <p item-end>150m</p>\n            </div>\n            <ion-item>\n                <ion-icon name="bookmark" item-start></ion-icon>\n                <p>19/100 attending</p>\n                <ion-avatar item-end >\n                    <img src="img/picon1.jpeg">\n                </ion-avatar>\n                <ion-avatar item-end >\n                    <img src="img/picon2.jpg">\n                </ion-avatar>\n            </ion-item>\n        </ion-list>\n          \n      </ion-card-content>\n  </ion-card>\n    \n    <ion-card>\n      <img  src="img/1.png"/>\n    \n      <ion-card-content>    \n          <div class="price-background"></div>\n          <div class="event-price" >$ 30</div>\n        <ion-card-title >\n          Welcome BBQ 2017\n          </ion-card-title>\n          <div class="card-subtitle"># Food & Drinks</div>\n          \n        <ion-list>\n          <div ion-item class="first-list">\n            <ion-icon name="pin" item-start></ion-icon>\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n              <p item-end>150m</p>\n            </div>\n            <ion-item>\n                <ion-icon name="bookmark" item-start></ion-icon>\n                <p>19/100 attending</p>\n                <ion-avatar item-end >\n                    <img src="img/picon2.jpg">\n                </ion-avatar>\n                <ion-avatar item-end >\n                    <img src="img/picon3.jpg">\n                </ion-avatar>\n            </ion-item>\n        </ion-list>\n          \n      </ion-card-content>\n  </ion-card>\n    \n    <ion-card>\n      <img  src="img/2.jpg"/>\n    \n      <ion-card-content>    \n          <div class="price-background"></div>\n          <div class="event-price" >$ 20</div>\n        <ion-card-title >\n          Welcome BBQ 2017\n          </ion-card-title>\n          <div class="card-subtitle"># Food & Drinks</div>\n          \n        <ion-list>\n          <div ion-item class="first-list">\n            <ion-icon name="pin" item-start></ion-icon>\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n              <p item-end>150m</p>\n            </div>\n            <ion-item>\n                <ion-icon name="bookmark" item-start></ion-icon>\n                <p>19/100 attending</p>\n                <ion-avatar item-end >\n                    <img src="img/picon3.jpg">\n                </ion-avatar>\n                <ion-avatar item-end >\n                    <img src="img/1.png">\n                </ion-avatar>\n            </ion-item>\n        </ion-list>\n          \n      </ion-card-content>\n  </ion-card>\n    \n    <ion-card>\n      <img  src="img/1.png"/>\n    \n      <ion-card-content>    \n          <div class="price-background"></div>\n          <div class="event-price" >$ 20</div>\n        <ion-card-title >\n          Welcome BBQ 2017\n          </ion-card-title>\n          <div class="card-subtitle"># Food & Drinks</div>\n          \n        <ion-list>\n          <div ion-item class="first-list">\n            <ion-icon name="pin" item-start></ion-icon>\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n              <p item-end>150m</p>\n            </div>\n            <ion-item>\n                <ion-icon name="bookmark" item-start></ion-icon>\n                <p>19/100 attending</p>\n                <ion-avatar item-end >\n                    <img src="img/1.png">\n                </ion-avatar>\n                <ion-avatar item-end >\n                    <img src="img/picon3.jpg">\n                </ion-avatar>\n            </ion-item>\n        </ion-list>\n          \n      </ion-card-content>\n  </ion-card>\n\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/allEvents/allEvents.html"*/,
         selector: 'page-about',
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */]])
@@ -366,11 +371,69 @@ AllEventsPage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventDetailPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the EventDetailPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var EventDetailPage = (function () {
+    function EventDetailPage(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.slides = [
+            {
+                title: "Welcome to the Docs!",
+                description: "The <b>Ionic Component Documentation</b> showcases a number of useful components that are included out of the box with Ionic.",
+                image: "img/1.png",
+            },
+            {
+                title: "What is Ionic?",
+                description: "<b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.",
+                image: "img/2.jpg",
+            },
+            {
+                title: "What is Ionic Cloud?",
+                description: "The <b>Ionic Cloud</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.",
+                image: "img/picon3.jpg",
+            }
+        ];
+    }
+    return EventDetailPage;
+}());
+EventDetailPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-event-detail',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/eventdetail/eventdetail.html"*/'<!--\n  Generated template for the eventDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="danger">\n    \n      <ion-toolbar>\n          <ion-title text-center>BBQ</ion-title>\n        <ion-buttons class="shareicon" end>\n            <ion-icon ios="ios-share" md="md-share" color="light"></ion-icon>\n        </ion-buttons>\n          <ion-buttons class="shareicon" end>\n            <ion-icon ios="ios-bookmark" md="md-bookmark" color="light"></ion-icon>\n        </ion-buttons>\n      </ion-toolbar>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content class="eventdetail">\n\n  <ion-slides class="slides" pager>\n    <ion-slide *ngFor="let slide of slides">\n      <img [src]="slide.image" class="slide-image"/>\n<!--\n      <h2 class="slide-title" [innerHTML]="slide.title"></h2>\n      <p [innerHTML]="slide.description"></p>\n-->\n    </ion-slide>\n    <ion-slide>\n      <img src="img/1.png" class="slide-image"/>\n<!--\n      <h2 class="slide-title">Ready to Play?</h2>\n      <button ion-button large clear icon-end color="primary">\n        Continue\n        <ion-icon name="arrow-forward"></ion-icon>\n      </button>\n-->\n    </ion-slide>\n  </ion-slides>\n    <p class="titlep">Sustainable Fashion Drinks</p>\n    <p class="timep">WED, 26 OCT, 18:00 PM until 21:00 PM BST</p>\n    <p class="eventtags">#Food &nbsp; #Outdoor</p>\n</ion-content>\n\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/event/eventdetail/eventdetail.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+], EventDetailPage);
+
+//# sourceMappingURL=eventdetail.js.map
+
+/***/ }),
+
+/***/ 248:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_firebase__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_firebase__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_firebase__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -491,14 +554,14 @@ ProfilePage = __decorate([
 
 /***/ }),
 
-/***/ 259:
+/***/ 260:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClubPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_clubTabs_clubTabs__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_clubTabs_clubTabs__ = __webpack_require__(261);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -530,14 +593,14 @@ ClubPage = __decorate([
 
 /***/ }),
 
-/***/ 260:
+/***/ 261:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClubTabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__club_myClubs_myClubs__ = __webpack_require__(261);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__club_allClubs_allClubs__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__club_myClubs_myClubs__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__club_allClubs_allClubs__ = __webpack_require__(263);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -568,13 +631,13 @@ ClubTabsPage = __decorate([
 
 /***/ }),
 
-/***/ 261:
+/***/ 262:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyClubsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -602,13 +665,13 @@ MyClubsPage = __decorate([
 
 /***/ }),
 
-/***/ 262:
+/***/ 263:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllClubsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__club_detail_club_detail__ = __webpack_require__(153);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -643,13 +706,13 @@ AllClubsPage = __decorate([
 
 /***/ }),
 
-/***/ 263:
+/***/ 264:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -669,7 +732,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>ClubHub</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2></h2>\n  <p>\n\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>ClubHub</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n   \n  <h2>hello</h2>\n \n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/Danson/TeamBeyondBeingThere/ClubHub/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
 ], HomePage);
@@ -678,16 +741,16 @@ HomePage = __decorate([
 
 /***/ }),
 
-/***/ 307:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EntryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -762,13 +825,13 @@ EntryPage = __decorate([
 
 /***/ }),
 
-/***/ 308:
+/***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(326);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -776,41 +839,43 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 325:
+/***/ 326:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(448);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_entry_entry__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(449);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_entry_entry__ = __webpack_require__(308);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_event_event__ = __webpack_require__(242);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_profile_profile__ = __webpack_require__(247);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_profile_profile__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_club_club__ = __webpack_require__(259);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_club_myClubs_myClubs__ = __webpack_require__(261);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_club_allClubs_allClubs__ = __webpack_require__(262);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tabs_clubTabs_clubTabs__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_club_club__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_club_myClubs_myClubs__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_club_allClubs_allClubs__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tabs_clubTabs_clubTabs__ = __webpack_require__(261);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_club_club_detail_club_detail__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_event_allEvents_allEvents__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_tabs_eventTabs_eventTabs__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_event_myEvents_myEvents__ = __webpack_require__(245);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_status_bar__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_splash_screen__ = __webpack_require__(306);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_http__ = __webpack_require__(457);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_angularfire2__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angularfire2_database__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_angularfire2_auth__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_firebase_service_firebase_service__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_event_eventdetail_eventdetail__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_status_bar__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_splash_screen__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_http__ = __webpack_require__(458);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angularfire2__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_angularfire2_database__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23_angularfire2_auth__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_firebase_service_firebase_service__ = __webpack_require__(203);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -865,10 +930,11 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_14__pages_event_allEvents_allEvents__["a" /* AllEventsPage */],
             __WEBPACK_IMPORTED_MODULE_15__pages_tabs_eventTabs_eventTabs__["a" /* EventTabsPage */],
             __WEBPACK_IMPORTED_MODULE_16__pages_event_myEvents_myEvents__["a" /* MyEventsPage */],
+            __WEBPACK_IMPORTED_MODULE_17__pages_event_eventdetail_eventdetail__["a" /* EventDetailPage */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_19__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_20__angular_http__["a" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                 links: [
                     { loadChildren: '../pages/club/club-detail/club-detail.module#ClubDetailPageModule', name: 'ClubDetailPage', segment: 'club-detail', priority: 'low', defaultHistory: [] },
@@ -876,9 +942,9 @@ AppModule = __decorate([
                     { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] }
                 ]
             }),
-            __WEBPACK_IMPORTED_MODULE_20_angularfire2__["a" /* AngularFireModule */].initializeApp(firebaseAuth),
-            __WEBPACK_IMPORTED_MODULE_21_angularfire2_database__["b" /* AngularFireDatabaseModule */],
-            __WEBPACK_IMPORTED_MODULE_22_angularfire2_auth__["b" /* AngularFireAuthModule */],
+            __WEBPACK_IMPORTED_MODULE_21_angularfire2__["a" /* AngularFireModule */].initializeApp(firebaseAuth),
+            __WEBPACK_IMPORTED_MODULE_22_angularfire2_database__["b" /* AngularFireDatabaseModule */],
+            __WEBPACK_IMPORTED_MODULE_23_angularfire2_auth__["b" /* AngularFireAuthModule */],
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicApp */]],
         entryComponents: [
@@ -896,11 +962,12 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_15__pages_tabs_eventTabs_eventTabs__["a" /* EventTabsPage */],
             __WEBPACK_IMPORTED_MODULE_14__pages_event_allEvents_allEvents__["a" /* AllEventsPage */],
             __WEBPACK_IMPORTED_MODULE_16__pages_event_myEvents_myEvents__["a" /* MyEventsPage */],
+            __WEBPACK_IMPORTED_MODULE_17__pages_event_eventdetail_eventdetail__["a" /* EventDetailPage */],
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_17__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_18__ionic_native_splash_screen__["a" /* SplashScreen */],
-            __WEBPACK_IMPORTED_MODULE_23__providers_firebase_service_firebase_service__["a" /* FirebaseServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_18__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_19__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_24__providers_firebase_service_firebase_service__["a" /* FirebaseServiceProvider */],
             { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicErrorHandler */] },
         ]
     })
@@ -910,15 +977,15 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 448:
+/***/ 449:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(307);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(124);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -956,5 +1023,5 @@ MyApp = __decorate([
 
 /***/ })
 
-},[308]);
+},[309]);
 //# sourceMappingURL=main.js.map

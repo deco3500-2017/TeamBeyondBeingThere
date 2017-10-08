@@ -25271,6 +25271,40 @@ page-entry .view .scroll-content {
   border-bottom: 1px solid lightgray;
 }
 
+.shareicon {
+  margin-right: 5%;
+}
+
+.eventdetail .slides {
+  height: 50%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.eventdetail .slide-image {
+  margin-top: 5%;
+}
+
+.titlep {
+  font-size: 18px;
+  letter-spacing: 0;
+  margin-left: 5%;
+}
+
+.timep {
+  font-size: 14px;
+  letter-spacing: 0;
+  color: dimgray;
+  margin-left: 5%;
+}
+
+.eventtags {
+  font-size: 14px;
+  letter-spacing: 0;
+  color: dimgray;
+  margin-left: 5%;
+}
+
 page-contact .segment-ios .segment-button:first-of-type {
   border-top-left-radius: 0px;
   border-top-right-radius: 0;
