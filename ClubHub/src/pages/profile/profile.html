@@ -1,10 +1,5 @@
 <ion-content >
 	<div class="basicinfo">
- 
-
-    
-
-
 		<div id='userimgContainer' >
       		<img src="{{facebook.profilePicture}}" />
 		</div>
@@ -16,16 +11,16 @@
     	</div>
 	</div>
     <div class="topButton">	  
-			<button ion-button color="danger" full (click)='loginWithFacebook()' *ngIf='!facebook.loggedIn'>
+			<button ion-button color="dark" full (click)='loginWithFacebook()' *ngIf='!facebook.loggedIn'>
 			  	<ion-icon name="logo-facebook"></ion-icon>Log in
 			</button>
-			<button ion-button color="danger" full (click)='logout()' *ngIf='facebook.loggedIn'>
+			<button ion-button color="dark" full (click)='logout()' *ngIf='facebook.loggedIn'>
 				<ion-icon name="log-facebook"></ion-icon>Log out
 			</button>
 	</div>
 
 <div class="followInfoContent">
-	<div class = "row">
+	<div class = "row" id="row1">
    		<div class = "col">
    			<p class= "colContent">2.5k</p>
    			<p class="colTitle">Follwer</p>
@@ -50,14 +45,7 @@
    		</div>
 	</div>
 
-
-
-
-
-
-
-
-		<div class="tagContent">
+	<div class="tagContent">
 		<ion-slides direction="horizontal">
 
 		  <ion-slide class="horizontalSlide">
@@ -66,17 +54,14 @@
 			    		#Fashion
 			    	</div>	 
 			    	<div id="slideCol" class="col">
-			    		#Party Animal
+			    		#Party
 			    	</div>
 
 			    	<div id="slideCol" class="col">
 			    		#Outgoing
 			    	</div>
-
-				</div>
-		    
+				</div> 
 		  </ion-slide>
-
 		  <ion-slide class="horizontalSlide">
 		  		<div id="slideRow" class="row">
 		    	<div id="slideCol" class="col">
@@ -88,19 +73,10 @@
 		    	<div id="slideCol" class="col">
 		    		#Friendly
 		    	</div>
-
-				</div>
-		    
+				</div>    
 		  </ion-slide>
-
-
 		</ion-slides>
 	</div>
-
-
-
-
-</div>
 
 
 
@@ -110,79 +86,73 @@
 	      <ion-segment-button value="events">
 	        EVENTS
 	      </ion-segment-button>
-	      <ion-segment-button value="ticketes">
+	      <ion-segment-button value="tickets">
 	        TICKETS
 	      </ion-segment-button>
 	      <ion-segment-button value="bookmarks">
-	        BOOKMARK
+	        BOOKMARKS
 	      </ion-segment-button>
 	    </ion-segment>
-			
-<div class="subTabContent" [ngSwitch]="segments" >
+					<div class="subTabContent" [ngSwitch]="segments" >
+						
+						<div *ngSwitchCase="'events'">
+						<ion-slides id="verticalSlide" pager="false" direction="vertical" >
+							<ion-slide>
+				  			<ion-list  style="margin:0">
+				  			<ion-item (click)="dosomething()" *ngFor="let sItem1 of events | async">
+				    		
+				    		<ion-thumbnail item-start>
+				      			<img src="img/2.jpg">
+				    		</ion-thumbnail>
+				    			<h2>{{sItem1.name}}</h2>
+								<p>The event info</p>
+				  			</ion-item>
+				  			</ion-list>
+				  			</ion-slide>
 
-		<ion-slides pager="false" direction="vertical" >
-			<ion-slide>
-  			<ion-list  style="margin:0">
-  		
-  			<ion-item (click)="dosomething()" *ngFor="let sItem of getEvent(segments)">
-    		
-    		<ion-thumbnail item-start>
-      			<img src="img/2.jpg">
-    		</ion-thumbnail>
-    		<h2>{{sItem.name}}</h2>
-				<p>The event info</p>
-  			
-  			</ion-item>  		
-  		
-  			</ion-list>
-  			</ion-slide>
-
-
+						</ion-slides>
+						</div>
 
 
-
-			<ion-slide>
-  			<ion-list  style="margin:0">
-  		
-  			<ion-item (click)="dosomething()" *ngFor="let sItem of getEvent(segments)">
-    		
-    		<ion-thumbnail item-start>
-      			<img src="img/2.jpg">
-    		</ion-thumbnail>
-    		<h2>{{sItem.name}}</h2>
-				<p>The event info</p>
-  			
-  			</ion-item>  		
-  		
-  			</ion-list>
-  			</ion-slide>
-
-
+						<div *ngSwitchCase="'tickets'">
+						<ion-slides id="verticalSlide" pager="false" direction="vertical" >
+							<ion-slide>
+				  			<ion-list  style="margin:0">
+				  			<ion-item (click)="dosomething()" *ngFor="let sItem2 of tickets | async">
+				    		
+				    		<ion-thumbnail item-start>
+				      			<img src="img/2.jpg">
+				    		</ion-thumbnail>
+				    			<h2>{{sItem2.name}}</h2>
+								<p>The event info</p>
+				  			</ion-item>
+				  			</ion-list>
+				  			</ion-slide>
+						</ion-slides>
+						</div>
 
 
+						<div *ngSwitchCase="'bookmarks'">
+						<ion-slides id="verticalSlide" pager="false" direction="vertical" >
+							<ion-slide>
+				  			<ion-list  style="margin:0">
+				  			<ion-item (click)="dosomething()" *ngFor="let sItem3 of bookmarks | async">
+				    		
+				    		<ion-thumbnail item-start>
+				      			<img src="img/2.jpg">
+				    		</ion-thumbnail>
+				    			<h2>{{sItem3.name}}</h2>
+								<p>The event info</p>
+				  			</ion-item>
+				  			</ion-list>
+				  			</ion-slide>
+						</ion-slides>
+						</div>
+					</div>
+			</div>
+</div>
 
 
-
-
-
-
-
-		</ion-slides>
-	</div>
-		
-	
-
-
-
-
-
-
-
-
-  	</div>
-	<ion-footer>  	
-
-	</ion-footer>
 
 	
 

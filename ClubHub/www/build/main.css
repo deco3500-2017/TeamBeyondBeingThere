@@ -25300,7 +25300,7 @@ page-contact .segment-ios-dark .segment-button {
 page-contact .segment-ios .segment-button {
   height: 4.0rem;
   line-height: 4.0rem;
-  text-align: center;
+  text-align: left;
 }
 
 page-contact .segment-ios-dark .segment-button.segment-activated {
@@ -25319,7 +25319,10 @@ page-contact .segment-md-dark .segment-button.segment-activated {
 
 page-contact ion-slides {
   height: auto;
-  position: absolute;
+}
+
+page-contact #verticalSlides {
+  height: 50px;
 }
 
 page-contact ion-slide {
@@ -25367,6 +25370,7 @@ page-contact #useremail {
 
 page-contact .button {
   margin: 0px;
+  font-size: 12px;
 }
 
 page-contact .row {
@@ -25375,6 +25379,7 @@ page-contact .row {
 
 page-contact .col {
   text-align: left;
+  padding-left: 15px;
 }
 
 page-contact .colContent {
@@ -25398,12 +25403,18 @@ page-contact p.colTitle {
   font-weight: bold;
 }
 
-page-contact .followInfoContent {
-  margin-left: 10px;
+page-contact .horizontalSlide {
+  height: 50px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 page-contact #slideCol {
   text-align: left;
+  color: #444444;
+  font-size: 14px;
+  padding: 0px;
 }
 
 page-contact .topButton {
@@ -25423,21 +25434,45 @@ page-contact .basicinfo {
   opacity: 0.9;
   position: absolute;
   width: 100%;
-  height: 32%;
+  height: 35%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, #000000));
   background-image: linear-gradient(-180deg, transparent 0%, #000000 90%);
 }
 
 page-contact .followInfoContent {
-  top: 32%;
+  top: 35%;
   position: absolute;
   width: 100%;
 }
 
 page-contact .profileSubTabs {
-  top: 50%;
+  position: absolute;
+  border-bottom: none;
   position: absolute;
   width: 100%;
   height: 300px;
   background: #ffffff;
+}
+
+page-contact #row1 {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+page-contact horizontalSlide swiper-slide swiper-slide-active {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+page-contact .item-md {
+  padding-left: 15px;
+}
+
+page-contact .tagContent {
+  position: relative;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
 }

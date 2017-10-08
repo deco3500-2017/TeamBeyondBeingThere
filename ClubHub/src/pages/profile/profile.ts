@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { NavController,AlertController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
+//Dont delete this!!!
+import { FirebaseServiceProvider } from '../../providers/firebase-service/firebase-service';
+//,public firebaseService:FirebaseServiceProvider
 
-
-import firebase from 'firebase'; 
+import * as firebase from 'firebase'; 
 
 
 @Component({
@@ -11,34 +13,10 @@ import firebase from 'firebase';
   templateUrl: 'profile.html'
 })
 export class ProfilePage {
-  items:any={
-    'events':[
-        {
-          name:"BBQ",
-          time:"tommorrow",
-        },
-        {
-          name:"Play",
-          time:"today",
-        },
-        {
-          name:"Play",
-          time:"today",
-        },
-        {
-          name:"Play",
-          time:"today",
-        },       
-        {
-          name:"Play",
-          time:"today",
-        },
-    ],
-  }
+  events:any;
+  tickets:any;
+  bookmarks:any;
 
-  getEvent(typename: any){
-    return this.items[typename];
-  }
 
   facebook={
     loggedIn:false,
@@ -47,7 +25,7 @@ export class ProfilePage {
     profilePicture:"",
   }
 
-  constructor(private fire:AngularFireAuth,public navCtrl: NavController,private alertCtrl: AlertController) {   
+  constructor(private fire:AngularFireAuth,public navCtrl: NavController,private alertCtrl: AlertController,public firebaseService:FirebaseServiceProvider) {   
     /*
     if(fire.auth.currentUser.email.length==0){
       this.facebook.loggedIn=false;
@@ -60,6 +38,8 @@ export class ProfilePage {
     }
     */
 
+    
+
   }
 
   loginWithFacebook(){
@@ -71,6 +51,9 @@ export class ProfilePage {
       this.facebook.name=res.user.displayName;
       this.facebook.email=res.user.email;
       this.facebook.profilePicture = res.user.photoURL;
+      this.events=this.firebaseService.getEvents();
+      this.tickets=this.firebaseService.getTickets();
+      this.bookmarks=this.firebaseService.getBookmarks();
     })
     .catch(error =>{
       console.log(error);
@@ -113,3 +96,4 @@ dosomething(){
 
 
 }
+
