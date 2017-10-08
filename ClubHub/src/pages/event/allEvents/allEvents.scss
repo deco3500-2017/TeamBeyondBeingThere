@@ -1,3 +1,52 @@
-page-about {
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+    
+  }
+
+  .card-title {
+    position: absolute;
+    bottom: 30%;
+    left:5%;
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #fff;
+      
+  }
+
+  .card-subtitle {
+    position: absolute;
+    font-size: 1.5em;
+    color: white;
+    bottom: 40%;
+    left:5%;
+  }
+    .event-price{
+        position: absolute;
+        right: 5%;
+        top:10%;
+        //width: 10%;
+        //opacity: 0.8;
+    //background-color: lightgray;
+        border-radius: 15px;
+        font-weight: bold;
+        color: rgb(236,50,105);
+    }
+    .price-background{
+        position: absolute;
+        right: 2%;
+        top:9.5%;
+        width: 13%;
+        height: 6%;
+        opacity: 0.8;
+        background-color: white;
+        border-radius: 13px;       
+    }
+    .first-list{
+        border-bottom: 1px solid lightgray;
+    }
+    
 
 }
