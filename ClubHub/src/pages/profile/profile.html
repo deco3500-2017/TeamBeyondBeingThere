@@ -1,86 +1,85 @@
-<ion-content >
+<expandable-header [scrollArea]="content">
+
+</expandable-header>
+
+<ion-header #head>
 	<div class="basicinfo">
-		<div id='userimgContainer' >
-      		<img src="{{facebook.profilePicture}}" />
+		<div class="userinfo">
+			<div id='userimgContainer'>
+	      		<img src="{{facebook.profilePicture}}" />	
+	      	</div>
+			<div id='usernameContainer'>
+		    	<p id='username'>{{facebook.name}}</p>
+		    </div>
+		    <div id='useremailContainer'>
+		   		<p id='useremail'>{{facebook.email}}</p>
+		    </div>
+	    </div>
+	
+		<div class="topButton">	  
+				<button ion-button color="dark" full (click)='loginWithFacebook()' *ngIf='!facebook.loggedIn'>
+				  	<ion-icon name="logo-facebook"></ion-icon>Log in
+				</button>
+				<button ion-button color="dark" full (click)='logout()' *ngIf='facebook.loggedIn'>
+					<ion-icon name="log-facebook"></ion-icon>Log out					
+				</button>
 		</div>
-		<div id='usernameContainer'>
-      		<p id='username'>{{facebook.name}}</p>
-    	</div>
-    	<div id='useremailContainer'>
-    		<p id='useremail'>{{facebook.email}}</p>
-    	</div>
+	
+		<div class="followInfoContent">
+			<div class = "row" id="row1">
+		   		<div class = "col">
+		   			<p class= "colContent">2.5k</p>
+		   			<p class="colTitle">Follwer</p>			   			
+			   	</div>
+			   	<div class = "col">
+					<p class= "colContent">5</p>
+		   			<p class="colTitle">Following</p>		   			
+			   	</div>
+				<div class = "col">
+			   			<p class= "colContent">3</p>
+			   			<p class="colTitle">Club</p>
+				</div>
+				<div class = "col">
+				   	<p class= "colContent">4</p>
+					<p class="colTitle">Event</p>	   			
+				</div>
+			</div>
+			<div class="tagContent">
+				<ion-slides direction="horizontal">
+				    <ion-slide class="horizontalSlide">
+				  		<div id="slideRow" class="row">
+					    	<div id="slideCol" class="col">
+					    		#Fashion
+					    	</div>	 
+					    	<div id="slideCol" class="col">
+					    		#Party
+					    	</div>
+
+					    	<div id="slideCol" class="col">
+					    		#Outgoing
+					    	</div>
+						</div> 
+				    </ion-slide>
+				    <ion-slide class="horizontalSlide">
+				  		<div id="slideRow" class="row">
+				    	<div id="slideCol" class="col">
+				    		#Haha
+				    	</div>	 
+				    	<div id="slideCol" class="col">
+				    		#UQ Student
+				    	</div>
+				    	<div id="slideCol" class="col">
+				    		#Friendly
+				    	</div>
+						</div>    
+				    </ion-slide>
+				</ion-slides>
+			</div>
+		</div>
 	</div>
-    <div class="topButton">	  
-			<button ion-button color="dark" full (click)='loginWithFacebook()' *ngIf='!facebook.loggedIn'>
-			  	<ion-icon name="logo-facebook"></ion-icon>Log in
-			</button>
-			<button ion-button color="dark" full (click)='logout()' *ngIf='facebook.loggedIn'>
-				<ion-icon name="log-facebook"></ion-icon>Log out
-			</button>
-	</div>
+</ion-header>
 
-<div class="followInfoContent">
-	<div class = "row" id="row1">
-   		<div class = "col">
-   			<p class= "colContent">2.5k</p>
-   			<p class="colTitle">Follwer</p>
-   			
-   		</div>
-   		<div class = "col">
-   			<p class= "colContent">5</p>
-   			<p class="colTitle">Following</p>
-   			
-   		</div>
-
-
-   		<div class = "col">
-   			<p class= "colContent">3</p>
-   			<p class="colTitle">Club</p>
-   			
-   		</div>
-   		<div class = "col">
-   			<p class= "colContent">4</p>
-   			<p class="colTitle">Event</p>
-   			
-   		</div>
-	</div>
-
-	<div class="tagContent">
-		<ion-slides direction="horizontal">
-
-		  <ion-slide class="horizontalSlide">
-		  		<div id="slideRow" class="row">
-			    	<div id="slideCol" class="col">
-			    		#Fashion
-			    	</div>	 
-			    	<div id="slideCol" class="col">
-			    		#Party
-			    	</div>
-
-			    	<div id="slideCol" class="col">
-			    		#Outgoing
-			    	</div>
-				</div> 
-		  </ion-slide>
-		  <ion-slide class="horizontalSlide">
-		  		<div id="slideRow" class="row">
-		    	<div id="slideCol" class="col">
-		    		#Haha
-		    	</div>	 
-		    	<div id="slideCol" class="col">
-		    		#UQ Student
-		    	</div>
-		    	<div id="slideCol" class="col">
-		    		#Friendly
-		    	</div>
-				</div>    
-		  </ion-slide>
-		</ion-slides>
-	</div>
-
-
-
-
+<ion-content fullscreen #content hide-header [header]="head">
 	<div class="profileSubTabs">
 	    <ion-segment  [(ngModel)]="segments" color="dark">
 	      <ion-segment-button value="events">
@@ -96,22 +95,23 @@
 					<div class="subTabContent" [ngSwitch]="segments" >
 						
 						<div *ngSwitchCase="'events'">
-						<ion-slides id="verticalSlide" pager="false" direction="vertical" >
-							<ion-slide>
-				  			<ion-list  style="margin:0">
-				  			<ion-item (click)="dosomething()" *ngFor="let sItem1 of events | async">
-				    		
-				    		<ion-thumbnail item-start>
-				      			<img src="img/2.jpg">
-				    		</ion-thumbnail>
-				    			<h2>{{sItem1.name}}</h2>
-								<p>The event info</p>
-				  			</ion-item>
-				  			</ion-list>
-				  			</ion-slide>
-
-						</ion-slides>
+						<ion-list id="test">
+							<ion-item>haha</ion-item>
+							<ion-item>haha</ion-item>
+							<ion-item>haha</ion-item>
+							<ion-item>haha</ion-item>
+							<ion-item>haha</ion-item>
+							<ion-item>haha</ion-item>
+							<ion-item>haha</ion-item>
+							<ion-item>haha</ion-item>
+							<ion-item>haha</ion-item>
+							<ion-item>haha</ion-item>
+							<ion-item>haha</ion-item>
+							<ion-item>haha</ion-item>
+						</ion-list>
+						
 						</div>
+					
 
 
 						<div *ngSwitchCase="'tickets'">
@@ -150,11 +150,6 @@
 						</div>
 					</div>
 			</div>
-</div>
-
-
-
-	
 
 
 </ion-content>

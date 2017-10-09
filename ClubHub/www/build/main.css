@@ -25199,6 +25199,10 @@ ion-navbar.toolbar {
   }
 }
 
+expandable-header {
+  display: block;
+}
+
 page-entry .button {
   margin: 0px;
 }
@@ -25334,7 +25338,7 @@ page-contact .segment-ios-dark .segment-button {
 page-contact .segment-ios .segment-button {
   height: 4.0rem;
   line-height: 4.0rem;
-  text-align: left;
+  text-align: center;
 }
 
 page-contact .segment-ios-dark .segment-button.segment-activated {
@@ -25400,6 +25404,8 @@ page-contact #useremail {
   color: #ffffff;
   letter-spacing: 0;
   text-align: center;
+  margin: 0px;
+  padding-bottom: 5px;
 }
 
 page-contact .button {
@@ -25454,6 +25460,7 @@ page-contact #slideCol {
 page-contact .topButton {
   position: absolute;
   right: 0;
+  top: 0;
   margin-top: 10px;
   margin-right: 10px;
   width: 5.5rem;
@@ -25464,28 +25471,33 @@ page-contact .topButton button {
 }
 
 page-contact .basicinfo {
-  top: 0%;
+  height: auto;
+}
+
+page-contact .userinfo {
   opacity: 0.9;
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 35%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, #000000));
   background-image: linear-gradient(-180deg, transparent 0%, #000000 90%);
 }
 
 page-contact .followInfoContent {
-  top: 35%;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 
 page-contact .profileSubTabs {
-  position: absolute;
+  position: relative;
   border-bottom: none;
-  position: absolute;
+  text-align: center;
   width: 100%;
   height: 300px;
   background: #ffffff;
+}
+
+page-contact ion-segment {
+  text-align: center;
 }
 
 page-contact #row1 {
@@ -25509,4 +25521,8 @@ page-contact .tagContent {
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+page-contact #test {
+  height: 300px;
 }
