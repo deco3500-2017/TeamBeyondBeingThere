@@ -1133,7 +1133,7 @@ var HideHeaderDirective = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])("header"),
-    __metadata("design:type", Object)
+    __metadata("design:type", HTMLElement)
 ], HideHeaderDirective.prototype, "header", void 0);
 HideHeaderDirective = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */])({
@@ -1142,10 +1142,9 @@ HideHeaderDirective = __decorate([
             '(ionScroll)': 'onContentScroll($event)',
         }
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Renderer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Renderer */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Renderer */]])
 ], HideHeaderDirective);
 
-var _a, _b;
 //# sourceMappingURL=hide-header.js.map
 
 /***/ })
