@@ -25199,6 +25199,10 @@ ion-navbar.toolbar {
   }
 }
 
+expandable-header {
+  display: block;
+}
+
 page-entry .button {
   margin: 0px;
 }
@@ -25353,7 +25357,10 @@ page-contact .segment-md-dark .segment-button.segment-activated {
 
 page-contact ion-slides {
   height: auto;
-  position: absolute;
+}
+
+page-contact #verticalSlides {
+  height: 50px;
 }
 
 page-contact ion-slide {
@@ -25397,10 +25404,13 @@ page-contact #useremail {
   color: #ffffff;
   letter-spacing: 0;
   text-align: center;
+  margin: 0px;
+  padding-bottom: 5px;
 }
 
 page-contact .button {
   margin: 0px;
+  font-size: 12px;
 }
 
 page-contact .row {
@@ -25409,6 +25419,7 @@ page-contact .row {
 
 page-contact .col {
   text-align: left;
+  padding-left: 15px;
 }
 
 page-contact .colContent {
@@ -25432,17 +25443,24 @@ page-contact p.colTitle {
   font-weight: bold;
 }
 
-page-contact .followInfoContent {
-  margin-left: 10px;
+page-contact .horizontalSlide {
+  height: 50px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 page-contact #slideCol {
   text-align: left;
+  color: #444444;
+  font-size: 14px;
+  padding: 0px;
 }
 
 page-contact .topButton {
   position: absolute;
   right: 0;
+  top: 0;
   margin-top: 10px;
   margin-right: 10px;
   width: 5.5rem;
@@ -25453,25 +25471,58 @@ page-contact .topButton button {
 }
 
 page-contact .basicinfo {
-  top: 0%;
+  height: auto;
+}
+
+page-contact .userinfo {
   opacity: 0.9;
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 32%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, #000000));
   background-image: linear-gradient(-180deg, transparent 0%, #000000 90%);
 }
 
 page-contact .followInfoContent {
-  top: 32%;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 
 page-contact .profileSubTabs {
-  top: 50%;
-  position: absolute;
+  position: relative;
+  border-bottom: none;
+  text-align: center;
   width: 100%;
   height: 300px;
   background: #ffffff;
+}
+
+page-contact ion-segment {
+  text-align: center;
+}
+
+page-contact #row1 {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+page-contact horizontalSlide swiper-slide swiper-slide-active {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+page-contact .item-md {
+  padding-left: 15px;
+}
+
+page-contact .tagContent {
+  position: relative;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+page-contact #test {
+  height: 300px;
 }

@@ -16,7 +16,19 @@ export class FirebaseServiceProvider {
     console.log('Hello FirebaseServiceProvider Provider');
 }
     getEvents(){
+      console.log(this.afd.list('/events/'));
     	return this.afd.list('/events/');
+    }
+
+    getBookmarks(){
+      console.log(this.afd.list('/bookmarks/'));
+      return this.afd.list('/events/');
+    }
+
+
+    getTickets(){
+      console.log(this.afd.list('/tickets/'));
+      return this.afd.list('/events/');
     }
 
     addEvent(event){
@@ -26,11 +38,5 @@ export class FirebaseServiceProvider {
     removeEvent(id){
     	this.afd.list('/events/').remove(id);
     }
-
-
-
-
-
-  
 
 }
