@@ -254,7 +254,7 @@ var EventPage = (function () {
 }());
 EventPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\event.html"*/'<ion-header>\n\n  <ion-navbar color="danger">\n\n    <ion-title text-center>\n\n      Event page\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-nav [root]="rootEventPage"></ion-nav>\n\n\n\n\n\n</ion-content>\n\n  \n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\event.html"*/,
+        selector: 'page-about',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\event.html"*/'<ion-header>\n\n  <ion-navbar >\n\n    <ion-title text-center class="titlebc">\n\n        <p class="titletext">Event page</p>\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-nav [root]="rootEventPage"></ion-nav>\n\n\n\n\n\n</ion-content>\n\n  \n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\event.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */]])
 ], EventPage);
@@ -291,7 +291,7 @@ var EventTabsPage = (function () {
     return EventTabsPage;
 }());
 EventTabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\eventTabs\eventTabs.html"*/'<!DOCTYPE html>\n\n<html>\n\n<head>\n\n	<meta charset="utf-8">\n\n</head>\n\n<body>\n\n	<div class="ion-tabs">\n\n		<ion-tabs tabsPlacement="top" color="danger">\n\n		<ion-tab [root]="allEventsRoot" tabTitle="All Events"></ion-tab>\n\n		<ion-tab [root]="myEventsRoot" tabTitle="My Events"></ion-tab>\n\n		</ion-tabs>\n\n	</div>\n\n</body>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\eventTabs\eventTabs.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\eventTabs\eventTabs.html"*/'<!DOCTYPE html>\n\n<html>\n\n<head>\n\n	<meta charset="utf-8">\n\n</head>\n\n<body>\n\n	<div class="ion-tabs">\n\n		<ion-tabs tabsPlacement="top" color="title">\n\n		<ion-tab [root]="allEventsRoot"tabTitle="All Events"></ion-tab>\n\n		<ion-tab [root]="myEventsRoot" tabTitle="My Events"></ion-tab>\n\n		</ion-tabs>\n\n	</div>\n\n</body>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\eventTabs\eventTabs.html"*/,
         selector: 'page-about',
     }),
     __metadata("design:paramtypes", [])
@@ -1064,7 +1064,7 @@ var HideHeaderDirective = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])("header"),
-    __metadata("design:type", Object)
+    __metadata("design:type", HTMLElement)
 ], HideHeaderDirective.prototype, "header", void 0);
 HideHeaderDirective = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */])({
@@ -1073,10 +1073,9 @@ HideHeaderDirective = __decorate([
             '(ionScroll)': 'onContentScroll($event)',
         }
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Renderer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Renderer */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Renderer */]])
 ], HideHeaderDirective);
 
-var _a, _b;
 //# sourceMappingURL=hide-header.js.map
 
 /***/ })
