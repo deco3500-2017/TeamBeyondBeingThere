@@ -1,5 +1,31 @@
 <ion-content>
-<ion-list></ion-list>
+<ion-list>
+
+	<ion-card (click)="gotoClubDetail()">
+		<img src="img/2.jpg"/>
+	  <ion-card-header>
+	    UQ Dancing Club
+	  </ion-card-header>
+
+	  <ion-card-content>
+	    #
+	  </ion-card-content>
+	</ion-card>
+
+	<ion-card (tap)="tapEvent($event)">
+
+	  <ion-card-header>
+	    BBQ Club
+	  </ion-card-header>
+
+	  <ion-card-content>
+	    #
+	  </ion-card-content>
+
+	</ion-card>
+
+
+</ion-list>
 
 <button ion-button full (click)='gotoClubDetail()'>go to detail page</button>
 

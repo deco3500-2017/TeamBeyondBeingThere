@@ -11,9 +11,9 @@ import { HomePage } from '../home/home';
 
 export class TabsPage {
 
-  tab1Root = HomePage;
-  tab2Root = EventPage;
-  tab3Root = ClubPage;
+  tab1Root = EventPage;
+  tab2Root = ClubPage;
+  tab3Root = HomePage;
   tab4Root = ProfilePage;
   constructor() {
 

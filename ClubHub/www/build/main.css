@@ -25199,10 +25199,6 @@ ion-navbar.toolbar {
   }
 }
 
-expandable-header {
-  display: block;
-}
-
 page-entry .button {
   margin: 0px;
 }

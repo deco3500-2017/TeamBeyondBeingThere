@@ -17,7 +17,6 @@ import { EventTabsPage } from '../pages/tabs/eventTabs/eventTabs';
 import { MyEventsPage } from '../pages/event/myEvents/myEvents';
 import { EventDetailPage } from '../pages/event/eventdetail/eventdetail';
 
-import {ExpandableHeaderComponent} from '../components/expandable-header/expandable-header';
 
 import {HideHeaderDirective} from '../directives/hide-header/hide-header';
 
@@ -62,7 +61,6 @@ const firebaseAuth = {
     EventTabsPage,
     MyEventsPage,
     EventDetailPage,
-    ExpandableHeaderComponent,
 
     HideHeaderDirective,
   ],

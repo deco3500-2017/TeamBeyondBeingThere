@@ -1,7 +1,3 @@
-<expandable-header [scrollArea]="content">
-
-</expandable-header>
-
 <ion-header #head>
 	<div class="basicinfo">
 		<div class="userinfo">
@@ -95,25 +91,52 @@
 					<div class="subTabContent" [ngSwitch]="segments" >
 						
 						<div *ngSwitchCase="'events'">
-						<ion-list id="test">
-							<ion-item>haha</ion-item>
-							<ion-item>haha</ion-item>
-							<ion-item>haha</ion-item>
-							<ion-item>haha</ion-item>
-							<ion-item>haha</ion-item>
-							<ion-item>haha</ion-item>
-							<ion-item>haha</ion-item>
-							<ion-item>haha</ion-item>
-							<ion-item>haha</ion-item>
-							<ion-item>haha</ion-item>
-							<ion-item>haha</ion-item>
-							<ion-item>haha</ion-item>
+						<ion-list id="eventList" >
+							<ion-item *ngFor="let sItem1 of events | async">
+								<ion-thumbnail item-start>
+				      			<img src="img/2.jpg">
+				    		</ion-thumbnail>
+				    			<h2>{{sItem1.name}}</h2>
+								<p>The event info</p>
+							</ion-item>
 						</ion-list>
-						
+												<ion-list id="eventList" >
+							<ion-item *ngFor="let sItem1 of events | async">
+								<ion-thumbnail item-start>
+				      			<img src="img/2.jpg">
+				    		</ion-thumbnail>
+				    			<h2>{{sItem1.name}}</h2>
+								<p>The event info</p>
+							</ion-item>
+						</ion-list>						<ion-list id="eventList" >
+							<ion-item *ngFor="let sItem1 of events | async">
+								<ion-thumbnail item-start>
+				      			<img src="img/2.jpg">
+				    		</ion-thumbnail>
+				    			<h2>{{sItem1.name}}</h2>
+								<p>The event info</p>
+							</ion-item>
+						</ion-list>
+						<ion-list id="eventList" >
+							<ion-item *ngFor="let sItem1 of events | async">
+								<ion-thumbnail item-start>
+				      			<img src="img/2.jpg">
+				    		</ion-thumbnail>
+				    			<h2>{{sItem1.name}}</h2>
+								<p>The event info</p>
+							</ion-item>
+						</ion-list>
+						<ion-list id="eventList" >
+							<ion-item *ngFor="let sItem1 of events | async">
+								<ion-thumbnail item-start>
+				      			<img src="img/2.jpg">
+				    		</ion-thumbnail>
+				    			<h2>{{sItem1.name}}</h2>
+								<p>The event info</p>
+							</ion-item>
+						</ion-list>
 						</div>
 					
-
-
 						<div *ngSwitchCase="'tickets'">
 						<ion-slides id="verticalSlide" pager="false" direction="vertical" >
 							<ion-slide>
@@ -130,7 +153,6 @@
 				  			</ion-slide>
 						</ion-slides>
 						</div>
-
 
 						<div *ngSwitchCase="'bookmarks'">
 						<ion-slides id="verticalSlide" pager="false" direction="vertical" >
