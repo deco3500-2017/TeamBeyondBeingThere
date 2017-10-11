@@ -15,10 +15,12 @@ import { ClubDetailPage } from '../pages/club/club-detail/club-detail';
 import { AllEventsPage } from '../pages/event/allEvents/allEvents';
 import { EventTabsPage } from '../pages/tabs/eventTabs/eventTabs';
 import { MyEventsPage } from '../pages/event/myEvents/myEvents';
+import { AddEventPage } from '../pages/event/add-event/add-event';
 import { EventDetailPage } from '../pages/event/eventdetail/eventdetail';
 
 
 import {HideHeaderDirective} from '../directives/hide-header/hide-header';
+
 
 
 
@@ -61,7 +63,7 @@ const firebaseAuth = {
     EventTabsPage,
     MyEventsPage,
     EventDetailPage,
-
+    AddEventPage,
     HideHeaderDirective,
   ],
 
@@ -96,7 +98,7 @@ const firebaseAuth = {
     AllEventsPage,
     MyEventsPage,
     EventDetailPage,
-    
+    AddEventPage,
   ],
   providers: [
     StatusBar,

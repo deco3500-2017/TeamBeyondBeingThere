@@ -27528,6 +27528,82 @@ page-entry .view .scroll-content {
   color: white;
 }
 
+.addEventButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 70px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.title_box {
+  border: #3c5a86 1px solid;
+  margin-top: 15px;
+  height: auto;
+}
+
+.title_box #title {
+  position: relative;
+  top: -0.5em;
+  margin-left: 1em;
+  margin-right: 50%;
+  display: inline;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  background-color: #ee4557;
+  text-align: left;
+  padding-right: 60px;
+  padding-left: 10px;
+  padding-top: 1px;
+  font-size: 10px;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+ion-datetime {
+  position: relative;
+}
+
+ion-select {
+  position: relative;
+}
+
+#sub_title {
+  margin-left: 16px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: auto;
+  margin-right: 0;
+  position: relative;
+  left: 0;
+  display: inline-block;
+}
+
+ion-toggle {
+  display: inline-block;
+  margin-bottom: 0.5em;
+  float: right;
+}
+
+#locationInfo ion-input {
+  width: auto;
+  position: absolute;
+  left: 30%;
+}
+
+#dollar {
+  display: inline-block;
+}
+
+#fee {
+  width: 20%;
+}
+
 .card-background-page ion-card {
   position: relative;
 }

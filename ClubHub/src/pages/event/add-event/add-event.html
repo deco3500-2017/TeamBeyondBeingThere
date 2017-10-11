@@ -1,0 +1,153 @@
+<!--
+  Generated template for the AddEventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Add New Event</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	
+
+			<div class="title_box">
+	    		<ion-label id="title">Event title</ion-label>
+	    		<ion-input type="text" [(ngModel)]="event.title"></ion-input>
+	    	</div>
+
+			<div class="title_box">
+	    		<ion-label id="title">Organizing club</ion-label>
+	    		<ion-select type="text" [(ngModel)]="event.club" placeholder="Organizing club">
+				    <ion-option value="Dancing Club">Dancing Club</ion-option>
+				    <ion-option value="Anime & Manga Club">Anime & Manga Club</ion-option>
+					<ion-option value="Japanese Taiko Drumming Team">UQ TAIKO</ion-option>
+	    		</ion-select>
+	    	</div>
+
+			<div class="title_box">
+	    		<ion-label id="title">Description</ion-label>
+	    		<ion-textarea type="text" [(ngModel)]="event.description"></ion-textarea>
+	    	</div>
+
+	  		<div class="title_box">
+	  			<ion-label id="title">Start time</ion-label>
+	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventStartTime" placeholder="Oct 17, 2017 00:00"></ion-datetime>
+	  		</div>
+
+
+	  		<div class="title_box">
+	  			<ion-label id="title">End time</ion-label>
+	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventEndTime" placeholder="Oct 17, 2017 00:00"></ion-datetime>
+	  		</div>
+
+
+			<div class="title_box">
+	  			<ion-label id="title">Registration deadline</ion-label>
+	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventRegistrationDeadline" placeholder="Oct 17, 2017 00:00"></ion-datetime>
+	  		</div>
+
+			<div class="title_box">
+	    		<ion-label id="title">Event Location</ion-label>
+				    <ion-label id="sub_title">On campus</ion-label>
+				    <ion-toggle color="secondary" [(ngModel)]="isOncampus"></ion-toggle>
+
+
+				<div *ngIf="!isOncampus" id="locationInfo">
+					<ion-list>
+						<ion-item>
+							<ion-label>City:</ion-label>
+							<ion-input type="text" [(ngModel)]="event.locationCity" value="{{event.locationCity}}"></ion-input>
+						</ion-item>	
+						<ion-item>
+							<ion-label>Suburb:</ion-label>
+							<ion-input type="text" [(ngModel)]="event.locationSuburb"></ion-input>
+						</ion-item>
+						<ion-item>
+							<ion-label>Street detail:</ion-label>
+							<ion-input type="text" [(ngModel)]="event.locationStreet"></ion-input>
+						</ion-item>	
+						<ion-item>
+							<ion-label>Postcode:</ion-label>
+							<ion-input type="number" [(ngModel)]="event.locationPostcode"></ion-input>
+						</ion-item>
+					</ion-list>	
+				</div>
+
+
+				<div *ngIf="isOncampus" id="locationInfo">
+					<ion-list>
+						<ion-item>
+							<ion-label>Campus:</ion-label>
+							<ion-select [(ngModel)]="Locationcampus" type="text">
+								<ion-option value="St Lucia" selected>St Lucia</ion-option>
+								<ion-option value="Gatton">Gatton</ion-option>
+								<ion-option value="Herston">Herston</ion-option>
+								<ion-option value="Other Location">Other Location</ion-option>
+							</ion-select>	
+						</ion-item>
+						<ion-item>
+							<ion-label>Building:</ion-label>
+							<ion-input placeholder="building" type="text" [(ngModel)]="eventLocationBuilding"></ion-input>
+						</ion-item>	
+						<ion-item>
+							<ion-label>Room:</ion-label>
+							<ion-input placeholder="room" type="text" [(ngModel)]="eventLocationRoom"></ion-input></ion-item>
+						<ion-item>
+							<ion-label>Details:</ion-label>
+							<ion-input placeholder="location details" type="text" [(ngModel)]="eventLocationDetails"></ion-input></ion-item>	
+					</ion-list>	
+				</div>
+	    	</div>
+
+	   		<div class="title_box">
+	    		<ion-label id="title">Fee</ion-label>
+	    		<ion-list>
+	    			<ion-item>
+	    				<ion-label>Member Fee</ion-label>
+	    				<ion-input id='fee' type="number" [(ngModel)]="event.memberFee"></ion-input>
+	    			</ion-item>
+
+	    			<ion-item>
+	    				<ion-label>NonMember Fee</ion-label>
+			    		<ion-input id='fee' type="number" [(ngModel)]="event.nonmemberFee"></ion-input>
+					</ion-item>
+				</ion-list>
+	    	</div>
+
+	   		<div class="title_box">
+	    		<ion-label id="title">Tags</ion-label>
+	    		<ion-select id="tags" multiple="true" [(ngModel)]="event.tags">
+		    		<ion-option value="Outdoor" >Outdoor</ion-option>
+		    		<ion-option value="Entertainment">Entertainment</ion-option>
+		    		<ion-option value="Academic">Academic</ion-option>
+		    		<ion-option value="Art & Entertainment">Art & Entertainment</ion-option>
+		    		<ion-option value="Festivals & Celevbrations">Festical & Celevbrations</ion-option>
+		    		<ion-option value="Free">Free</ion-option>
+		    		<ion-option value="Sport">Sport</ion-option>
+		    		<ion-option value="Markets">Markets</ion-option>
+		    		<ion-option value="Eat & Drink">Eat & Drink</ion-option>
+		    		<ion-option value="Anime">Anime</ion-option>
+	    		</ion-select>
+	    	</div>
+
+
+	    	<ion-label floating>Contact Number</ion-label>
+	    	<ion-input  type="tel" [(ngModel)]="event.number"></ion-input>
+
+			<ion-label>Contact Email</ion-label>
+		    <ion-input type="email" [(ngModel)]="event.email">
+			</ion-input>
+
+	    	<ion-label>Description</ion-label>
+	    	<ion-textarea type="text" [(ngModel)]="event.description"></ion-textarea>
+
+	    	<ion-label>Description</ion-label>
+	    	<ion-textarea type="text" [(ngModel)]="event.description"></ion-textarea>
+
+
+	<button ion-button (click)="addEvent()">Add</button>
+</ion-content>

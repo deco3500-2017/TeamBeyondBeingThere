@@ -28,6 +28,7 @@ export class ClubDetailPage {
     endDate:null,
     endTime:null,
     tag:null, 
+    locationCity:"Brisbane",
   };
 	  constructor(public navCtrl: NavController, public navParams: NavParams,public firebaseService:FirebaseServiceProvider) {
   	  	this.events=this.firebaseService.getEvents();
@@ -38,7 +39,6 @@ export class ClubDetailPage {
   	}
 
   	addEvent(event){
-
   		this.firebaseService.addEvent(this.event);
   	}
 

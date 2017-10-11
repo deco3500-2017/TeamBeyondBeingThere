@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { App,NavController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { EventTabsPage } from '../tabs/eventTabs/eventTabs';
+import { AddEventPage } from './add-event/add-event';
 
 @Component({
   selector: 'page-about',
@@ -11,10 +12,13 @@ import { EventTabsPage } from '../tabs/eventTabs/eventTabs';
 export class EventPage {
   
   rootEventPage:any=EventTabsPage
-  constructor(public navCtrl: NavController,public fire:AngularFireAuth) {
+  constructor(private app: App, public navCtrl: NavController,public fire:AngularFireAuth) {
     	
   }
 
+  addNewEvent(){
+  	this.app.getRootNav().push(AddEventPage);
+  }
 }
 
 
