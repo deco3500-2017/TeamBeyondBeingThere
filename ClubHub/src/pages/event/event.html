@@ -4,15 +4,15 @@
         <p class="titletext">Event page</p>
     </ion-title>
   </ion-navbar>
-  <button ion-button color="primary" class="addEventButton" (click)="addNewEvent()">
-  	add Event
-  </button>
+
+	<button ion-button round class="addEventButton" color="danger" (click)="addNewEvent()">
+		<ion-icon name="add"></ion-icon>
+	</button>
+
+
 </ion-header>
 
 <ion-content padding>
     <ion-nav [root]="rootEventPage"></ion-nav>
-
-
 </ion-content>
-  
 

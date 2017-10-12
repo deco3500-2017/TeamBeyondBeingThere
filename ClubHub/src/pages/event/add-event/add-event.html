@@ -60,7 +60,7 @@
 					<ion-list>
 						<ion-item>
 							<ion-label>City:</ion-label>
-							<ion-input type="text" [(ngModel)]="event.locationCity" value="{{event.locationCity}}"></ion-input>
+							<ion-input type="text" [(ngModel)]="event.locationCity">{{event.locationCity}}</ion-input>
 						</ion-item>	
 						<ion-item>
 							<ion-label>Suburb:</ion-label>
@@ -132,22 +132,36 @@
 		    		<ion-option value="Eat & Drink">Eat & Drink</ion-option>
 		    		<ion-option value="Anime">Anime</ion-option>
 	    		</ion-select>
+
+	    		<ion-scroll scrollX="true">
+	    			<div id="tagsScroll" *ngFor="let tag1 of event.tags">#{{tag1}}</div>
+	    		</ion-scroll>
+	    		
+	    	</div>
+
+	    	<div class="title_box">
+	    		<ion-label id="title">Contact number</ion-label>	
+	    		<ion-input  type="tel" [(ngModel)]="event.number"></ion-input>
 	    	</div>
 
 
-	    	<ion-label floating>Contact Number</ion-label>
-	    	<ion-input  type="tel" [(ngModel)]="event.number"></ion-input>
+	    	<div class="title_box">
+				<ion-label id="title">Contact Email</ion-label>
+	    		<ion-input  type="email" [(ngModel)]="event.email"></ion-input>
+	    	</div>
 
-			<ion-label>Contact Email</ion-label>
-		    <ion-input type="email" [(ngModel)]="event.email">
-			</ion-input>
-
-	    	<ion-label>Description</ion-label>
-	    	<ion-textarea type="text" [(ngModel)]="event.description"></ion-textarea>
-
-	    	<ion-label>Description</ion-label>
-	    	<ion-textarea type="text" [(ngModel)]="event.description"></ion-textarea>
+	    	<div class="title_box">
+				<ion-label id="title">Important Notification</ion-label>
+	    		<ion-textarea  type="text" [(ngModel)]="event.notification"></ion-textarea>
+	    	</div>
 
 
-	<button ion-button (click)="addEvent()">Add</button>
+
+
+	
 </ion-content>
+
+
+<ion-footer>
+	<button ion-button (click)="addEvent()">Publish</button>
+</ion-footer>

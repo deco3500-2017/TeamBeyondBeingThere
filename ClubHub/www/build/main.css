@@ -27534,10 +27534,11 @@ page-entry .view .scroll-content {
   right: 0;
   margin-top: 10px;
   margin-right: 10px;
-  width: 70px;
+  width: 40px;
   height: 30px;
   font-size: 14px;
   text-align: center;
+  background-color: #939393;
 }
 
 .title_box {
@@ -27602,6 +27603,33 @@ ion-toggle {
 
 #fee {
   width: 20%;
+}
+
+ion-scroll {
+  position: relative;
+  height: 20px;
+}
+
+#tagsScroll {
+  white-space: nowrap;
+  display: inline;
+  font-size: 14px;
+  padding-right: 8px;
+  color: #909090;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+ion-app.ios [padding], ion-app.ios [padding] .scroll-content {
+  padding: 0px;
+  padding-left: 16px;
+}
+
+ion-footer button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed3269), to(#f05f3e));
+  background-image: linear-gradient(90deg, #ed3269 0%, #f05f3e 100%);
+  width: 100%;
+  height: 50px;
 }
 
 .card-background-page ion-card {
@@ -27765,7 +27793,9 @@ page-contact #useremailContainer {
 
 page-contact #username {
   text-transform: captitalize;
-  line-height: 1.5;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  line-height: 1;
   font-size: 16px;
   color: #ffffff;
   letter-spacing: 0;
@@ -27848,6 +27878,7 @@ page-contact .basicinfo {
 
 page-contact .userinfo {
   opacity: 0.9;
+  height: 160px;
   position: relative;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, #000000));
@@ -27861,10 +27892,10 @@ page-contact .followInfoContent {
 
 page-contact .profileSubTabs {
   position: relative;
+  height: auto;
   border-bottom: none;
   text-align: center;
   width: 100%;
-  height: 300px;
   background: #ffffff;
 }
 

@@ -1,76 +1,15 @@
 webpackJsonp([4],{
 
-/***/ 115:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FirebaseServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(350);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(204);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/*
-  Generated class for the FirebaseServiceProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-var FirebaseServiceProvider = (function () {
-    function FirebaseServiceProvider(afd) {
-        this.afd = afd;
-        console.log('Hello FirebaseServiceProvider Provider');
-    }
-    FirebaseServiceProvider.prototype.getEvents = function () {
-        console.log(this.afd.list('/events/'));
-        return this.afd.list('/events/');
-    };
-    FirebaseServiceProvider.prototype.getBookmarks = function () {
-        console.log(this.afd.list('/bookmarks/'));
-        return this.afd.list('/events/');
-    };
-    FirebaseServiceProvider.prototype.getTickets = function () {
-        console.log(this.afd.list('/tickets/'));
-        return this.afd.list('/events/');
-    };
-    FirebaseServiceProvider.prototype.addEvent = function (event) {
-        this.afd.list('/events/').push(event);
-    };
-    FirebaseServiceProvider.prototype.removeEvent = function (id) {
-        this.afd.list('/events/').remove(id);
-    };
-    return FirebaseServiceProvider;
-}());
-FirebaseServiceProvider = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]])
-], FirebaseServiceProvider);
-
-//# sourceMappingURL=firebase-service.js.map
-
-/***/ }),
-
 /***/ 125:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__event_event__ = __webpack_require__(242);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_profile__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__club_club__ = __webpack_require__(260);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__event_event__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_profile__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__club_club__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(265);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -95,7 +34,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 TabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="Event" ></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Clubs" ></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="People" ></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Profile" ></ion-tab>\n\n</ion-tabs>\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\tabs.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="Event" ></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Clubs" ></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="People" ></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Profile" ></ion-tab>\n\n</ion-tabs>\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\tabs\tabs.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], TabsPage);
@@ -108,10 +47,76 @@ TabsPage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddEventPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_firebase_service_firebase_service__ = __webpack_require__(74);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AddEventPage = (function () {
+    function AddEventPage(navCtrl, navParams, firebaseProvider) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.firebaseProvider = firebaseProvider;
+        this.event = {
+            title: null,
+            club: null,
+            tags: null,
+            memberFee: null,
+            nonmemberFee: null,
+            description: null,
+            location: null,
+            email: null,
+            startDate: null,
+            startTime: null,
+            endDate: null,
+            endTime: null,
+            tag: null,
+            locationCity: "Brisbane",
+            locationPostcode: null,
+            locationSuburb: null,
+            locationStreet: null,
+        };
+    }
+    AddEventPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AddEventPage');
+    };
+    AddEventPage.prototype.addEvent = function (event) {
+        console.log(this.event);
+        this.firebaseProvider.addEvent(this.event);
+    };
+    return AddEventPage;
+}());
+AddEventPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-add-event',template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\event\add-event\add-event.html"*/'<!--\n\n  Generated template for the AddEventPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Add New Event</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n	\n\n\n\n			<div class="title_box">\n\n	    		<ion-label id="title">Event title</ion-label>\n\n	    		<ion-input type="text" [(ngModel)]="event.title"></ion-input>\n\n	    	</div>\n\n\n\n			<div class="title_box">\n\n	    		<ion-label id="title">Organizing club</ion-label>\n\n	    		<ion-select type="text" [(ngModel)]="event.club" placeholder="Organizing club">\n\n				    <ion-option value="Dancing Club">Dancing Club</ion-option>\n\n				    <ion-option value="Anime & Manga Club">Anime & Manga Club</ion-option>\n\n					<ion-option value="Japanese Taiko Drumming Team">UQ TAIKO</ion-option>\n\n	    		</ion-select>\n\n	    	</div>\n\n\n\n			<div class="title_box">\n\n	    		<ion-label id="title">Description</ion-label>\n\n	    		<ion-textarea type="text" [(ngModel)]="event.description"></ion-textarea>\n\n	    	</div>\n\n\n\n	  		<div class="title_box">\n\n	  			<ion-label id="title">Start time</ion-label>\n\n	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventStartTime" placeholder="Oct 17, 2017 00:00"></ion-datetime>\n\n	  		</div>\n\n\n\n\n\n	  		<div class="title_box">\n\n	  			<ion-label id="title">End time</ion-label>\n\n	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventEndTime" placeholder="Oct 17, 2017 00:00"></ion-datetime>\n\n	  		</div>\n\n\n\n\n\n			<div class="title_box">\n\n	  			<ion-label id="title">Registration deadline</ion-label>\n\n	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventRegistrationDeadline" placeholder="Oct 17, 2017 00:00"></ion-datetime>\n\n	  		</div>\n\n\n\n			<div class="title_box">\n\n	    		<ion-label id="title">Event Location</ion-label>\n\n				    <ion-label id="sub_title">On campus</ion-label>\n\n				    <ion-toggle color="secondary" [(ngModel)]="isOncampus"></ion-toggle>\n\n\n\n\n\n				<div *ngIf="!isOncampus" id="locationInfo">\n\n					<ion-list>\n\n						<ion-item>\n\n							<ion-label>City:</ion-label>\n\n							<ion-input type="text" [(ngModel)]="event.locationCity">{{event.locationCity}}</ion-input>\n\n						</ion-item>	\n\n						<ion-item>\n\n							<ion-label>Suburb:</ion-label>\n\n							<ion-input type="text" [(ngModel)]="event.locationSuburb"></ion-input>\n\n						</ion-item>\n\n						<ion-item>\n\n							<ion-label>Street detail:</ion-label>\n\n							<ion-input type="text" [(ngModel)]="event.locationStreet"></ion-input>\n\n						</ion-item>	\n\n						<ion-item>\n\n							<ion-label>Postcode:</ion-label>\n\n							<ion-input type="number" [(ngModel)]="event.locationPostcode"></ion-input>\n\n						</ion-item>\n\n					</ion-list>	\n\n				</div>\n\n\n\n\n\n				<div *ngIf="isOncampus" id="locationInfo">\n\n					<ion-list>\n\n						<ion-item>\n\n							<ion-label>Campus:</ion-label>\n\n							<ion-select [(ngModel)]="Locationcampus" type="text">\n\n								<ion-option value="St Lucia" selected>St Lucia</ion-option>\n\n								<ion-option value="Gatton">Gatton</ion-option>\n\n								<ion-option value="Herston">Herston</ion-option>\n\n								<ion-option value="Other Location">Other Location</ion-option>\n\n							</ion-select>	\n\n						</ion-item>\n\n						<ion-item>\n\n							<ion-label>Building:</ion-label>\n\n							<ion-input placeholder="building" type="text" [(ngModel)]="eventLocationBuilding"></ion-input>\n\n						</ion-item>	\n\n						<ion-item>\n\n							<ion-label>Room:</ion-label>\n\n							<ion-input placeholder="room" type="text" [(ngModel)]="eventLocationRoom"></ion-input></ion-item>\n\n						<ion-item>\n\n							<ion-label>Details:</ion-label>\n\n							<ion-input placeholder="location details" type="text" [(ngModel)]="eventLocationDetails"></ion-input></ion-item>	\n\n					</ion-list>	\n\n				</div>\n\n	    	</div>\n\n\n\n	   		<div class="title_box">\n\n	    		<ion-label id="title">Fee</ion-label>\n\n	    		<ion-list>\n\n	    			<ion-item>\n\n	    				<ion-label>Member Fee</ion-label>\n\n	    				<ion-input id=\'fee\' type="number" [(ngModel)]="event.memberFee"></ion-input>\n\n	    			</ion-item>\n\n\n\n	    			<ion-item>\n\n	    				<ion-label>NonMember Fee</ion-label>\n\n			    		<ion-input id=\'fee\' type="number" [(ngModel)]="event.nonmemberFee"></ion-input>\n\n					</ion-item>\n\n				</ion-list>\n\n	    	</div>\n\n\n\n	   		<div class="title_box">\n\n	    		<ion-label id="title">Tags</ion-label>\n\n	    		<ion-select id="tags" multiple="true" [(ngModel)]="event.tags">\n\n		    		<ion-option value="Outdoor" >Outdoor</ion-option>\n\n		    		<ion-option value="Entertainment">Entertainment</ion-option>\n\n		    		<ion-option value="Academic">Academic</ion-option>\n\n		    		<ion-option value="Art & Entertainment">Art & Entertainment</ion-option>\n\n		    		<ion-option value="Festivals & Celevbrations">Festical & Celevbrations</ion-option>\n\n		    		<ion-option value="Free">Free</ion-option>\n\n		    		<ion-option value="Sport">Sport</ion-option>\n\n		    		<ion-option value="Markets">Markets</ion-option>\n\n		    		<ion-option value="Eat & Drink">Eat & Drink</ion-option>\n\n		    		<ion-option value="Anime">Anime</ion-option>\n\n	    		</ion-select>\n\n\n\n	    		<ion-scroll scrollX="true">\n\n	    			<div id="tagsScroll" *ngFor="let tag1 of event.tags">#{{tag1}}</div>\n\n	    		</ion-scroll>\n\n	    		\n\n	    	</div>\n\n\n\n	    	<div class="title_box">\n\n	    		<ion-label id="title">Contact number</ion-label>	\n\n	    		<ion-input  type="tel" [(ngModel)]="event.number"></ion-input>\n\n	    	</div>\n\n\n\n\n\n	    	<div class="title_box">\n\n				<ion-label id="title">Contact Email</ion-label>\n\n	    		<ion-input  type="email" [(ngModel)]="event.email"></ion-input>\n\n	    	</div>\n\n\n\n	    	<div class="title_box">\n\n				<ion-label id="title">Important Notification</ion-label>\n\n	    		<ion-textarea  type="text" [(ngModel)]="event.notification"></ion-textarea>\n\n	    	</div>\n\n\n\n\n\n\n\n\n\n	\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n	<button ion-button (click)="addEvent()">Publish</button>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\event\add-event\add-event.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_firebase_service_firebase_service__["a" /* FirebaseServiceProvider */]])
+], AddEventPage);
+
+//# sourceMappingURL=add-event.js.map
+
+/***/ }),
+
+/***/ 155:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClubDetailPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_firebase_service_firebase_service__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_firebase_service_firebase_service__ = __webpack_require__(74);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -164,7 +169,7 @@ var ClubDetailPage = (function () {
 ClubDetailPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-club-detail',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\club-detail\club-detail.html"*/'<!--\n\n  Generated template for the ClubDetailPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>clubDetail</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n\n\n<ion-list>\n\n	<ion-item>\n\n		<ion-label>Event name</ion-label>\n\n			<ion-input type="text" [(ngModel)]="event.name" placeholder="Event Name" required>Event Name</ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label>Event Fee</ion-label>\n\n		<ion-input type="number" placeholder="Event Fee"></ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label>Event Description</ion-label>\n\n		<ion-textarea type="text" [(ngModel)]="event.description" placeholder="Event Description"></ion-textarea>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-input type="text" [(ngModel)]="event.location" placeholder="Event Location"></ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-input type="email" [(ngModel)]="event.contactEmail" placeholder="Contact Email"></ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n      	<ion-label>Event Start Date</ion-label>\n\n      	<ion-datetime displayFormat="MMM DD, YYYY" min="2017" max="2020" [(ngModel)]="event.startDate"></ion-datetime> \n\n	</ion-item>\n\n\n\n	<ion-item>\n\n		<ion-label>Event Start Time</ion-label>\n\n      	<ion-datetime displayFormat="hh:mm A" [(ngModel)]="event.startTime"></ion-datetime>\n\n	</ion-item>\n\n\n\n	<ion-item>\n\n      	<ion-label>Event End Date</ion-label>\n\n      	<ion-datetime displayFormat="MMM DD, YYYY" min="2017" max="2020" [(ngModel)]="event.endDate"></ion-datetime>\n\n    </ion-item>\n\n    <ion-item>\n\n      	<ion-label>Event End Time</ion-label>\n\n      	<ion-datetime displayFormat="hh:mm A" [(ngModel)]="event.endTime"></ion-datetime>\n\n    </ion-item>\n\n	<ion-item>\n\n	    <ion-label>Tags</ion-label>\n\n	    <ion-select [(ngModel)]="tags" multiple="true" cancelText="Cancel" okText="Okay!" slide="false">\n\n	      <ion-option value="sports" >sports</ion-option>\n\n	      <ion-option value="academic">academic</ion-option>\n\n	      <ion-option value="musical" >musical</ion-option>\n\n	    </ion-select>\n\n  	</ion-item>\n\n</ion-list>\n\n\n\n\n\n\n\n<ion-list>\n\n	<ion-item-sliding *ngFor="let event of events | async">\n\n  		<ion-item>\n\n  			{{event.name}}\n\n  		</ion-item>\n\n  		<ion-item-options side="right">\n\n  			<button ion-button color="danger" icon-only (click)=\'removeEvent(event.$key)\'>\n\n  				<ion-icon name="trash"></ion-icon>\n\n  			</button>\n\n  		</ion-item-options>\n\n	</ion-item-sliding>\n\n</ion-list>\n\n\n\n<button ion-button full (click)=\'addEvent()\'> create new event</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\club-detail\club-detail.html"*/,
+        selector: 'page-club-detail',template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\club\club-detail\club-detail.html"*/'<!--\n\n  Generated template for the ClubDetailPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>clubDetail</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n\n\n<ion-list>\n\n	<ion-item>\n\n		<ion-label>Event name</ion-label>\n\n			<ion-input type="text" [(ngModel)]="event.name" placeholder="Event Name" required>Event Name</ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label>Event Fee</ion-label>\n\n		<ion-input type="number" placeholder="Event Fee"></ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label>Event Description</ion-label>\n\n		<ion-textarea type="text" [(ngModel)]="event.description" placeholder="Event Description"></ion-textarea>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-input type="text" [(ngModel)]="event.location" placeholder="Event Location"></ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-input type="email" [(ngModel)]="event.contactEmail" placeholder="Contact Email"></ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n      	<ion-label>Event Start Date</ion-label>\n\n      	<ion-datetime displayFormat="MMM DD, YYYY" min="2017" max="2020" [(ngModel)]="event.startDate"></ion-datetime> \n\n	</ion-item>\n\n\n\n	<ion-item>\n\n		<ion-label>Event Start Time</ion-label>\n\n      	<ion-datetime displayFormat="hh:mm A" [(ngModel)]="event.startTime"></ion-datetime>\n\n	</ion-item>\n\n\n\n	<ion-item>\n\n      	<ion-label>Event End Date</ion-label>\n\n      	<ion-datetime displayFormat="MMM DD, YYYY" min="2017" max="2020" [(ngModel)]="event.endDate"></ion-datetime>\n\n    </ion-item>\n\n    <ion-item>\n\n      	<ion-label>Event End Time</ion-label>\n\n      	<ion-datetime displayFormat="hh:mm A" [(ngModel)]="event.endTime"></ion-datetime>\n\n    </ion-item>\n\n	<ion-item>\n\n	    <ion-label>Tags</ion-label>\n\n	    <ion-select [(ngModel)]="tags" multiple="true" cancelText="Cancel" okText="Okay!" slide="false">\n\n	      <ion-option value="sports" >sports</ion-option>\n\n	      <ion-option value="academic">academic</ion-option>\n\n	      <ion-option value="musical" >musical</ion-option>\n\n	    </ion-select>\n\n  	</ion-item>\n\n</ion-list>\n\n\n\n\n\n\n\n<ion-list>\n\n	<ion-item-sliding *ngFor="let event of events | async">\n\n  		<ion-item>\n\n  			{{event.name}}\n\n  		</ion-item>\n\n  		<ion-item-options side="right">\n\n  			<button ion-button color="danger" icon-only (click)=\'removeEvent(event.$key)\'>\n\n  				<ion-icon name="trash"></ion-icon>\n\n  			</button>\n\n  		</ion-item-options>\n\n	</ion-item-sliding>\n\n</ion-list>\n\n\n\n<button ion-button full (click)=\'addEvent()\'> create new event</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\club\club-detail\club-detail.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_firebase_service_firebase_service__["a" /* FirebaseServiceProvider */]])
 ], ClubDetailPage);
@@ -173,7 +178,7 @@ ClubDetailPage = __decorate([
 
 /***/ }),
 
-/***/ 162:
+/***/ 163:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -186,11 +191,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 162;
+webpackEmptyAsyncContext.id = 163;
 
 /***/ }),
 
-/***/ 203:
+/***/ 204:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -222,12 +227,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 203;
+webpackAsyncContext.id = 204;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 242:
+/***/ 243:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -235,8 +240,8 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_eventTabs_eventTabs__ = __webpack_require__(244);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__add_event_add_event__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_eventTabs_eventTabs__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__add_event_add_event__ = __webpack_require__(154);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -265,7 +270,7 @@ var EventPage = (function () {
 }());
 EventPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\event.html"*/'<ion-header>\n\n  <ion-navbar >\n\n    <ion-title text-center class="titlebc">\n\n        <p class="titletext">Event page</p>\n\n    </ion-title>\n\n  </ion-navbar>\n\n  <button ion-button color="primary" class="addEventButton" (click)="addNewEvent()">\n\n  	add Event\n\n  </button>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-nav [root]="rootEventPage"></ion-nav>\n\n\n\n\n\n</ion-content>\n\n  \n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\event.html"*/,
+        selector: 'page-about',template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\event\event.html"*/'<ion-header>\n\n  <ion-navbar >\n\n    <ion-title text-center class="titlebc">\n\n        <p class="titletext">Event page</p>\n\n    </ion-title>\n\n  </ion-navbar>\n\n\n\n	<button ion-button round class="addEventButton" color="danger" (click)="addNewEvent()">\n\n		<ion-icon name="add"></ion-icon>\n\n	</button>\n\n\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-nav [root]="rootEventPage"></ion-nav>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\event\event.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */]])
 ], EventPage);
@@ -274,14 +279,14 @@ EventPage = __decorate([
 
 /***/ }),
 
-/***/ 244:
+/***/ 245:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventTabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__event_myEvents_myEvents__ = __webpack_require__(245);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__event_allEvents_allEvents__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__event_myEvents_myEvents__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__event_allEvents_allEvents__ = __webpack_require__(247);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -302,7 +307,7 @@ var EventTabsPage = (function () {
     return EventTabsPage;
 }());
 EventTabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\eventTabs\eventTabs.html"*/'<!DOCTYPE html>\n\n<html>\n\n<head>\n\n	<meta charset="utf-8">\n\n</head>\n\n<body>\n\n	<div class="ion-tabs">\n\n		<ion-tabs tabsPlacement="top" color="title">\n\n		<ion-tab [root]="allEventsRoot"tabTitle="All Events"></ion-tab>\n\n		<ion-tab [root]="myEventsRoot" tabTitle="My Events"></ion-tab>\n\n		</ion-tabs>\n\n	</div>\n\n</body>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\eventTabs\eventTabs.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\tabs\eventTabs\eventTabs.html"*/'<!DOCTYPE html>\n\n<html>\n\n<head>\n\n	<meta charset="utf-8">\n\n</head>\n\n<body>\n\n	<div class="ion-tabs">\n\n		<ion-tabs tabsPlacement="top" color="title">\n\n		<ion-tab [root]="allEventsRoot"tabTitle="All Events"></ion-tab>\n\n		<ion-tab [root]="myEventsRoot" tabTitle="My Events"></ion-tab>\n\n		</ion-tabs>\n\n	</div>\n\n</body>\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\tabs\eventTabs\eventTabs.html"*/,
         selector: 'page-about',
     }),
     __metadata("design:paramtypes", [])
@@ -312,7 +317,7 @@ EventTabsPage = __decorate([
 
 /***/ }),
 
-/***/ 245:
+/***/ 246:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -337,7 +342,7 @@ var MyEventsPage = (function () {
     return MyEventsPage;
 }());
 MyEventsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\myEvents\myEvents.html"*/'<ion-content>\n\n    hello\n\n \n\n   \n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\myEvents\myEvents.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\event\myEvents\myEvents.html"*/'<ion-content>\n\n    hello\n\n \n\n   \n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\event\myEvents\myEvents.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
 ], MyEventsPage);
@@ -346,14 +351,14 @@ MyEventsPage = __decorate([
 
 /***/ }),
 
-/***/ 246:
+/***/ 247:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllEventsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eventdetail_eventdetail__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eventdetail_eventdetail__ = __webpack_require__(248);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -377,7 +382,7 @@ var AllEventsPage = (function () {
     return AllEventsPage;
 }());
 AllEventsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\allEvents\allEvents.html"*/'<ion-content class="card-background-page">\n\n    \n\n<ion-card>\n\n      <img  (click)=\'gotoEventDetail()\' src="img/2.jpg"/>\n\n    \n\n      <ion-card-content>   \n\n         \n\n          <div class="price-background"></div>\n\n          <div class="event-price" >$ 20</div>\n\n        <ion-card-title >\n\n          Welcome BBQ 2017\n\n          </ion-card-title>\n\n          <div class="card-subtitle"># Food & Drinks</div>\n\n          \n\n        <ion-list>\n\n          <div ion-item class="first-list">\n\n            <ion-icon name="pin" item-start></ion-icon>\n\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n\n              <p item-end>150m</p>\n\n            </div>\n\n            <ion-item>\n\n                <ion-icon name="bookmark" item-start></ion-icon>\n\n                <p>19/100 attending</p>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon1.jpeg">\n\n                </ion-avatar>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon2.jpg">\n\n                </ion-avatar>\n\n            </ion-item>\n\n        </ion-list>\n\n          \n\n      </ion-card-content>\n\n  </ion-card>\n\n    \n\n    <ion-card>\n\n      <img  src="img/1.png"/>\n\n    \n\n      <ion-card-content>    \n\n          <div class="price-background"></div>\n\n          <div class="event-price" >$ 30</div>\n\n        <ion-card-title >\n\n          Welcome BBQ 2017\n\n          </ion-card-title>\n\n          <div class="card-subtitle"># Food & Drinks</div>\n\n          \n\n        <ion-list>\n\n          <div ion-item class="first-list">\n\n            <ion-icon name="pin" item-start></ion-icon>\n\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n\n              <p item-end>150m</p>\n\n            </div>\n\n            <ion-item>\n\n                <ion-icon name="bookmark" item-start></ion-icon>\n\n                <p>19/100 attending</p>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon2.jpg">\n\n                </ion-avatar>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon3.jpg">\n\n                </ion-avatar>\n\n            </ion-item>\n\n        </ion-list>\n\n          \n\n      </ion-card-content>\n\n  </ion-card>\n\n    \n\n    <ion-card>\n\n      <img  src="img/2.jpg"/>\n\n    \n\n      <ion-card-content>    \n\n          <div class="price-background"></div>\n\n          <div class="event-price" >$ 20</div>\n\n        <ion-card-title >\n\n          Welcome BBQ 2017\n\n          </ion-card-title>\n\n          <div class="card-subtitle"># Food & Drinks</div>\n\n          \n\n        <ion-list>\n\n          <div ion-item class="first-list">\n\n            <ion-icon name="pin" item-start></ion-icon>\n\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n\n              <p item-end>150m</p>\n\n            </div>\n\n            <ion-item>\n\n                <ion-icon name="bookmark" item-start></ion-icon>\n\n                <p>19/100 attending</p>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon3.jpg">\n\n                </ion-avatar>\n\n                <ion-avatar item-end >\n\n                    <img src="img/1.png">\n\n                </ion-avatar>\n\n            </ion-item>\n\n        </ion-list>\n\n          \n\n      </ion-card-content>\n\n  </ion-card>\n\n    \n\n    <ion-card>\n\n      <img  src="img/1.png"/>\n\n    \n\n      <ion-card-content>    \n\n          <div class="price-background"></div>\n\n          <div class="event-price" >$ 20</div>\n\n        <ion-card-title >\n\n          Welcome BBQ 2017\n\n          </ion-card-title>\n\n          <div class="card-subtitle"># Food & Drinks</div>\n\n          \n\n        <ion-list>\n\n          <div ion-item class="first-list">\n\n            <ion-icon name="pin" item-start></ion-icon>\n\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n\n              <p item-end>150m</p>\n\n            </div>\n\n            <ion-item>\n\n                <ion-icon name="bookmark" item-start></ion-icon>\n\n                <p>19/100 attending</p>\n\n                <ion-avatar item-end >\n\n                    <img src="img/1.png">\n\n                </ion-avatar>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon3.jpg">\n\n                </ion-avatar>\n\n            </ion-item>\n\n        </ion-list>\n\n          \n\n      </ion-card-content>\n\n  </ion-card>\n\n\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\allEvents\allEvents.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\event\allEvents\allEvents.html"*/'<ion-content class="card-background-page">\n\n    \n\n<ion-card>\n\n      <img  (click)=\'gotoEventDetail()\' src="img/2.jpg"/>\n\n    \n\n      <ion-card-content>   \n\n         \n\n          <div class="price-background"></div>\n\n          <div class="event-price" >$ 20</div>\n\n        <ion-card-title >\n\n          Welcome BBQ 2017\n\n          </ion-card-title>\n\n          <div class="card-subtitle"># Food & Drinks</div>\n\n          \n\n        <ion-list>\n\n          <div ion-item class="first-list">\n\n            <ion-icon name="pin" item-start></ion-icon>\n\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n\n              <p item-end>150m</p>\n\n            </div>\n\n            <ion-item>\n\n                <ion-icon name="bookmark" item-start></ion-icon>\n\n                <p>19/100 attending</p>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon1.jpeg">\n\n                </ion-avatar>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon2.jpg">\n\n                </ion-avatar>\n\n            </ion-item>\n\n        </ion-list>\n\n          \n\n      </ion-card-content>\n\n  </ion-card>\n\n    \n\n    <ion-card>\n\n      <img  src="img/1.png"/>\n\n    \n\n      <ion-card-content>    \n\n          <div class="price-background"></div>\n\n          <div class="event-price" >$ 30</div>\n\n        <ion-card-title >\n\n          Welcome BBQ 2017\n\n          </ion-card-title>\n\n          <div class="card-subtitle"># Food & Drinks</div>\n\n          \n\n        <ion-list>\n\n          <div ion-item class="first-list">\n\n            <ion-icon name="pin" item-start></ion-icon>\n\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n\n              <p item-end>150m</p>\n\n            </div>\n\n            <ion-item>\n\n                <ion-icon name="bookmark" item-start></ion-icon>\n\n                <p>19/100 attending</p>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon2.jpg">\n\n                </ion-avatar>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon3.jpg">\n\n                </ion-avatar>\n\n            </ion-item>\n\n        </ion-list>\n\n          \n\n      </ion-card-content>\n\n  </ion-card>\n\n    \n\n    <ion-card>\n\n      <img  src="img/2.jpg"/>\n\n    \n\n      <ion-card-content>    \n\n          <div class="price-background"></div>\n\n          <div class="event-price" >$ 20</div>\n\n        <ion-card-title >\n\n          Welcome BBQ 2017\n\n          </ion-card-title>\n\n          <div class="card-subtitle"># Food & Drinks</div>\n\n          \n\n        <ion-list>\n\n          <div ion-item class="first-list">\n\n            <ion-icon name="pin" item-start></ion-icon>\n\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n\n              <p item-end>150m</p>\n\n            </div>\n\n            <ion-item>\n\n                <ion-icon name="bookmark" item-start></ion-icon>\n\n                <p>19/100 attending</p>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon3.jpg">\n\n                </ion-avatar>\n\n                <ion-avatar item-end >\n\n                    <img src="img/1.png">\n\n                </ion-avatar>\n\n            </ion-item>\n\n        </ion-list>\n\n          \n\n      </ion-card-content>\n\n  </ion-card>\n\n    \n\n    <ion-card>\n\n      <img  src="img/1.png"/>\n\n    \n\n      <ion-card-content>    \n\n          <div class="price-background"></div>\n\n          <div class="event-price" >$ 20</div>\n\n        <ion-card-title >\n\n          Welcome BBQ 2017\n\n          </ion-card-title>\n\n          <div class="card-subtitle"># Food & Drinks</div>\n\n          \n\n        <ion-list>\n\n          <div ion-item class="first-list">\n\n            <ion-icon name="pin" item-start></ion-icon>\n\n              <p class="list-p">Royal Hortucultural Halls,No.78</p>\n\n              <p item-end>150m</p>\n\n            </div>\n\n            <ion-item>\n\n                <ion-icon name="bookmark" item-start></ion-icon>\n\n                <p>19/100 attending</p>\n\n                <ion-avatar item-end >\n\n                    <img src="img/1.png">\n\n                </ion-avatar>\n\n                <ion-avatar item-end >\n\n                    <img src="img/picon3.jpg">\n\n                </ion-avatar>\n\n            </ion-item>\n\n        </ion-list>\n\n          \n\n      </ion-card-content>\n\n  </ion-card>\n\n\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\event\allEvents\allEvents.html"*/,
         selector: 'page-about',
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */]])
@@ -387,7 +392,7 @@ AllEventsPage = __decorate([
 
 /***/ }),
 
-/***/ 247:
+/***/ 248:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -436,7 +441,7 @@ var EventDetailPage = (function () {
 }());
 EventDetailPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-event-detail',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\eventdetail\eventdetail.html"*/'<!--\n\n  Generated template for the eventDetailPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="danger">\n\n    \n\n      <ion-toolbar>\n\n          <ion-title text-center>BBQ</ion-title>\n\n        <ion-buttons class="shareicon" end>\n\n            <ion-icon ios="ios-share" md="md-share" color="light"></ion-icon>\n\n        </ion-buttons>\n\n          <ion-buttons class="shareicon" end>\n\n            <ion-icon ios="ios-bookmark" md="md-bookmark" color="light"></ion-icon>\n\n        </ion-buttons>\n\n      </ion-toolbar>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content class="eventdetail">\n\n\n\n  <ion-slides class="slides" pager>\n\n    <ion-slide *ngFor="let slide of slides">\n\n      <img [src]="slide.image" class="slide-image"/>\n\n<!--\n\n      <h2 class="slide-title" [innerHTML]="slide.title"></h2>\n\n      <p [innerHTML]="slide.description"></p>\n\n-->\n\n    </ion-slide>\n\n    <ion-slide>\n\n      <img src="img/1.png" class="slide-image"/>\n\n<!--\n\n      <h2 class="slide-title">Ready to Play?</h2>\n\n      <button ion-button large clear icon-end color="primary">\n\n        Continue\n\n        <ion-icon name="arrow-forward"></ion-icon>\n\n      </button>\n\n-->\n\n    </ion-slide>\n\n  </ion-slides>\n\n    <p class="titlep">Sustainable Fashion Drinks</p>\n\n    <p class="timep">WED, 26 OCT, 18:00 PM until 21:00 PM BST</p>\n\n    <p class="eventtags">#Food &nbsp; #Outdoor</p>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\eventdetail\eventdetail.html"*/,
+        selector: 'page-event-detail',template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\event\eventdetail\eventdetail.html"*/'<!--\n\n  Generated template for the eventDetailPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="danger">\n\n    \n\n      <ion-toolbar>\n\n          <ion-title text-center>BBQ</ion-title>\n\n        <ion-buttons class="shareicon" end>\n\n            <ion-icon ios="ios-share" md="md-share" color="light"></ion-icon>\n\n        </ion-buttons>\n\n          <ion-buttons class="shareicon" end>\n\n            <ion-icon ios="ios-bookmark" md="md-bookmark" color="light"></ion-icon>\n\n        </ion-buttons>\n\n      </ion-toolbar>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content class="eventdetail">\n\n\n\n  <ion-slides class="slides" pager>\n\n    <ion-slide *ngFor="let slide of slides">\n\n      <img [src]="slide.image" class="slide-image"/>\n\n<!--\n\n      <h2 class="slide-title" [innerHTML]="slide.title"></h2>\n\n      <p [innerHTML]="slide.description"></p>\n\n-->\n\n    </ion-slide>\n\n    <ion-slide>\n\n      <img src="img/1.png" class="slide-image"/>\n\n<!--\n\n      <h2 class="slide-title">Ready to Play?</h2>\n\n      <button ion-button large clear icon-end color="primary">\n\n        Continue\n\n        <ion-icon name="arrow-forward"></ion-icon>\n\n      </button>\n\n-->\n\n    </ion-slide>\n\n  </ion-slides>\n\n    <p class="titlep">Sustainable Fashion Drinks</p>\n\n    <p class="timep">WED, 26 OCT, 18:00 PM until 21:00 PM BST</p>\n\n    <p class="eventtags">#Food &nbsp; #Outdoor</p>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\event\eventdetail\eventdetail.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
 ], EventDetailPage);
@@ -445,7 +450,7 @@ EventDetailPage = __decorate([
 
 /***/ }),
 
-/***/ 248:
+/***/ 249:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -453,8 +458,8 @@ EventDetailPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_firebase_service_firebase_service__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_firebase_service_firebase_service__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -546,7 +551,7 @@ var ProfilePage = (function () {
 }());
 ProfilePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\profile\profile.html"*/'<ion-header #head>\n\n	<div class="basicinfo">\n\n		<div class="userinfo">\n\n			<div id=\'userimgContainer\'>\n\n	      		<img src="{{facebook.profilePicture}}" />	\n\n	      	</div>\n\n			<div id=\'usernameContainer\'>\n\n		    	<p id=\'username\'>{{facebook.name}}</p>\n\n		    </div>\n\n		    <div id=\'useremailContainer\'>\n\n		   		<p id=\'useremail\'>{{facebook.email}}</p>\n\n		    </div>\n\n	    </div>\n\n	\n\n		<div class="topButton">	  \n\n				<button ion-button color="dark" full (click)=\'loginWithFacebook()\' *ngIf=\'!facebook.loggedIn\'>\n\n				  	<ion-icon name="logo-facebook"></ion-icon>Log in\n\n				</button>\n\n				<button ion-button color="dark" full (click)=\'logout()\' *ngIf=\'facebook.loggedIn\'>\n\n					<ion-icon name="log-facebook"></ion-icon>Log out					\n\n				</button>\n\n		</div>\n\n	\n\n		<div class="followInfoContent">\n\n			<div class = "row" id="row1">\n\n		   		<div class = "col">\n\n		   			<p class= "colContent">2.5k</p>\n\n		   			<p class="colTitle">Follwer</p>			   			\n\n			   	</div>\n\n			   	<div class = "col">\n\n					<p class= "colContent">5</p>\n\n		   			<p class="colTitle">Following</p>		   			\n\n			   	</div>\n\n				<div class = "col">\n\n			   			<p class= "colContent">3</p>\n\n			   			<p class="colTitle">Club</p>\n\n				</div>\n\n				<div class = "col">\n\n				   	<p class= "colContent">4</p>\n\n					<p class="colTitle">Event</p>	   			\n\n				</div>\n\n			</div>\n\n			<div class="tagContent">\n\n				<ion-slides direction="horizontal">\n\n				    <ion-slide class="horizontalSlide">\n\n				  		<div id="slideRow" class="row">\n\n					    	<div id="slideCol" class="col">\n\n					    		#Fashion\n\n					    	</div>	 \n\n					    	<div id="slideCol" class="col">\n\n					    		#Party\n\n					    	</div>\n\n\n\n					    	<div id="slideCol" class="col">\n\n					    		#Outgoing\n\n					    	</div>\n\n						</div> \n\n				    </ion-slide>\n\n				    <ion-slide class="horizontalSlide">\n\n				  		<div id="slideRow" class="row">\n\n				    	<div id="slideCol" class="col">\n\n				    		#Haha\n\n				    	</div>	 \n\n				    	<div id="slideCol" class="col">\n\n				    		#UQ Student\n\n				    	</div>\n\n				    	<div id="slideCol" class="col">\n\n				    		#Friendly\n\n				    	</div>\n\n						</div>    \n\n				    </ion-slide>\n\n				</ion-slides>\n\n			</div>\n\n		</div>\n\n	</div>\n\n</ion-header>\n\n\n\n<ion-content fullscreen #content hide-header [header]="head">\n\n	<div class="profileSubTabs">\n\n	    <ion-segment  [(ngModel)]="segments" color="dark">\n\n	      <ion-segment-button value="events">\n\n	        EVENTS\n\n	      </ion-segment-button>\n\n	      <ion-segment-button value="tickets">\n\n	        TICKETS\n\n	      </ion-segment-button>\n\n	      <ion-segment-button value="bookmarks">\n\n	        BOOKMARKS\n\n	      </ion-segment-button>\n\n	    </ion-segment>\n\n					<div class="subTabContent" [ngSwitch]="segments" >\n\n						\n\n						<div *ngSwitchCase="\'events\'">\n\n						<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.name}}</h2>\n\n								<p>The event info</p>\n\n							</ion-item>\n\n						</ion-list>\n\n												<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.name}}</h2>\n\n								<p>The event info</p>\n\n							</ion-item>\n\n						</ion-list>						<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.name}}</h2>\n\n								<p>The event info</p>\n\n							</ion-item>\n\n						</ion-list>\n\n						<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.name}}</h2>\n\n								<p>The event info</p>\n\n							</ion-item>\n\n						</ion-list>\n\n						<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.name}}</h2>\n\n								<p>The event info</p>\n\n							</ion-item>\n\n						</ion-list>\n\n						</div>\n\n					\n\n						<div *ngSwitchCase="\'tickets\'">\n\n						<ion-slides id="verticalSlide" pager="false" direction="vertical" >\n\n							<ion-slide>\n\n				  			<ion-list  style="margin:0">\n\n				  			<ion-item (click)="dosomething()" *ngFor="let sItem2 of tickets | async">\n\n				    		\n\n				    		<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem2.name}}</h2>\n\n								<p>The event info</p>\n\n				  			</ion-item>\n\n				  			</ion-list>\n\n				  			</ion-slide>\n\n						</ion-slides>\n\n						</div>\n\n\n\n						<div *ngSwitchCase="\'bookmarks\'">\n\n						<ion-slides id="verticalSlide" pager="false" direction="vertical" >\n\n							<ion-slide>\n\n				  			<ion-list  style="margin:0">\n\n				  			<ion-item (click)="dosomething()" *ngFor="let sItem3 of bookmarks | async">\n\n				    		\n\n				    		<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem3.name}}</h2>\n\n								<p>The event info</p>\n\n				  			</ion-item>\n\n				  			</ion-list>\n\n				  			</ion-slide>\n\n						</ion-slides>\n\n						</div>\n\n					</div>\n\n			</div>\n\n\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\profile\profile.html"*/
+        selector: 'page-contact',template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\profile\profile.html"*/'<ion-header #head>\n\n	<div class="basicinfo">\n\n		<div class="userinfo">\n\n			<div id=\'userimgContainer\'>\n\n	      		<img src="{{facebook.profilePicture}}" />	\n\n	      	</div>\n\n			<div id=\'usernameContainer\'>\n\n		    	<p id=\'username\'>{{facebook.name}}</p>\n\n		    </div>\n\n		    <div id=\'useremailContainer\'>\n\n		   		<p id=\'useremail\'>{{facebook.email}}</p>\n\n		    </div>\n\n	    </div>\n\n	\n\n		<div class="topButton">	  \n\n				<button ion-button color="dark" full (click)=\'loginWithFacebook()\' *ngIf=\'!facebook.loggedIn\'>\n\n				  	<ion-icon name="logo-facebook"></ion-icon>Log in\n\n				</button>\n\n				<button ion-button color="dark" full (click)=\'logout()\' *ngIf=\'facebook.loggedIn\'>\n\n					<ion-icon name="log-facebook"></ion-icon>Log out					\n\n				</button>\n\n		</div>\n\n	\n\n		<div class="followInfoContent">\n\n			<div class = "row" id="row1">\n\n		   		<div class = "col">\n\n		   			<p class= "colContent">2.5k</p>\n\n		   			<p class="colTitle">Follwer</p>			   			\n\n			   	</div>\n\n			   	<div class = "col">\n\n					<p class= "colContent">5</p>\n\n		   			<p class="colTitle">Following</p>		   			\n\n			   	</div>\n\n				<div class = "col">\n\n			   			<p class= "colContent">3</p>\n\n			   			<p class="colTitle">Club</p>\n\n				</div>\n\n				<div class = "col">\n\n				   	<p class= "colContent">4</p>\n\n					<p class="colTitle">Event</p>	   			\n\n				</div>\n\n			</div>\n\n			<div class="tagContent">\n\n				<ion-slides direction="horizontal">\n\n				    <ion-slide class="horizontalSlide">\n\n				  		<div id="slideRow" class="row">\n\n					    	<div id="slideCol" class="col">\n\n					    		#Fashion\n\n					    	</div>	 \n\n					    	<div id="slideCol" class="col">\n\n					    		#Party\n\n					    	</div>\n\n\n\n					    	<div id="slideCol" class="col">\n\n					    		#Outgoing\n\n					    	</div>\n\n						</div> \n\n				    </ion-slide>\n\n				    <ion-slide class="horizontalSlide">\n\n				  		<div id="slideRow" class="row">\n\n				    	<div id="slideCol" class="col">\n\n				    		#Haha\n\n				    	</div>	 \n\n				    	<div id="slideCol" class="col">\n\n				    		#UQ Student\n\n				    	</div>\n\n				    	<div id="slideCol" class="col">\n\n				    		#Friendly\n\n				    	</div>\n\n						</div>    \n\n				    </ion-slide>\n\n				</ion-slides>\n\n			</div>\n\n		</div>\n\n	</div>\n\n</ion-header>\n\n\n\n<ion-content fullscreen #content hide-header [header]="head">\n\n	<div class="profileSubTabs">\n\n	    <ion-segment  [(ngModel)]="segments" color="dark">\n\n	      <ion-segment-button value="events">\n\n	        EVENTS\n\n	      </ion-segment-button>\n\n	      <ion-segment-button value="tickets">\n\n	        TICKETS\n\n	      </ion-segment-button>\n\n	      <ion-segment-button value="bookmarks">\n\n	        BOOKMARKS\n\n	      </ion-segment-button>\n\n	    </ion-segment>\n\n					<div class="subTabContent" [ngSwitch]="segments" >\n\n						\n\n						<div *ngSwitchCase="\'events\'">\n\n						<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.name}}</h2>\n\n								<p>The event info</p>\n\n							</ion-item>\n\n						</ion-list>\n\n						<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.name}}</h2>\n\n								<p>The event info</p>\n\n							</ion-item>\n\n						</ion-list>						<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.name}}</h2>\n\n								<p>The event info</p>\n\n							</ion-item>\n\n						</ion-list>\n\n						<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.name}}</h2>\n\n								<p>The event info</p>\n\n							</ion-item>\n\n						</ion-list>\n\n						<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.name}}</h2>\n\n								<p>The event info</p>\n\n							</ion-item>\n\n						</ion-list>\n\n						</div>\n\n					\n\n						<div *ngSwitchCase="\'tickets\'">\n\n						<ion-slides id="verticalSlide" pager="false" direction="vertical" >\n\n							<ion-slide>\n\n				  			<ion-list  style="margin:0">\n\n				  			<ion-item (click)="dosomething()" *ngFor="let sItem2 of tickets | async">\n\n				    		\n\n				    		<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem2.name}}</h2>\n\n								<p>The event info</p>\n\n				  			</ion-item>\n\n				  			</ion-list>\n\n				  			</ion-slide>\n\n						</ion-slides>\n\n						</div>\n\n\n\n						<div *ngSwitchCase="\'bookmarks\'">\n\n						<ion-slides id="verticalSlide" pager="false" direction="vertical" >\n\n							<ion-slide>\n\n				  			<ion-list  style="margin:0">\n\n				  			<ion-item (click)="dosomething()" *ngFor="let sItem3 of bookmarks | async">\n\n				    		\n\n				    		<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem3.name}}</h2>\n\n								<p>The event info</p>\n\n				  			</ion-item>\n\n				  			</ion-list>\n\n				  			</ion-slide>\n\n						</ion-slides>\n\n						</div>\n\n					</div>\n\n			</div>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\profile\profile.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_3__providers_firebase_service_firebase_service__["a" /* FirebaseServiceProvider */]])
 ], ProfilePage);
@@ -555,14 +560,14 @@ ProfilePage = __decorate([
 
 /***/ }),
 
-/***/ 260:
+/***/ 261:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClubPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_clubTabs_clubTabs__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_clubTabs_clubTabs__ = __webpack_require__(262);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -585,7 +590,7 @@ var ClubPage = (function () {
 }());
 ClubPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\club.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>\n\n            Club\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n	<ion-nav [root]="rootClubPage"></ion-nav>\n\n</ion-content>'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\club.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\club\club.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>\n\n            Club\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n	<ion-nav [root]="rootClubPage"></ion-nav>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\club\club.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */]])
 ], ClubPage);
@@ -594,14 +599,14 @@ ClubPage = __decorate([
 
 /***/ }),
 
-/***/ 261:
+/***/ 262:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClubTabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__club_myClubs_myClubs__ = __webpack_require__(262);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__club_allClubs_allClubs__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__club_myClubs_myClubs__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__club_allClubs_allClubs__ = __webpack_require__(264);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -622,7 +627,7 @@ var ClubTabsPage = (function () {
     return ClubTabsPage;
 }());
 ClubTabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\clubTabs\clubTabs.html"*/'<!DOCTYPE html>\n\n<html>\n\n<head>\n\n	<meta charset="utf-8">\n\n</head>\n\n<body>\n\n	<div class="ion-tabs">\n\n		<ion-tabs tabsPlacement="top" color="primary">\n\n		<ion-tab [root]="allClubRoot" tabTitle="All Club"></ion-tab>\n\n		<ion-tab [root]="myClubRoot" tabTitle="My Club"></ion-tab>\n\n		</ion-tabs>\n\n	</div>\n\n</body>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\tabs\clubTabs\clubTabs.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\tabs\clubTabs\clubTabs.html"*/'<!DOCTYPE html>\n\n<html>\n\n<head>\n\n	<meta charset="utf-8">\n\n</head>\n\n<body>\n\n	<div class="ion-tabs">\n\n		<ion-tabs tabsPlacement="top" color="primary">\n\n		<ion-tab [root]="allClubRoot" tabTitle="All Club"></ion-tab>\n\n		<ion-tab [root]="myClubRoot" tabTitle="My Club"></ion-tab>\n\n		</ion-tabs>\n\n	</div>\n\n</body>\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\tabs\clubTabs\clubTabs.html"*/,
         selector: 'page-about',
     }),
     __metadata("design:paramtypes", [])
@@ -632,7 +637,7 @@ ClubTabsPage = __decorate([
 
 /***/ }),
 
-/***/ 262:
+/***/ 263:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -657,7 +662,7 @@ var MyClubsPage = (function () {
     return MyClubsPage;
 }());
 MyClubsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\myClubs\myClubs.html"*/'<ion-content>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\myClubs\myClubs.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\club\myClubs\myClubs.html"*/'<ion-content>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\club\myClubs\myClubs.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
 ], MyClubsPage);
@@ -666,14 +671,14 @@ MyClubsPage = __decorate([
 
 /***/ }),
 
-/***/ 263:
+/***/ 264:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllClubsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__club_detail_club_detail__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__club_detail_club_detail__ = __webpack_require__(155);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -697,7 +702,7 @@ var AllClubsPage = (function () {
     return AllClubsPage;
 }());
 AllClubsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\allClubs\allClubs.html"*/'<ion-content>\n\n<ion-list>\n\n\n\n	<ion-card (click)="gotoClubDetail()">\n\n		<img src="img/2.jpg"/>\n\n	  <ion-card-header>\n\n	    UQ Dancing Club\n\n	  </ion-card-header>\n\n\n\n	  <ion-card-content>\n\n	    #\n\n	  </ion-card-content>\n\n	</ion-card>\n\n\n\n	<ion-card (tap)="tapEvent($event)">\n\n\n\n	  <ion-card-header>\n\n	    BBQ Club\n\n	  </ion-card-header>\n\n\n\n	  <ion-card-content>\n\n	    #\n\n	  </ion-card-content>\n\n\n\n	</ion-card>\n\n\n\n\n\n</ion-list>\n\n\n\n<button ion-button full (click)=\'gotoClubDetail()\'>go to detail page</button>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\club\allClubs\allClubs.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\club\allClubs\allClubs.html"*/'<ion-content>\n\n<ion-list>\n\n\n\n	<ion-card (click)="gotoClubDetail()">\n\n		<img src="img/2.jpg"/>\n\n	  <ion-card-header>\n\n	    UQ Dancing Club\n\n	  </ion-card-header>\n\n\n\n	  <ion-card-content>\n\n	    #\n\n	  </ion-card-content>\n\n	</ion-card>\n\n\n\n	<ion-card (tap)="tapEvent($event)">\n\n\n\n	  <ion-card-header>\n\n	    BBQ Club\n\n	  </ion-card-header>\n\n\n\n	  <ion-card-content>\n\n	    #\n\n	  </ion-card-content>\n\n\n\n	</ion-card>\n\n\n\n\n\n</ion-list>\n\n\n\n<button ion-button full (click)=\'gotoClubDetail()\'>go to detail page</button>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\club\allClubs\allClubs.html"*/,
         selector: 'page-about',
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */]])
@@ -707,7 +712,7 @@ AllClubsPage = __decorate([
 
 /***/ }),
 
-/***/ 264:
+/***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -733,78 +738,12 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>ClubHub</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n   \n\n  <h2>hello</h2>\n\n \n\n  <p>\n\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n\n    update any existing page or create new pages.\n\n  </p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>ClubHub</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n   \n\n  <h2>hello</h2>\n\n \n\n  <p>\n\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n\n    update any existing page or create new pages.\n\n  </p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
 ], HomePage);
 
 //# sourceMappingURL=home.js.map
-
-/***/ }),
-
-/***/ 308:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddEventPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_firebase_service_firebase_service__ = __webpack_require__(115);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var AddEventPage = (function () {
-    function AddEventPage(navCtrl, navParams, firebaseProvider) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.firebaseProvider = firebaseProvider;
-        this.event = {
-            title: null,
-            club: null,
-            tags: null,
-            memberFee: null,
-            nonmemberFee: null,
-            description: null,
-            location: null,
-            email: null,
-            startDate: null,
-            startTime: null,
-            endDate: null,
-            endTime: null,
-            tag: null,
-            locationCity: "Brisbane",
-            locationPostcode: null,
-            locationSuburb: null,
-            locationStreet: null,
-        };
-    }
-    AddEventPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AddEventPage');
-    };
-    AddEventPage.prototype.addEvent = function (event) {
-        console.log(this.event);
-        this.firebaseProvider.addEvent(this.event);
-    };
-    return AddEventPage;
-}());
-AddEventPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-add-event',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\add-event\add-event.html"*/'<!--\n  Generated template for the AddEventPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>Add New Event</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n	\n\n			<div class="title_box">\n	    		<ion-label id="title">Event title</ion-label>\n	    		<ion-input type="text" [(ngModel)]="event.title"></ion-input>\n	    	</div>\n\n			<div class="title_box">\n	    		<ion-label id="title">Organizing club</ion-label>\n	    		<ion-select type="text" [(ngModel)]="event.club" placeholder="Organizing club">\n				    <ion-option value="Dancing Club">Dancing Club</ion-option>\n				    <ion-option value="Anime & Manga Club">Anime & Manga Club</ion-option>\n					<ion-option value="Japanese Taiko Drumming Team">UQ TAIKO</ion-option>\n	    		</ion-select>\n	    	</div>\n\n			<div class="title_box">\n	    		<ion-label id="title">Description</ion-label>\n	    		<ion-textarea type="text" [(ngModel)]="event.description"></ion-textarea>\n	    	</div>\n\n	  		<div class="title_box">\n	  			<ion-label id="title">Start time</ion-label>\n	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventStartTime" placeholder="Oct 17, 2017 00:00"></ion-datetime>\n	  		</div>\n\n\n	  		<div class="title_box">\n	  			<ion-label id="title">End time</ion-label>\n	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventEndTime" placeholder="Oct 17, 2017 00:00"></ion-datetime>\n	  		</div>\n\n\n			<div class="title_box">\n	  			<ion-label id="title">Registration deadline</ion-label>\n	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventRegistrationDeadline" placeholder="Oct 17, 2017 00:00"></ion-datetime>\n	  		</div>\n\n			<div class="title_box">\n	    		<ion-label id="title">Event Location</ion-label>\n				    <ion-label id="sub_title">On campus</ion-label>\n				    <ion-toggle color="secondary" [(ngModel)]="isOncampus"></ion-toggle>\n\n\n				<div *ngIf="!isOncampus" id="locationInfo">\n					<ion-list>\n						<ion-item>\n							<ion-label>City:</ion-label>\n							<ion-input type="text" [(ngModel)]="event.locationCity" value="{{event.locationCity}}"></ion-input>\n						</ion-item>	\n						<ion-item>\n							<ion-label>Suburb:</ion-label>\n							<ion-input type="text" [(ngModel)]="event.locationSuburb"></ion-input>\n						</ion-item>\n						<ion-item>\n							<ion-label>Street detail:</ion-label>\n							<ion-input type="text" [(ngModel)]="event.locationStreet"></ion-input>\n						</ion-item>	\n						<ion-item>\n							<ion-label>Postcode:</ion-label>\n							<ion-input type="number" [(ngModel)]="event.locationPostcode"></ion-input>\n						</ion-item>\n					</ion-list>	\n				</div>\n\n\n				<div *ngIf="isOncampus" id="locationInfo">\n					<ion-list>\n						<ion-item>\n							<ion-label>Campus:</ion-label>\n							<ion-select [(ngModel)]="Locationcampus" type="text">\n								<ion-option value="St Lucia" selected>St Lucia</ion-option>\n								<ion-option value="Gatton">Gatton</ion-option>\n								<ion-option value="Herston">Herston</ion-option>\n								<ion-option value="Other Location">Other Location</ion-option>\n							</ion-select>	\n						</ion-item>\n						<ion-item>\n							<ion-label>Building:</ion-label>\n							<ion-input placeholder="building" type="text" [(ngModel)]="eventLocationBuilding"></ion-input>\n						</ion-item>	\n						<ion-item>\n							<ion-label>Room:</ion-label>\n							<ion-input placeholder="room" type="text" [(ngModel)]="eventLocationRoom"></ion-input></ion-item>\n						<ion-item>\n							<ion-label>Details:</ion-label>\n							<ion-input placeholder="location details" type="text" [(ngModel)]="eventLocationDetails"></ion-input></ion-item>	\n					</ion-list>	\n				</div>\n	    	</div>\n\n	   		<div class="title_box">\n	    		<ion-label id="title">Fee</ion-label>\n	    		<ion-list>\n	    			<ion-item>\n	    				<ion-label>Member Fee</ion-label>\n	    				<ion-input id=\'fee\' type="number" [(ngModel)]="event.memberFee"></ion-input>\n	    			</ion-item>\n\n	    			<ion-item>\n	    				<ion-label>NonMember Fee</ion-label>\n			    		<ion-input id=\'fee\' type="number" [(ngModel)]="event.nonmemberFee"></ion-input>\n					</ion-item>\n				</ion-list>\n	    	</div>\n\n	   		<div class="title_box">\n	    		<ion-label id="title">Tags</ion-label>\n	    		<ion-select id="tags" multiple="true" [(ngModel)]="event.tags">\n		    		<ion-option value="Outdoor" >Outdoor</ion-option>\n		    		<ion-option value="Entertainment">Entertainment</ion-option>\n		    		<ion-option value="Academic">Academic</ion-option>\n		    		<ion-option value="Art & Entertainment">Art & Entertainment</ion-option>\n		    		<ion-option value="Festivals & Celevbrations">Festical & Celevbrations</ion-option>\n		    		<ion-option value="Free">Free</ion-option>\n		    		<ion-option value="Sport">Sport</ion-option>\n		    		<ion-option value="Markets">Markets</ion-option>\n		    		<ion-option value="Eat & Drink">Eat & Drink</ion-option>\n		    		<ion-option value="Anime">Anime</ion-option>\n	    		</ion-select>\n	    	</div>\n\n\n	    	<ion-label floating>Contact Number</ion-label>\n	    	<ion-input  type="tel" [(ngModel)]="event.number"></ion-input>\n\n			<ion-label>Contact Email</ion-label>\n		    <ion-input type="email" [(ngModel)]="event.email">\n			</ion-input>\n\n	    	<ion-label>Description</ion-label>\n	    	<ion-textarea type="text" [(ngModel)]="event.description"></ion-textarea>\n\n	    	<ion-label>Description</ion-label>\n	    	<ion-textarea type="text" [(ngModel)]="event.description"></ion-textarea>\n\n\n	<button ion-button (click)="addEvent()">Add</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\event\add-event\add-event.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_firebase_service_firebase_service__["a" /* FirebaseServiceProvider */]])
-], AddEventPage);
-
-//# sourceMappingURL=add-event.js.map
 
 /***/ }),
 
@@ -817,7 +756,7 @@ AddEventPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -883,7 +822,7 @@ var EntryPage = (function () {
 EntryPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-entry',template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\entry\entry.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>UQ ClubHub</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content no-bounce padding class=\'view\'>\n\n	<div id=\'imageContainer\'>\n\n	<img src="../../assets/icon/clubHub.png" height="100px" width="100px" />\n\n	</div>\n\n<ion-footer>\n\n	<div id="container">\n\n		<p id=\'line1\' >Have a great time!</p>\n\n	</div>\n\n\n\n	<div id=\'bottomButton\'>	\n\n	  	<button ion-button full color=\'primary\'(click)=\'loginWithFacebook()\'>\n\n	  	  Sign in with facebook\n\n	  	</button> \n\n	</div>\n\n</ion-footer>		\n\n\n\n	\n\n</ion-content>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\pages\entry\entry.html"*/,
+        selector: 'page-entry',template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\entry\entry.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>UQ ClubHub</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content no-bounce padding class=\'view\'>\n\n	<div id=\'imageContainer\'>\n\n	<img src="../../assets/icon/clubHub.png" height="100px" width="100px" />\n\n	</div>\n\n<ion-footer>\n\n	<div id="container">\n\n		<p id=\'line1\' >Have a great time!</p>\n\n	</div>\n\n\n\n	<div id=\'bottomButton\'>	\n\n	  	<button ion-button full color=\'primary\'(click)=\'loginWithFacebook()\'>\n\n	  	  Sign in with facebook\n\n	  	</button> \n\n	</div>\n\n</ion-footer>		\n\n\n\n	\n\n</ion-content>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\entry\entry.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
 ], EntryPage);
@@ -916,28 +855,28 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(450);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_entry_entry__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_event_event__ = __webpack_require__(242);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_profile_profile__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_event_event__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_profile_profile__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(265);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_club_club__ = __webpack_require__(260);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_club_myClubs_myClubs__ = __webpack_require__(262);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_club_allClubs_allClubs__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tabs_clubTabs_clubTabs__ = __webpack_require__(261);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_club_club_detail_club_detail__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_event_allEvents_allEvents__ = __webpack_require__(246);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_tabs_eventTabs_eventTabs__ = __webpack_require__(244);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_event_myEvents_myEvents__ = __webpack_require__(245);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_event_add_event_add_event__ = __webpack_require__(308);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_event_eventdetail_eventdetail__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_club_club__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_club_myClubs_myClubs__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_club_allClubs_allClubs__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tabs_clubTabs_clubTabs__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_club_club_detail_club_detail__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_event_allEvents_allEvents__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_tabs_eventTabs_eventTabs__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_event_myEvents_myEvents__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_event_add_event_add_event__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_event_eventdetail_eventdetail__ = __webpack_require__(248);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__directives_hide_header_hide_header__ = __webpack_require__(459);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_status_bar__ = __webpack_require__(304);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_splash_screen__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_status_bar__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_splash_screen__ = __webpack_require__(308);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__angular_http__ = __webpack_require__(460);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23_angularfire2__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angularfire2_database__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angularfire2_database__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_angularfire2_auth__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_firebase_service_firebase_service__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_firebase_service_firebase_service__ = __webpack_require__(74);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1059,8 +998,8 @@ AppModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(304);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(308);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(125);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1089,7 +1028,7 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\lvan0\Desktop\TeamBeyondBeingThere\ClubHub\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\app\app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
@@ -1159,6 +1098,67 @@ HideHeaderDirective = __decorate([
 ], HideHeaderDirective);
 
 //# sourceMappingURL=hide-header.js.map
+
+/***/ }),
+
+/***/ 74:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FirebaseServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(205);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/*
+  Generated class for the FirebaseServiceProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var FirebaseServiceProvider = (function () {
+    function FirebaseServiceProvider(afd) {
+        this.afd = afd;
+        console.log('Hello FirebaseServiceProvider Provider');
+    }
+    FirebaseServiceProvider.prototype.getEvents = function () {
+        console.log(this.afd.list('/events/'));
+        return this.afd.list('/events/');
+    };
+    FirebaseServiceProvider.prototype.getBookmarks = function () {
+        console.log(this.afd.list('/bookmarks/'));
+        return this.afd.list('/events/');
+    };
+    FirebaseServiceProvider.prototype.getTickets = function () {
+        console.log(this.afd.list('/tickets/'));
+        return this.afd.list('/events/');
+    };
+    FirebaseServiceProvider.prototype.addEvent = function (event) {
+        this.afd.list('/events/').push(event);
+    };
+    FirebaseServiceProvider.prototype.removeEvent = function (id) {
+        this.afd.list('/events/').remove(id);
+    };
+    return FirebaseServiceProvider;
+}());
+FirebaseServiceProvider = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]])
+], FirebaseServiceProvider);
+
+//# sourceMappingURL=firebase-service.js.map
 
 /***/ })
 
