@@ -1,21 +1,26 @@
 <ion-content class="card-background-page">
-    
-<ion-card>
+
+<ion-card *ngFor="let event of events | async">
       <img  (click)='gotoEventDetail()' src="img/2.jpg"/>
-    
-      <ion-card-content>   
-         
+      <ion-card-content>       
           <div class="price-background"></div>
-          <div class="event-price" >$ 20</div>
+          <div class="event-price" >${{event.nonmemberFee}}</div>
         <ion-card-title >
-          Welcome BBQ 2017
+          {{event.title}}
           </ion-card-title>
-          <div class="card-subtitle"># Food & Drinks</div>
+          <div class="card-subtitle">{{event.tags}}</div>
+          <div class="card-time">
+            <p>Start at:
+            {{event.startTime}}</p>
+            <p>End at: {{event.endTime}}</p>
+          </div>
+          
           
         <ion-list>
           <div ion-item class="first-list">
             <ion-icon name="pin" item-start></ion-icon>
-              <p class="list-p">Royal Hortucultural Halls,No.78</p>
+              <p class="list-p" *ngIf="event.isOncampus">{{event.locationCampus}}, {{event.locationBuilding}}
+              </p>
               <p item-end>150m</p>
             </div>
             <ion-item>
@@ -29,106 +34,9 @@
                 </ion-avatar>
             </ion-item>
         </ion-list>
-          
       </ion-card-content>
-  </ion-card>
+</ion-card>
     
-    <ion-card>
-      <img  src="img/1.png"/>
-    
-      <ion-card-content>    
-          <div class="price-background"></div>
-          <div class="event-price" >$ 30</div>
-        <ion-card-title >
-          Welcome BBQ 2017
-          </ion-card-title>
-          <div class="card-subtitle"># Food & Drinks</div>
-          
-        <ion-list>
-          <div ion-item class="first-list">
-            <ion-icon name="pin" item-start></ion-icon>
-              <p class="list-p">Royal Hortucultural Halls,No.78</p>
-              <p item-end>150m</p>
-            </div>
-            <ion-item>
-                <ion-icon name="bookmark" item-start></ion-icon>
-                <p>19/100 attending</p>
-                <ion-avatar item-end >
-                    <img src="img/picon2.jpg">
-                </ion-avatar>
-                <ion-avatar item-end >
-                    <img src="img/picon3.jpg">
-                </ion-avatar>
-            </ion-item>
-        </ion-list>
-          
-      </ion-card-content>
-  </ion-card>
-    
-    <ion-card>
-      <img  src="img/2.jpg"/>
-    
-      <ion-card-content>    
-          <div class="price-background"></div>
-          <div class="event-price" >$ 20</div>
-        <ion-card-title >
-          Welcome BBQ 2017
-          </ion-card-title>
-          <div class="card-subtitle"># Food & Drinks</div>
-          
-        <ion-list>
-          <div ion-item class="first-list">
-            <ion-icon name="pin" item-start></ion-icon>
-              <p class="list-p">Royal Hortucultural Halls,No.78</p>
-              <p item-end>150m</p>
-            </div>
-            <ion-item>
-                <ion-icon name="bookmark" item-start></ion-icon>
-                <p>19/100 attending</p>
-                <ion-avatar item-end >
-                    <img src="img/picon3.jpg">
-                </ion-avatar>
-                <ion-avatar item-end >
-                    <img src="img/1.png">
-                </ion-avatar>
-            </ion-item>
-        </ion-list>
-          
-      </ion-card-content>
-  </ion-card>
-    
-    <ion-card>
-      <img  src="img/1.png"/>
-    
-      <ion-card-content>    
-          <div class="price-background"></div>
-          <div class="event-price" >$ 20</div>
-        <ion-card-title >
-          Welcome BBQ 2017
-          </ion-card-title>
-          <div class="card-subtitle"># Food & Drinks</div>
-          
-        <ion-list>
-          <div ion-item class="first-list">
-            <ion-icon name="pin" item-start></ion-icon>
-              <p class="list-p">Royal Hortucultural Halls,No.78</p>
-              <p item-end>150m</p>
-            </div>
-            <ion-item>
-                <ion-icon name="bookmark" item-start></ion-icon>
-                <p>19/100 attending</p>
-                <ion-avatar item-end >
-                    <img src="img/1.png">
-                </ion-avatar>
-                <ion-avatar item-end >
-                    <img src="img/picon3.jpg">
-                </ion-avatar>
-            </ion-item>
-        </ion-list>
-          
-      </ion-card-content>
-  </ion-card>
-
 
 </ion-content>
 

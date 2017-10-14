@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { FirebaseServiceProvider } from '../../../providers/firebase-service/firebase-service';
 
@@ -10,25 +10,29 @@ import { FirebaseServiceProvider } from '../../../providers/firebase-service/fir
 })
 export class AddEventPage {
 	event={
+    isOncampus:null,
 		title:null,
 		club:null,
     tags:null,
     	memberFee:null,
       nonmemberFee:null,
     	description:null,
-    	location:null,
     	email:null,
-    	startDate:null,
-    	startTime:null,
-    	endDate:null,
-    	endTime:null,
+      number:null,
     	tag:null, 
       locationCity:"Brisbane",
       locationPostcode:null,
       locationSuburb:null,
       locationStreet:null,
+      locationCampus:null,
+      locationBuilding:null,
+      locationRoom:null,
+      locationDetails:null,
+      startTime:null,
+      endTime:null,
+      registrationDeadline:null,
 	}
-  constructor(public navCtrl: NavController, public navParams: NavParams,private firebaseProvider:FirebaseServiceProvider ) {
+  constructor(public alertCtrl: AlertController,public navCtrl: NavController, public navParams: NavParams,private firebaseProvider:FirebaseServiceProvider ) {
   	
   }
 
@@ -36,9 +40,61 @@ export class AddEventPage {
     console.log('ionViewDidLoad AddEventPage');
   }
 
-addEvent(event){
-  console.log(this.event);
-	this.firebaseProvider.addEvent(this.event);
-}
+  addEvent(event){
+    console.log(this.event);
+    if(this.event.title==null){
+      this.alert("Club title needed!");
+    }else if(this.event.tags==null){
+      this.alert("Tags needed!")
+    }else if(this.event.memberFee==null){
+      this.alert("MemberFee needed!")
+    }else if(this.event.nonmemberFee==null){
+      this.alert("nonmemberFee needed!")
+    }else if(this.event.description==null){
+      this.alert("Description needed!")
+    }else if(this.event.email==null){
+      this.alert("Email needed!")
+    }else if(this.event.registrationDeadline==null){
+      this.alert("Registration deadline needed!")
+    }else if(this.event.endTime==null){
+      this.alert("End time needed!")
+    }else if(this.event.startTime==null){
+      this.alert("Start time needed!")
+    }else if(this.event.number==null){
+      this.alert("Contact number needed!")
+    }else if(this.event.isOncampus){
+      if(this.event.locationCampus==null||this.event.locationBuilding==null||
+        this.event.locationRoom==null){
+          this.alert("Event Location needed")
+      }else{
+        this.firebaseProvider.addEvent(this.event);
+        this.navCtrl.pop();
+        this.alert("Event Created");
+      }
+    }else if(!this.event.isOncampus){
+      if(this.event.locationCity==null||this.event.locationPostcode==null||
+        this.event.locationSuburb==null||this.event.locationStreet==null){
+        this.alert("Event Location needed")
+      }
+
+    }else{
+      this.firebaseProvider.addEvent(this.event);
+      this.navCtrl.pop();
+      this.alert("Event Created");
+    }
+  	
+  }
+
+
+
+  
+  alert(message: string){
+    this.alertCtrl.create({
+      title:'Info!',
+      subTitle: message,
+      buttons: ['OK'],
+    }).present();
+  }
+
 
 }

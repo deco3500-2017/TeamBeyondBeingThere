@@ -1,8 +1,9 @@
 <ion-header #head>
 	<div class="basicinfo">
-		<div class="userinfo">
+		<div class="userinfo" style="background-image: url('img/profilebg.jpg')" >
 			<div id='userimgContainer'>
-	      		<img src="{{facebook.profilePicture}}" />	
+	      		<img *ngIf="!facebook.loggedIn" src="img/profile.png"/>
+	      		<img *ngIf="facebook.loggedIn" src="{{facebook.profilePicture}}" />	
 	      	</div>
 			<div id='usernameContainer'>
 		    	<p id='username'>{{facebook.name}}</p>
@@ -21,7 +22,7 @@
 				</button>
 		</div>
 	
-		<div class="followInfoContent">
+		<div class="followInfoContent" *ngIf="facebook.loggedIn">
 			<div class = "row" id="row1">
 		   		<div class = "col">
 		   			<p class= "colContent">2.5k</p>
@@ -75,8 +76,8 @@
 	</div>
 </ion-header>
 
-<ion-content fullscreen #content hide-header [header]="head">
-	<div class="profileSubTabs">
+<ion-content fullscreen #content hide-header [header]="head" >
+	<div class="profileSubTabs" *ngIf="facebook.loggedIn">
 	    <ion-segment  [(ngModel)]="segments" color="dark">
 	      <ion-segment-button value="events">
 	        EVENTS
@@ -172,5 +173,7 @@
 						</div>
 					</div>
 			</div>
+
+	<div *ngIf="!facebook.loggedIn" class="info">Log in to experience more~</div>
 </ion-content>
 

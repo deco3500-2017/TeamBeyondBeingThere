@@ -35,28 +35,28 @@
 
 	  		<div class="title_box">
 	  			<ion-label id="title">Start time</ion-label>
-	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventStartTime" placeholder="Oct 17, 2017 00:00"></ion-datetime>
+	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" min="2017" max="2020" [(ngModel)]="event.startTime" placeholder="Oct 17, 2017 00:00"></ion-datetime>
 	  		</div>
 
 
 	  		<div class="title_box">
 	  			<ion-label id="title">End time</ion-label>
-	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventEndTime" placeholder="Oct 17, 2017 00:00"></ion-datetime>
+	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" min="2017" max="2020" [(ngModel)]="event.endTime" placeholder="Oct 17, 2017 00:00"></ion-datetime>
 	  		</div>
 
 
 			<div class="title_box">
 	  			<ion-label id="title">Registration deadline</ion-label>
-	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="eventRegistrationDeadline" placeholder="Oct 17, 2017 00:00"></ion-datetime>
+	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="event.registrationDeadline" placeholder="Oct 17, 2017 00:00"></ion-datetime>
 	  		</div>
 
 			<div class="title_box">
 	    		<ion-label id="title">Event Location</ion-label>
 				    <ion-label id="sub_title">On campus</ion-label>
-				    <ion-toggle color="secondary" [(ngModel)]="isOncampus"></ion-toggle>
+				    <ion-toggle color="secondary" [(ngModel)]="event.isOncampus"></ion-toggle>
 
 
-				<div *ngIf="!isOncampus" id="locationInfo">
+				<div *ngIf="!event.isOncampus" id="locationInfo">
 					<ion-list>
 						<ion-item>
 							<ion-label>City:</ion-label>
@@ -78,11 +78,11 @@
 				</div>
 
 
-				<div *ngIf="isOncampus" id="locationInfo">
+				<div *ngIf="event.isOncampus" id="locationInfo">
 					<ion-list>
 						<ion-item>
 							<ion-label>Campus:</ion-label>
-							<ion-select [(ngModel)]="Locationcampus" type="text">
+							<ion-select [(ngModel)]="event.locationCampus" type="text">
 								<ion-option value="St Lucia" selected>St Lucia</ion-option>
 								<ion-option value="Gatton">Gatton</ion-option>
 								<ion-option value="Herston">Herston</ion-option>
@@ -91,14 +91,14 @@
 						</ion-item>
 						<ion-item>
 							<ion-label>Building:</ion-label>
-							<ion-input placeholder="building" type="text" [(ngModel)]="eventLocationBuilding"></ion-input>
+							<ion-input placeholder="building" type="text" [(ngModel)]="event.locationBuilding"></ion-input>
 						</ion-item>	
 						<ion-item>
 							<ion-label>Room:</ion-label>
-							<ion-input placeholder="room" type="text" [(ngModel)]="eventLocationRoom"></ion-input></ion-item>
+							<ion-input placeholder="room" type="text" [(ngModel)]="event.locationRoom"></ion-input></ion-item>
 						<ion-item>
 							<ion-label>Details:</ion-label>
-							<ion-input placeholder="location details" type="text" [(ngModel)]="eventLocationDetails"></ion-input></ion-item>	
+							<ion-input placeholder="location details" type="text" [(ngModel)]="event.locationDetails"></ion-input></ion-item>	
 					</ion-list>	
 				</div>
 	    	</div>
@@ -122,7 +122,6 @@
 	    		<ion-label id="title">Tags</ion-label>
 	    		<ion-select id="tags" multiple="true" [(ngModel)]="event.tags">
 		    		<ion-option value="Outdoor" >Outdoor</ion-option>
-		    		<ion-option value="Entertainment">Entertainment</ion-option>
 		    		<ion-option value="Academic">Academic</ion-option>
 		    		<ion-option value="Art & Entertainment">Art & Entertainment</ion-option>
 		    		<ion-option value="Festivals & Celevbrations">Festical & Celevbrations</ion-option>

@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { App,NavController } from 'ionic-angular';
 import { EventDetailPage } from '../eventdetail/eventdetail';
 import { EventPage } from '../../event/event';
+import { FirebaseListObservable } from 'angularfire2/database';
+import { FirebaseServiceProvider } from '../../../providers/firebase-service/firebase-service';
+
 
 
 
@@ -12,12 +15,13 @@ import { EventPage } from '../../event/event';
 })
 
 export class AllEventsPage {
-
+	events:FirebaseListObservable<any[]>;
 	
-  constructor(public navCtrl: NavController,private app:App) {
-  	
+  constructor( public navCtrl: NavController,private app:App,public firebaseService:FirebaseServiceProvider) {
+  	this.events=this.firebaseService.getEvents();
+  	console.log(this.events)
   }
-gotoEventDetail(){
+	gotoEventDetail(){
 		this.app.getRootNav().push(EventDetailPage);
 	}
 	
