@@ -1,0 +1,67 @@
+tabs-about{
+	.tabs-ios .tab-button-icon{
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+
+
+	.tabs-ios .tab-button[aria-selected=true] .tab-button-icon .ion-ios-events-outline,
+	.ion-ios-events{
+  		background-image: url('../img/tab_icon/events_icon_actived.png');
+	}
+
+	.ion-ios-events-outline{
+  		background-image: url('../img/tab_icon/events_icon.png');
+	}
+
+
+
+
+
+	.tabs-ios .tab-button[aria-selected=true] .tab-button-icon .ion-ios-clubs-outline,
+	.ion-ios-clubs{
+  		background-image: url('../img/tab_icon/clubs_icon_actived.png');
+	}
+
+	.ion-ios-clubs-outline{
+  		background-image: url('../img/tab_icon/clubs_icon.png');
+	}
+
+
+
+
+
+	.tabs-ios .tab-button[aria-selected=true] .tab-button-icon .ion-ios-peoples-outline,
+	.ion-ios-peoples{
+  		background-image: url('../img/tab_icon/peoples_icon_actived.png');
+	}
+
+	.ion-ios-peoples-outline{
+  		background-image: url('../img/tab_icon/peoples_icon.png');
+	}
+
+
+
+
+
+	.tabs-ios .tab-button[aria-selected=true] .tab-button-icon .ion-ios-profile-outline,
+	.ion-ios-profile{
+  		background-image: url('../img/tab_icon/profile_icon_actived.png');
+	}
+
+	.ion-ios-profile-outline{
+  		background-image: url('../img/tab_icon/profile_icon.png');
+	}
+
+
+
+
+
+	a#tab-t0-0[aria-selected=true], a#tab-t0-1[aria-selected=true], a#tab-t0-2[aria-selected=true], a#tab-t0-3[aria-selected=true]{
+		color:red;
+	}
+
+
+
+
+}

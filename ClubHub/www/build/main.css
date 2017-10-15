@@ -27904,7 +27904,7 @@ page-contact .followInfoContent {
 page-contact .profileSubTabs {
   position: relative;
   display: block;
-  top: 52%;
+  top: 50%;
   height: auto;
   border-bottom: none;
   text-align: center;
@@ -27949,4 +27949,49 @@ page-contact .info {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+}
+
+tabs-about .tabs-ios .tab-button-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+tabs-about .tabs-ios .tab-button[aria-selected=true] .tab-button-icon .ion-ios-events-outline,
+tabs-about .ion-ios-events {
+  background-image: url("../img/tab_icon/events_icon_actived.png");
+}
+
+tabs-about .ion-ios-events-outline {
+  background-image: url("../img/tab_icon/events_icon.png");
+}
+
+tabs-about .tabs-ios .tab-button[aria-selected=true] .tab-button-icon .ion-ios-clubs-outline,
+tabs-about .ion-ios-clubs {
+  background-image: url("../img/tab_icon/clubs_icon_actived.png");
+}
+
+tabs-about .ion-ios-clubs-outline {
+  background-image: url("../img/tab_icon/clubs_icon.png");
+}
+
+tabs-about .tabs-ios .tab-button[aria-selected=true] .tab-button-icon .ion-ios-peoples-outline,
+tabs-about .ion-ios-peoples {
+  background-image: url("../img/tab_icon/peoples_icon_actived.png");
+}
+
+tabs-about .ion-ios-peoples-outline {
+  background-image: url("../img/tab_icon/peoples_icon.png");
+}
+
+tabs-about .tabs-ios .tab-button[aria-selected=true] .tab-button-icon .ion-ios-profile-outline,
+tabs-about .ion-ios-profile {
+  background-image: url("../img/tab_icon/profile_icon_actived.png");
+}
+
+tabs-about .ion-ios-profile-outline {
+  background-image: url("../img/tab_icon/profile_icon.png");
+}
+
+tabs-about a#tab-t0-0[aria-selected=true], tabs-about a#tab-t0-1[aria-selected=true], tabs-about a#tab-t0-2[aria-selected=true], tabs-about a#tab-t0-3[aria-selected=true] {
+  color: red;
 }

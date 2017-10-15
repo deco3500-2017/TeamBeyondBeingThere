@@ -62,27 +62,11 @@ export class AddEventPage {
       this.alert("Start time needed!")
     }else if(this.event.number==null){
       this.alert("Contact number needed!")
-    }else if(this.event.isOncampus){
-      if(this.event.locationCampus==null||this.event.locationBuilding==null||
-        this.event.locationRoom==null){
-          this.alert("Event Location needed")
-      }else{
-        this.firebaseProvider.addEvent(this.event);
-        this.navCtrl.pop();
-        this.alert("Event Created");
-      }
-    }else if(!this.event.isOncampus){
-      if(this.event.locationCity==null||this.event.locationPostcode==null||
-        this.event.locationSuburb==null||this.event.locationStreet==null){
-        this.alert("Event Location needed")
-      }
-
     }else{
-      this.firebaseProvider.addEvent(this.event);
-      this.navCtrl.pop();
-      this.alert("Event Created");
+          this.firebaseProvider.addEvent(this.event);
+          this.navCtrl.pop();
+          this.alert("Event Created");
     }
-  	
   }
 
 

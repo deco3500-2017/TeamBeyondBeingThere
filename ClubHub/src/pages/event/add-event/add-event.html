@@ -47,7 +47,7 @@
 
 			<div class="title_box">
 	  			<ion-label id="title">Registration deadline</ion-label>
-	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="event.registrationDeadline" placeholder="Oct 17, 2017 00:00"></ion-datetime>
+	  			<ion-datetime displayFormat="MMM DD, YYYY HH:mm" min="2017" max="2020"[(ngModel)]="event.registrationDeadline" placeholder="Oct 17, 2017 00:00"></ion-datetime>
 	  		</div>
 
 			<div class="title_box">
