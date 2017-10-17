@@ -1,28 +1,30 @@
 <ion-nav [root]="rootPage"></ion-nav>
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>UQ ClubHub</ion-title>
-  </ion-navbar>
-
-</ion-header>
 
 
 <ion-content no-bounce padding class='view'>
+
+
+
+
 	<div id='imageContainer'>
-	<img src="../../assets/icon/clubHub.png" height="100px" width="100px" />
-	</div>
-<ion-footer>
-	<div id="container">
-		<p id='line1' >Have a great time!</p>
+			<img src="../img/logo.png" />
 	</div>
 
-	<div id='bottomButton'>	
-	  	<button ion-button full color='primary'(click)='loginWithFacebook()'>
-	  	  Sign in with facebook
-	  	</button> 
+	<div id='inputContainer'>
+		<ion-list>
+			<ion-item  no-lines>
+				<ion-input type="email" [(ngModel)]="email" placeholder="Student Email"></ion-input>
+			</ion-item>
+			<ion-item  no-lines>
+				<ion-input type="password" [(ngModel)]="pw" placeholder="Password"></ion-input>
+			</ion-item>
+		</ion-list>
 	</div>
-</ion-footer>		
+
+	<div id="loginContainer">
+		<button id="login" (click)="loginWithEmail()">LOG IN</button>
+	</div>
+
 
 	
 </ion-content>

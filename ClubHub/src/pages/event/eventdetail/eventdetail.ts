@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController} from 'ionic-angular';
+import { NavController, NavParams,ViewController} from 'ionic-angular';
 
 
 /**
@@ -16,26 +16,23 @@ import { NavController} from 'ionic-angular';
 })
 export class EventDetailPage {
 
-slides = [
-    {
-      title: "Welcome to the Docs!",
-      description: "The <b>Ionic Component Documentation</b> showcases a number of useful components that are included out of the box with Ionic.",
-      image: "img/1.png",
-    },
-    {
-      title: "What is Ionic?",
-      description: "<b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.",
-      image: "img/2.jpg",
-    },
-    {
-      title: "What is Ionic Cloud?",
-      description: "The <b>Ionic Cloud</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.",
-      image: "img/1.png",
-    }
-  ];
+  event:any;
 
-  constructor(public navCtrl: NavController) {
 
+
+  constructor(public viewCtrl:ViewController,public navCtrl: NavController,public navParams:NavParams) {
+    this.event=this.navParams.data;
   }
+
+  ionViewDidLoad(){
+
+    console.log(this.navParams.data); 
+  }
+
+  closeModal(){
+    this.viewCtrl.dismiss();
+  }
+
+
 
 }

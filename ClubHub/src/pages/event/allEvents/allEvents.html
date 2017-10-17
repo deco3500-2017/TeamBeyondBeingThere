@@ -1,7 +1,7 @@
 <ion-content class="card-background-page">
 
-<ion-card *ngFor="let event of events | async">
-      <img  (click)='gotoEventDetail()' src="img/2.jpg"/>
+<ion-card *ngFor="let event of events | async" (click)='gotoEventDetail(event)'>
+      <img src="img/2.jpg" />
       <ion-card-content>       
           <div class="price-background"></div>
           <div class="event-price" >${{event.nonmemberFee}}</div>

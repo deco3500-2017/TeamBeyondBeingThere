@@ -20,6 +20,11 @@ import firebase from 'firebase';
 })
 
 export class EntryPage {
+
+  email=null;
+  pw=null;
+
+
 	facebook={
     loggedIn:false,
     name:null,
@@ -43,6 +48,7 @@ export class EntryPage {
     }).present();
   }
 
+/*
   loginWithFacebook(){
 	this.fire.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider())
     .then(res => {
@@ -59,6 +65,24 @@ export class EntryPage {
       this.alert(error.message);
     })
   }
+*/
+  loginWithEmail(){
+    if(this.email==null||this.pw==null){
+      this.alert("The email/password can not be null!");
+      return;
+    }
+    this.fire.auth.signInWithEmailAndPassword(this.email,this.pw)
+    .then(res=>{
+      console.log(res);
+        this.alert("You have logged in");
+        this.navCtrl.setRoot(TabsPage);
+    })
+    .catch(error =>{
+      console.log(error);
+      this.alert(error.message);
+    });
+  }
+
 
 }
 
