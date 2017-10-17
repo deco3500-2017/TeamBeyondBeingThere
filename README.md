@@ -1,6 +1,6 @@
 ﻿### Updates
 17 Oct, 2017
-Append Week 12 stand-up content to ![TeamBeyondBeingThere/Design Process/Week 12 - Promotional Material Design/Week 12 stand-up.pdf](https://github.com/deco3500-2017/TeamBeyondBeingThere/blob/master/Design%20Process/Week%2012%20-%20Promotional%20Material%20Design/Week%2012%20stand-up.pdf "Week 12 stand-up.pdf")
+Append Week 12 stand-up content to TeamBeyondBeingThere/Design Process/Week 12 - Promotional Material Design/Week 12 stand-up.pdf![Download the pdf version here](https://github.com/deco3500-2017/TeamBeyondBeingThere/blob/master/Design%20Process/Week%2012%20-%20Promotional%20Material%20Design/Week%2012%20stand-up.pdf "Download the pdf version here")
 
 4 Oct, 2017
 Append stand-up content to the [Week 10](#week-10) section.
