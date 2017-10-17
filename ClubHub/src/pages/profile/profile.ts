@@ -5,6 +5,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { FirebaseServiceProvider } from '../../providers/firebase-service/firebase-service';
 //,public firebaseService:FirebaseServiceProvider
 
+
 import * as firebase from 'firebase'; 
 
 
@@ -16,6 +17,10 @@ export class ProfilePage {
   events:any;
   tickets:any;
   bookmarks:any;
+
+  email:string;
+  pw:string;
+
 
 
   facebook={
@@ -60,6 +65,16 @@ export class ProfilePage {
       this.alert(error.message);
     })
   }
+
+
+  loginWithAccount(){
+    this.fire.auth.signInWithEmailAndPassword(this.email,this.pw)
+    .then(res=>{
+      console.log(res);
+      this.alert("logged in")
+    })
+  }
+
 
   logout(){
     this.fire.auth.signOut()
