@@ -20,6 +20,16 @@
 				<button ion-button color="dark" full (click)='logout()' *ngIf='facebook.loggedIn'>
 					<ion-icon name="log-facebook"></ion-icon>Log out					
 				</button>
+
+				<ion-input type="text" [(ngModel)]="email">
+					<ion-label>email</ion-label>
+				</ion-input>
+				<ion-input type="password" [(ngModel)]="pw">
+					<ion-label>pw</ion-label>
+				</ion-input>
+				<button ion-button color="dark" full (click)="loginWithAccount()"></button>
+
+
 		</div>
 	
 		<div class="followInfoContent" *ngIf="facebook.loggedIn">
