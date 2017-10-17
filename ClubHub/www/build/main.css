@@ -27704,10 +27704,6 @@ ion-footer button {
   margin-right: 1%;
 }
 
-.eventdetail .slide-image {
-  margin-top: 5%;
-}
-
 .titlep {
   font-size: 18px;
   letter-spacing: 0;
@@ -27726,6 +27722,18 @@ ion-footer button {
   letter-spacing: 0;
   color: dimgray;
   margin-left: 5%;
+}
+
+.map {
+  margin-top: 2%;
+}
+
+.titlebc {
+  background: -webkit-gradient(linear, left top, right top, from(#ed3269), to(#f05f3e));
+  background: linear-gradient(to right, #ed3269 0%, #f05f3e 100%);
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 10%;
 }
 
 page-contact .segment-ios .segment-button:first-of-type {
