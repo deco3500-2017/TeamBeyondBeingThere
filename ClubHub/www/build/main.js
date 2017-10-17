@@ -275,9 +275,10 @@ EntryPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-entry',template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\entry\entry.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n\n\n\n\n<ion-content no-bounce padding class=\'view\'>\n\n\n\n\n\n\n\n\n\n	<div id=\'imageContainer\'>\n\n			<img src="../img/logo.png" />\n\n	</div>\n\n\n\n	<div id=\'inputContainer\'>\n\n		<ion-list>\n\n			<ion-item  no-lines>\n\n				<ion-input type="email" [(ngModel)]="email" placeholder="Student Email"></ion-input>\n\n			</ion-item>\n\n			<ion-item  no-lines>\n\n				<ion-input type="password" [(ngModel)]="pw" placeholder="Password"></ion-input>\n\n			</ion-item>\n\n		</ion-list>\n\n	</div>\n\n\n\n	<div id="loginContainer">\n\n		<button id="login" (click)="loginWithEmail()">LOG IN</button>\n\n	</div>\n\n\n\n\n\n	\n\n</ion-content>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\entry\entry.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__["a" /* AngularFireAuth */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__["a" /* AngularFireAuth */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object])
 ], EntryPage);
 
+var _a, _b, _c;
 //# sourceMappingURL=entry.js.map
 
 /***/ }),
@@ -610,8 +611,7 @@ EventDetailPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_firebase_service_firebase_service__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(410);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__entry_entry__ = __webpack_require__(155);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -629,7 +629,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 //,public firebaseService:FirebaseServiceProvider
 
 var ProfilePage = (function () {
-    function ProfilePage(fire, navCtrl, alertCtrl, firebaseService) {
+    function ProfilePage(modalCtrl, fire, navCtrl, alertCtrl, firebaseService) {
+        this.modalCtrl = modalCtrl;
+        this.fire = fire;
+        this.navCtrl = navCtrl;
+        this.alertCtrl = alertCtrl;
+        this.firebaseService = firebaseService;
+        this.user = {
+            loggedIn: false,
+            email: "",
+            name: "",
+        };
+        this.facebook = {
+            loggedIn: false,
+            name: "anonymous",
+            email: "",
+            profilePicture: "",
+        };
         /*
         if(fire.auth.currentUser.email.length==0){
           this.facebook.loggedIn=false;
@@ -641,43 +657,47 @@ var ProfilePage = (function () {
           this.facebook.profilePicture=fire.auth.currentUser.photoURL;
         }
         */
-        this.fire = fire;
-        this.navCtrl = navCtrl;
-        this.alertCtrl = alertCtrl;
-        this.firebaseService = firebaseService;
-        this.facebook = {
-            loggedIn: false,
-            name: "anonymous",
-            email: "",
-            profilePicture: "",
-        };
+        this.user.loggedIn = true;
+        this.user.email = this.fire.auth.currentUser.email;
+        this.user.name = "Ethan";
     }
-    ProfilePage.prototype.loginWithFacebook = function () {
-        var _this = this;
-        this.fire.auth.signInWithPopup(new __WEBPACK_IMPORTED_MODULE_4_firebase__["auth"].FacebookAuthProvider())
-            .then(function (res) {
-            console.log(res);
-            _this.alert('You have logged in');
-            _this.facebook.loggedIn = true;
-            _this.facebook.name = res.user.displayName;
-            _this.facebook.email = res.user.email;
-            _this.facebook.profilePicture = res.user.photoURL;
-            _this.events = _this.firebaseService.getEvents();
-            _this.tickets = _this.firebaseService.getTickets();
-            _this.bookmarks = _this.firebaseService.getBookmarks();
+    /*
+      loginWithFacebook(){
+        this.fire.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider())
+        .then(res => {
+          console.log(res);
+          this.alert('You have logged in');
+          this.facebook.loggedIn=true;
+          this.facebook.name=res.user.displayName;
+          this.facebook.email=res.user.email;
+          this.facebook.profilePicture = res.user.photoURL;
+          this.events=this.firebaseService.getEvents();
+          this.tickets=this.firebaseService.getTickets();
+          this.bookmarks=this.firebaseService.getBookmarks();
         })
-            .catch(function (error) {
-            console.log(error);
-            _this.alert(error.message);
-        });
-    };
+        .catch(error =>{
+          console.log(error);
+          this.alert(error.message);
+        })
+      }
+    */
     ProfilePage.prototype.loginWithAccount = function () {
-        var _this = this;
-        this.fire.auth.signInWithEmailAndPassword(this.email, this.pw)
-            .then(function (res) {
-            console.log(res);
-            _this.alert("logged in");
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__entry_entry__["a" /* EntryPage */]);
+        modal.onDidDismiss(function (data) {
+            console.log(data);
         });
+        modal.present();
+        /*
+        this.fire.auth.signInWithEmailAndPassword(this.email,this.pw)
+        .then(res=>{
+          console.log(res);
+          this.user.email=this.fire.auth.currentUser.email;
+          this.user.name="Ethan";
+          this.user.loggedIn=true;
+          
+          this.alert("logged in")
+        })
+        */
     };
     ProfilePage.prototype.logout = function () {
         var _this = this;
@@ -685,10 +705,15 @@ var ProfilePage = (function () {
             .then(function (res) {
             console.log(res);
             _this.alert('You have logged out');
-            _this.facebook.loggedIn = false;
-            _this.facebook.name = "anonymous";
-            _this.facebook.email = null;
-            _this.facebook.profilePicture = null;
+            _this.user.email = null;
+            _this.user.name = "anonymous";
+            _this.user.loggedIn = false;
+            /*
+            this.facebook.loggedIn = false;
+            this.facebook.name="anonymous";
+            this.facebook.email=null;
+            this.facebook.profilePicture=null;
+            */
         })
             .catch(function (error) {
             console.log(error);
@@ -710,11 +735,12 @@ var ProfilePage = (function () {
 }());
 ProfilePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\profile\profile.html"*/'<ion-header #head>\n\n	<div class="basicinfo">\n\n		<div class="userinfo" style="background-image: url(\'img/profilebg.jpg\')" >\n\n			<div id=\'userimgContainer\'>\n\n	      		<img *ngIf="!facebook.loggedIn" src="img/profile.png"/>\n\n	      		<img *ngIf="facebook.loggedIn" src="{{facebook.profilePicture}}" />	\n\n	      	</div>\n\n			<div id=\'usernameContainer\'>\n\n		    	<p id=\'username\'>{{facebook.name}}</p>\n\n		    </div>\n\n		    <div id=\'useremailContainer\'>\n\n		   		<p id=\'useremail\'>{{facebook.email}}</p>\n\n		    </div>\n\n	    </div>\n\n	\n\n		<div class="topButton">	  \n\n				<button ion-button color="dark" full (click)=\'loginWithFacebook()\' *ngIf=\'!facebook.loggedIn\'>\n\n				  	<ion-icon name="logo-facebook"></ion-icon>Log in\n\n				</button>\n\n				<button ion-button color="dark" full (click)=\'logout()\' *ngIf=\'facebook.loggedIn\'>\n\n					<ion-icon name="log-facebook"></ion-icon>Log out					\n\n				</button>\n\n\n\n				<ion-input type="text" [(ngModel)]="email">\n\n					<ion-label>email</ion-label>\n\n				</ion-input>\n\n				<ion-input type="password" [(ngModel)]="pw">\n\n					<ion-label>pw</ion-label>\n\n				</ion-input>\n\n				<button ion-button color="dark" full (click)="loginWithAccount()"></button>\n\n\n\n\n\n		</div>\n\n	\n\n		<div class="followInfoContent" *ngIf="facebook.loggedIn">\n\n			<div class = "row" id="row1">\n\n		   		<div class = "col">\n\n		   			<p class= "colContent">2.5k</p>\n\n		   			<p class="colTitle">Follwer</p>			   			\n\n			   	</div>\n\n			   	<div class = "col">\n\n					<p class= "colContent">5</p>\n\n		   			<p class="colTitle">Following</p>		   			\n\n			   	</div>\n\n				<div class = "col">\n\n			   			<p class= "colContent">3</p>\n\n			   			<p class="colTitle">Club</p>\n\n				</div>\n\n				<div class = "col">\n\n				   	<p class= "colContent">4</p>\n\n					<p class="colTitle">Event</p>	   			\n\n				</div>\n\n			</div>\n\n			<div class="tagContent">\n\n				<ion-slides direction="horizontal">\n\n				    <ion-slide class="horizontalSlide">\n\n				  		<div id="slideRow" class="row">\n\n					    	<div id="slideCol" class="col">\n\n					    		#Fashion\n\n					    	</div>	 \n\n					    	<div id="slideCol" class="col">\n\n					    		#Party\n\n					    	</div>\n\n\n\n					    	<div id="slideCol" class="col">\n\n					    		#Outgoing\n\n					    	</div>\n\n						</div> \n\n				    </ion-slide>\n\n				    <ion-slide class="horizontalSlide">\n\n				  		<div id="slideRow" class="row">\n\n				    	<div id="slideCol" class="col">\n\n				    		#Haha\n\n				    	</div>	 \n\n				    	<div id="slideCol" class="col">\n\n				    		#UQ Student\n\n				    	</div>\n\n				    	<div id="slideCol" class="col">\n\n				    		#Friendly\n\n				    	</div>\n\n						</div>    \n\n				    </ion-slide>\n\n				</ion-slides>\n\n			</div>\n\n		</div>\n\n	</div>\n\n</ion-header>\n\n\n\n<ion-content fullscreen #content hide-header [header]="head" >\n\n	<div class="profileSubTabs" *ngIf="facebook.loggedIn">\n\n	    <ion-segment  [(ngModel)]="segments" color="dark">\n\n	      <ion-segment-button value="events">\n\n	        EVENTS\n\n	      </ion-segment-button>\n\n	      <ion-segment-button value="tickets">\n\n	        TICKETS\n\n	      </ion-segment-button>\n\n	      <ion-segment-button value="bookmarks">\n\n	        BOOKMARKS\n\n	      </ion-segment-button>\n\n	    </ion-segment>\n\n					<div class="subTabContent" [ngSwitch]="segments" >\n\n						\n\n						<div *ngSwitchCase="\'events\'">\n\n						<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.title}}</h2>\n\n								<p>{{sItem1.description}}</p>\n\n							</ion-item>\n\n						</ion-list>\n\n						\n\n						</div>\n\n					\n\n						<div *ngSwitchCase="\'tickets\'">\n\n						<ion-slides id="verticalSlide" pager="false" direction="vertical" >\n\n							<ion-slide>\n\n				  			<ion-list  style="margin:0">\n\n				  			<ion-item (click)="dosomething()" *ngFor="let sItem2 of tickets | async">\n\n				    		\n\n				    		<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem2.title}}</h2>\n\n								<p>{{sItem2.description}}</p>\n\n				  			</ion-item>\n\n				  			</ion-list>\n\n				  			</ion-slide>\n\n						</ion-slides>\n\n						</div>\n\n\n\n						<div *ngSwitchCase="\'bookmarks\'">\n\n						<ion-slides id="verticalSlide" pager="false" direction="vertical" >\n\n							<ion-slide>\n\n				  			<ion-list  style="margin:0">\n\n				  			<ion-item (click)="dosomething()" *ngFor="let sItem3 of bookmarks | async">\n\n				    		\n\n				    		<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem3.title}}</h2>\n\n								<p>{{sItem3.description}}</p>\n\n				  			</ion-item>\n\n				  			</ion-list>\n\n				  			</ion-slide>\n\n						</ion-slides>\n\n						</div>\n\n					</div>\n\n			</div>\n\n\n\n	<div *ngIf="!facebook.loggedIn" class="info">Log in to experience more~</div>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\profile\profile.html"*/
+        selector: 'page-contact',template:/*ion-inline-start:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\profile\profile.html"*/'<ion-header #head>\n\n	<div class="basicinfo">\n\n		<div class="userinfo" style="background-image: url(\'img/profilebg.jpg\')" >\n\n			<div id=\'userimgContainer\'>\n\n	      		<img *ngIf="!user.loggedIn" src="img/profile.png"/>\n\n	      		<img *ngIf="user.loggedIn" src="img/profile_img.jpg" />	\n\n	      	</div>\n\n			<div id=\'usernameContainer\'>\n\n		    	<p id=\'username\'>{{user.name}}</p>\n\n		    </div>\n\n		    <div id=\'useremailContainer\'>\n\n		   		<p id=\'useremail\'>{{user.email}}</p>\n\n		    </div>\n\n	    </div>\n\n	\n\n		<div class="topButton">	  \n\n				<button ion-button color="dark" full (click)="loginWithAccount()" *ngIf=\'!user.loggedIn\'>\n\n				  	Log in\n\n				</button>\n\n				<button ion-button color="dark" full (click)=\'logout()\' *ngIf=\'user.loggedIn\'>\n\n					Log out				\n\n				</button>\n\n\n\n		</div>\n\n	\n\n		<div class="followInfoContent" *ngIf="user.loggedIn">\n\n			<div class = "row" id="row1">\n\n		   		<div class = "col">\n\n		   			<p class= "colContent">2.5k</p>\n\n		   			<p class="colTitle">Follwer</p>			   			\n\n			   	</div>\n\n			   	<div class = "col">\n\n					<p class= "colContent">5</p>\n\n		   			<p class="colTitle">Following</p>		   			\n\n			   	</div>\n\n				<div class = "col">\n\n			   			<p class= "colContent">3</p>\n\n			   			<p class="colTitle">Club</p>\n\n				</div>\n\n				<div class = "col">\n\n				   	<p class= "colContent">4</p>\n\n					<p class="colTitle">Event</p>	   			\n\n				</div>\n\n			</div>\n\n			<div class="tagContent">\n\n				<ion-slides direction="horizontal">\n\n				    <ion-slide class="horizontalSlide">\n\n				  		<div id="slideRow" class="row">\n\n					    	<div id="slideCol" class="col">\n\n					    		#Fashion\n\n					    	</div>	 \n\n					    	<div id="slideCol" class="col">\n\n					    		#Party\n\n					    	</div>\n\n\n\n					    	<div id="slideCol" class="col">\n\n					    		#Outgoing\n\n					    	</div>\n\n						</div> \n\n				    </ion-slide>\n\n				    <ion-slide class="horizontalSlide">\n\n				  		<div id="slideRow" class="row">\n\n				    	<div id="slideCol" class="col">\n\n				    		#Haha\n\n				    	</div>	 \n\n				    	<div id="slideCol" class="col">\n\n				    		#UQ Student\n\n				    	</div>\n\n				    	<div id="slideCol" class="col">\n\n				    		#Friendly\n\n				    	</div>\n\n						</div>    \n\n				    </ion-slide>\n\n				</ion-slides>\n\n			</div>\n\n		</div>\n\n	</div>\n\n</ion-header>\n\n\n\n<ion-content fullscreen #content hide-header [header]="head" >\n\n	<div class="profileSubTabs" *ngIf="user.loggedIn">\n\n	    <ion-segment  [(ngModel)]="segments" color="dark">\n\n	      <ion-segment-button value="events">\n\n	        EVENTS\n\n	      </ion-segment-button>\n\n	      <ion-segment-button value="tickets">\n\n	        TICKETS\n\n	      </ion-segment-button>\n\n	      <ion-segment-button value="bookmarks">\n\n	        BOOKMARKS\n\n	      </ion-segment-button>\n\n	    </ion-segment>\n\n					<div class="subTabContent" [ngSwitch]="segments" >\n\n						\n\n						<div *ngSwitchCase="\'events\'">\n\n						<ion-list id="eventList" >\n\n							<ion-item *ngFor="let sItem1 of events | async">\n\n								<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem1.title}}</h2>\n\n								<p>{{sItem1.description}}</p>\n\n							</ion-item>\n\n						</ion-list>\n\n						\n\n						</div>\n\n					\n\n						<div *ngSwitchCase="\'tickets\'">\n\n						<ion-slides id="verticalSlide" pager="false" direction="vertical" >\n\n							<ion-slide>\n\n				  			<ion-list  style="margin:0">\n\n				  			<ion-item (click)="dosomething()" *ngFor="let sItem2 of tickets | async">\n\n				    		\n\n				    		<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem2.title}}</h2>\n\n								<p>{{sItem2.description}}</p>\n\n				  			</ion-item>\n\n				  			</ion-list>\n\n				  			</ion-slide>\n\n						</ion-slides>\n\n						</div>\n\n\n\n						<div *ngSwitchCase="\'bookmarks\'">\n\n						<ion-slides id="verticalSlide" pager="false" direction="vertical" >\n\n							<ion-slide>\n\n				  			<ion-list  style="margin:0">\n\n				  			<ion-item (click)="dosomething()" *ngFor="let sItem3 of bookmarks | async">\n\n				    		\n\n				    		<ion-thumbnail item-start>\n\n				      			<img src="img/2.jpg">\n\n				    		</ion-thumbnail>\n\n				    			<h2>{{sItem3.title}}</h2>\n\n								<p>{{sItem3.description}}</p>\n\n				  			</ion-item>\n\n				  			</ion-list>\n\n				  			</ion-slide>\n\n						</ion-slides>\n\n						</div>\n\n					</div>\n\n			</div>\n\n\n\n	<div *ngIf="!user.loggedIn" class="info">Log in to experience more~</div>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\Yifan Lu\Documents\TeamBeyondBeingThere\ClubHub\src\pages\profile\profile.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_3__providers_firebase_service_firebase_service__["a" /* FirebaseServiceProvider */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__providers_firebase_service_firebase_service__["a" /* FirebaseServiceProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_firebase_service_firebase_service__["a" /* FirebaseServiceProvider */]) === "function" && _e || Object])
 ], ProfilePage);
 
+var _a, _b, _c, _d, _e;
 //# sourceMappingURL=profile.js.map
 
 /***/ }),

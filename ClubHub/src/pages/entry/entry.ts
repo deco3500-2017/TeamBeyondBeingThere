@@ -33,7 +33,7 @@ export class EntryPage {
   }
 
   
-  constructor(private fire:AngularFireAuth,public navCtrl: NavController,private alertCtrl: AlertController) {
+  constructor(public fire:AngularFireAuth,public navCtrl: NavController,private alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {

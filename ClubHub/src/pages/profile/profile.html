@@ -2,37 +2,28 @@
 	<div class="basicinfo">
 		<div class="userinfo" style="background-image: url('img/profilebg.jpg')" >
 			<div id='userimgContainer'>
-	      		<img *ngIf="!facebook.loggedIn" src="img/profile.png"/>
-	      		<img *ngIf="facebook.loggedIn" src="{{facebook.profilePicture}}" />	
+	      		<img *ngIf="!user.loggedIn" src="img/profile.png"/>
+	      		<img *ngIf="user.loggedIn" src="img/profile_img.jpg" />	
 	      	</div>
 			<div id='usernameContainer'>
-		    	<p id='username'>{{facebook.name}}</p>
+		    	<p id='username'>{{user.name}}</p>
 		    </div>
 		    <div id='useremailContainer'>
-		   		<p id='useremail'>{{facebook.email}}</p>
+		   		<p id='useremail'>{{user.email}}</p>
 		    </div>
 	    </div>
 	
 		<div class="topButton">	  
-				<button ion-button color="dark" full (click)='loginWithFacebook()' *ngIf='!facebook.loggedIn'>
-				  	<ion-icon name="logo-facebook"></ion-icon>Log in
+				<button ion-button color="dark" full (click)="loginWithAccount()" *ngIf='!user.loggedIn'>
+				  	Log in
 				</button>
-				<button ion-button color="dark" full (click)='logout()' *ngIf='facebook.loggedIn'>
-					<ion-icon name="log-facebook"></ion-icon>Log out					
+				<button ion-button color="dark" full (click)='logout()' *ngIf='user.loggedIn'>
+					Log out				
 				</button>
-
-				<ion-input type="text" [(ngModel)]="email">
-					<ion-label>email</ion-label>
-				</ion-input>
-				<ion-input type="password" [(ngModel)]="pw">
-					<ion-label>pw</ion-label>
-				</ion-input>
-				<button ion-button color="dark" full (click)="loginWithAccount()"></button>
-
 
 		</div>
 	
-		<div class="followInfoContent" *ngIf="facebook.loggedIn">
+		<div class="followInfoContent" *ngIf="user.loggedIn">
 			<div class = "row" id="row1">
 		   		<div class = "col">
 		   			<p class= "colContent">2.5k</p>
@@ -87,7 +78,7 @@
 </ion-header>
 
 <ion-content fullscreen #content hide-header [header]="head" >
-	<div class="profileSubTabs" *ngIf="facebook.loggedIn">
+	<div class="profileSubTabs" *ngIf="user.loggedIn">
 	    <ion-segment  [(ngModel)]="segments" color="dark">
 	      <ion-segment-button value="events">
 	        EVENTS
@@ -150,6 +141,6 @@
 					</div>
 			</div>
 
-	<div *ngIf="!facebook.loggedIn" class="info">Log in to experience more~</div>
+	<div *ngIf="!user.loggedIn" class="info">Log in to experience more~</div>
 </ion-content>
 
