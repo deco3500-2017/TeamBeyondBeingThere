@@ -51,6 +51,9 @@ export class ProfilePage {
     this.user.loggedIn=true;
     this.user.email=this.fire.auth.currentUser.email;
     this.user.name="Ethan";
+    this.events=this.firebaseService.getEvents();
+    this.tickets=this.firebaseService.getTickets();
+    this.bookmarks=this.firebaseService.getBookmarks();
   }
 
 /*
@@ -104,6 +107,7 @@ export class ProfilePage {
       this.user.email=null;
       this.user.name="anonymous";
       this.user.loggedIn=false;
+
       /*
       this.facebook.loggedIn = false;
       this.facebook.name="anonymous";

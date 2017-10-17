@@ -660,6 +660,9 @@ var ProfilePage = (function () {
         this.user.loggedIn = true;
         this.user.email = this.fire.auth.currentUser.email;
         this.user.name = "Ethan";
+        this.events = this.firebaseService.getEvents();
+        this.tickets = this.firebaseService.getTickets();
+        this.bookmarks = this.firebaseService.getBookmarks();
     }
     /*
       loginWithFacebook(){
