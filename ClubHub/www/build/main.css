@@ -27493,6 +27493,15 @@ ion-navbar.toolbar {
   }
 }
 
+.titlebc {
+  background: -webkit-gradient(linear, left top, right top, from(#ed3269), to(#f05f3e));
+  background: linear-gradient(to right, #ed3269 0%, #f05f3e 100%);
+}
+
+.titletext {
+  color: white;
+}
+
 page-entry .button {
   margin: 0px;
 }
