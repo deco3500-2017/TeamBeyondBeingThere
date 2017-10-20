@@ -27766,6 +27766,15 @@ ion-footer button {
   margin-bottom: 10%;
 }
 
+.titlebc {
+  background: -webkit-gradient(linear, left top, right top, from(#ed3269), to(#f05f3e));
+  background: linear-gradient(to right, #ed3269 0%, #f05f3e 100%);
+}
+
+.titlebc p {
+  color: white;
+}
+
 page-contact .segment-ios .segment-button:first-of-type {
   border-top-left-radius: 0px;
   border-top-right-radius: 0;
