@@ -27569,15 +27569,21 @@ page-entry #loginContainer {
 
 .addEventButton {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 10px;
-  margin-right: 10px;
-  width: 40px;
-  height: 30px;
-  font-size: 14px;
+  left: 6%;
+  top: 25%;
   text-align: center;
-  background-color: #939393;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.addp {
+  position: absolute;
+  left: 2%;
+  top: 55%;
+  font-size: 8px;
+  color: white;
+  font-weight: bold;
 }
 
 .title_box {
@@ -27764,6 +27770,10 @@ ion-footer button {
   width: 100%;
   margin-top: 2%;
   margin-bottom: 10%;
+}
+
+.infoarea {
+  margin: 5%;
 }
 
 .titlebc {

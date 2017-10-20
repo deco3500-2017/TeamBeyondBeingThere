@@ -76,7 +76,7 @@
   </ion-fab>
 -->
 
-  <div *ngIf="event.isOncampus">
+  <div class="infoarea"  *ngIf="event.isOncampus">
     <ion-label>Location</ion-label>
     <p *ngIf="event.locationCampus">Campus: {{event.locationCampus}}</p>
     <p *ngIf="event.locationBuilding">Building: {{event.locationBuilding}}</p>
@@ -85,7 +85,7 @@
   </div>
 
 
-  <div *ngIf="!event.isOncampus">
+  <div class="infoarea" *ngIf="!event.isOncampus">
     <ion-label>Location</ion-label>
     <p *ngIf="event.locationCity">City: {{event.locationCity}}</p>
     <p *ngIf="event.locationSuburb">Building: {{event.locationSuburb}}</p>
@@ -95,6 +95,7 @@
 
 
 
+<!--
   <ion-item>
     <ion-icon name="football" item-start large></ion-icon>
     <h2>Museum of Football</h2>
@@ -118,6 +119,7 @@
       Start
     </button>
   </ion-item>
+-->
     
    <button ion-button class="titlebc">Join</button>
     

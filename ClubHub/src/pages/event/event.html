@@ -1,15 +1,19 @@
 <ion-header>
+    
   <ion-navbar >
+      
     <ion-title text-center class="titlebc">
         <p class="titletext">Event page</p>
     </ion-title>
   </ion-navbar>
-
-	<button ion-button round class="addEventButton" color="danger" (click)="addNewEvent()">
-		<ion-icon name="add"></ion-icon>
+    <ion-icon class="addEventButton" md="md-add-circle" ios="ios-add-circle-outline" (click)="addNewEvent()"></ion-icon>
+    <p class="addp">ADD EVENT</p>
+	
+<!--
+	<button ion-button round class="addEventButton"  (click)="addNewEvent()">
+		<ion-icon ios="ios-add-circle-outline"></ion-icon>
 	</button>
-
-
+-->
 </ion-header>
 
 <ion-content >
