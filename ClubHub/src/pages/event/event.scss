@@ -6,20 +6,32 @@
 .titletext{
     color: white;
 }
+
 .addEventButton{
 	position:absolute;
-    left:6%;
-	top:25%;
-	text-align:center;
+	top:30%;
+    left:20%;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    display:block;
 }
 .addp{
+    margin:0px;
     position: absolute;
-    left:2%;
-    top:55%;
+    top:70%;
     font-size: 8px;
     color: white;
     font-weight: bold;
+    display:block;
 }
+
+#topbuttonContainer{
+    position:relative;    
+    width:80px;
+    height:44px;
+    text-align:center;
+    left:2%;
+}
+
+
