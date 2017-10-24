@@ -74,7 +74,7 @@ export class EntryPage {
     this.fire.auth.signInWithEmailAndPassword(this.email,this.pw)
     .then(res=>{
       console.log(res);
-        this.alert("You have logged in");
+        //this.alert("You have logged in");
         this.navCtrl.setRoot(TabsPage);
     })
     .catch(error =>{

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Pipe,PipeTransform } from '@angular/core';
 import { App,NavController,ModalController } from 'ionic-angular';
 import { EventDetailPage } from '../eventdetail/eventdetail';
 import { EventPage } from '../../event/event';
@@ -31,5 +31,8 @@ export class AllEventsPage {
 		let modal=this.modalCtrl.create(EventDetailPage,event);
 		modal.present();
 	}
+	
+
+
 	
 }

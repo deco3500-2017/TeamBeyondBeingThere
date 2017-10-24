@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
-import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabase,FirebaseListObservable } from 'angularfire2/database';
 
 /*
   Generated class for the FirebaseServiceProvider provider.
@@ -17,9 +17,9 @@ export class FirebaseServiceProvider {
 }
     getEvents(){
       console.log(this.afd.list('/events/'));
-    	return this.afd.list('/events/');
-    }
-
+    	return this.afd.list('/events/').map( (array) => {return array.reverse()} ) as
+      FirebaseListObservable<any[]>;
+  }
     getBookmarks(){
       console.log(this.afd.list('/bookmarks/'));
       return this.afd.list('/events/');

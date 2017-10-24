@@ -27615,7 +27615,7 @@ page-entry #loginContainer {
   padding-right: 60px;
   padding-left: 10px;
   padding-top: 1px;
-  font-size: 10px;
+  font-size: 14px;
   color: #ffffff;
   letter-spacing: 0;
 }
@@ -27684,6 +27684,19 @@ ion-footer button {
   background-image: linear-gradient(90deg, #ed3269 0%, #f05f3e 100%);
   width: 100%;
   height: 50px;
+}
+
+.imgContainer {
+  text-align: center;
+  padding-left: 10px;
+}
+
+img {
+  padding-right: 10px;
+}
+
+.uploadImage {
+  padding-left: 10px;
 }
 
 .card-background-page ion-card {
@@ -27979,7 +27992,7 @@ page-contact .followInfoContent {
 page-contact .profileSubTabs {
   position: relative;
   display: block;
-  top:50%;
+  top: 50%;
   height: auto;
   border-bottom: none;
   text-align: center;

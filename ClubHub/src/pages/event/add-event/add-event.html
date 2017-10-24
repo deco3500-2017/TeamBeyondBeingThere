@@ -54,8 +54,6 @@
 	    		<ion-label id="title">Event Location</ion-label>
 				    <ion-label id="sub_title">On campus</ion-label>
 				    <ion-toggle color="secondary" [(ngModel)]="event.isOncampus"></ion-toggle>
-
-
 				<div *ngIf="!event.isOncampus" id="locationInfo">
 					<ion-list>
 						<ion-item>
@@ -89,30 +87,30 @@
 								<ion-option value="Other Location">Other Location</ion-option>
 							</ion-select>	
 						</ion-item>
+						
 						<ion-item>
-							<ion-label>Building:</ion-label>
-							<ion-input placeholder="building" type="text" [(ngModel)]="event.locationBuilding"></ion-input>
-						</ion-item>	
-						<ion-item>
-							<ion-label>Room:</ion-label>
-							<ion-input placeholder="room" type="text" [(ngModel)]="event.locationRoom"></ion-input></ion-item>
-						<ion-item>
-							<ion-label>Details:</ion-label>
-							<ion-input placeholder="location details" type="text" [(ngModel)]="event.locationDetails"></ion-input></ion-item>	
+							<ion-label>Location Details:</ion-label>
+							<ion-input placeholder="Details" type="text" [(ngModel)]="event.locationDetails"></ion-input></ion-item>	
 					</ion-list>	
 				</div>
+	    	</div>
+
+	    	<div class="title_box">
+				<ion-label id="title">Restriction</ion-label>
+				<ion-label id="sub_title">Member only</ion-label>
+			    <ion-toggle color="secondary" [(ngModel)]="event.memberRestriction"></ion-toggle>
 	    	</div>
 
 	   		<div class="title_box">
 	    		<ion-label id="title">Fee</ion-label>
 	    		<ion-list>
 	    			<ion-item>
-	    				<ion-label>Member Fee</ion-label>
+	    				<ion-label>Member Fee:</ion-label>
 	    				<ion-input id='fee' type="number" [(ngModel)]="event.memberFee"></ion-input>
 	    			</ion-item>
 
-	    			<ion-item>
-	    				<ion-label>NonMember Fee</ion-label>
+	    			<ion-item *ngIf="!event.memberRestriction">
+	    				<ion-label>NonMember Fee:</ion-label>
 			    		<ion-input id='fee' type="number" [(ngModel)]="event.nonmemberFee"></ion-input>
 					</ion-item>
 				</ion-list>
@@ -154,10 +152,18 @@
 	    		<ion-textarea  type="text" [(ngModel)]="event.notification"></ion-textarea>
 	    	</div>
 
-
-
-
-	
+	    	<div class="uploadImage">
+	    		<button ion-button style="background-color: #ee4557;" *ngIf="!hasImage" (click)="showImage()">Upload Image</button>	
+	    	</div>
+	    		
+	    	<div *ngIf="hasImage" class="title_box">
+				<ion-label id="title">Uploaded Image</ion-label>
+	    		<div class="imgContainer">
+		    		<img src="img/buffet.jpg" width="110px" height="100px" />
+		    		<img src="img/1.png" width="110px" height="100px" />
+		    		<img src="img/2.jpg" width="110px" height="100px" />
+	    		</div>
+	    	</div>
 </ion-content>
 
 

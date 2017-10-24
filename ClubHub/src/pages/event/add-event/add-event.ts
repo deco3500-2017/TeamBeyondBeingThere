@@ -14,6 +14,7 @@ export class AddEventPage {
 		title:null,
 		club:null,
     tags:null,
+    memberRestriction:null,
     	memberFee:null,
       nonmemberFee:null,
     	description:null,
@@ -25,15 +26,14 @@ export class AddEventPage {
       locationSuburb:null,
       locationStreet:null,
       locationCampus:null,
-      locationBuilding:null,
-      locationRoom:null,
       locationDetails:null,
       startTime:null,
       endTime:null,
       registrationDeadline:null,
 	}
+   hasImage:boolean;
   constructor(public alertCtrl: AlertController,public navCtrl: NavController, public navParams: NavParams,private firebaseProvider:FirebaseServiceProvider ) {
-  	
+  	this.hasImage=false;
   }
 
   ionViewDidLoad() {
@@ -80,5 +80,8 @@ export class AddEventPage {
     }).present();
   }
 
+  showImage(){
+    this.hasImage=true;
+  }
 
 }
