@@ -5,6 +5,7 @@ page-contact {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0px;
     margin-right: 0;
+    padding:0px;
 }
 
 .segment-ios .segment-button:last-of-type {
@@ -72,6 +73,7 @@ img{
 	height:100px;
 	border:5px solid rgba(255,255,255,0.40);
 	border-radius:50%;
+	padding:0px;
 	background:#ffffff;
 }
 
@@ -239,5 +241,11 @@ padding-left:15px;
 	font-size:20px;
 	font-weight:bold;
 }
+
+.item-ios ion-thumbnail ion-img, .item-ios ion-thumbnail img{
+	padding:0px;
+}
+
+
 
 }

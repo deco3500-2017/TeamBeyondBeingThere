@@ -48,8 +48,6 @@ export class AddEventPage {
       this.alert("Tags needed!")
     }else if(this.event.memberFee==null){
       this.alert("MemberFee needed!")
-    }else if(this.event.nonmemberFee==null){
-      this.alert("nonmemberFee needed!")
     }else if(this.event.description==null){
       this.alert("Description needed!")
     }else if(this.event.email==null){
