@@ -1,4 +1,4 @@
-import { Component,Pipe,PipeTransform } from '@angular/core';
+import { Component } from '@angular/core';
 import { App,NavController,ModalController } from 'ionic-angular';
 import { EventDetailPage } from '../eventdetail/eventdetail';
 import { EventPage } from '../../event/event';
@@ -26,13 +26,15 @@ export class AllEventsPage {
   	this.events=this.firebaseService.getEvents();
   	console.log(this.events)
   }
+
+  ngOnInit(){
+  	this.events=this.firebaseService.getEvents();
+  }
+
 	gotoEventDetail(event){
 		console.log(event);
 		let modal=this.modalCtrl.create(EventDetailPage,event);
 		modal.present();
 	}
-	
-
-
 	
 }
