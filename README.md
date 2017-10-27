@@ -4,12 +4,14 @@
 
 ### Poster
 ![poster](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/Project%20Poster.png)
+*The project poster*
 
 ### Video
 https://www.youtube.com/watch?v=kJgdRPSD5PA
 
 ### Flyer
 ![flyer](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/Flyer.png)
+*Front and back sides of the flyer*
 
 ## Prototype
 We have two prototypes for our concept. 
@@ -19,11 +21,13 @@ The main prototype is a horizontal prototype, which covers most features of the 
 #### How to view the prototype:
 Use the link on your mobile phone: https://invis.io/E4E1WC9XS) 
 ![features](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/features.png)
+*The main features of the product*
 
 ### Ionic Prototype
 The other prototype is a vertical prototype. It is implemented to test the “adding events” feature for organisers. The prototype is connected to the database. The source code is accessible in the Github repository: TeamBeyondBeingThere/ClubHub/
 
 ![add events feature in ionic framework](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/ionic.png)
+*The ideal interface of the ionic prototype (The prototype works well on iPhone 6)*
 
 #### How to view the prototype:
 (1) Download the Ionic View app:
@@ -44,6 +48,7 @@ Link: https://console.firebase.google.com/
 You can log in to the console and view Authentication and Database sections by using the username and password below. 
 ACCOUNT: uqclubhub3500@gmail.com PW:deco3500
 ![database screenshot](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/database.png)
+*A screenshot of the database*
 
 ## Summary
 There are 219 clubs and societies which hold various types of events and enrich the student's campus life at UQ (University of Queensland Union, 2017). However, the power of clubs has not been fully utilised. Several main problems have been identified.
@@ -55,6 +60,7 @@ UQ ClubHub is a smartphone app, which provides an integrated platform for UQ stu
 
 Currently, students rely too much on the market day to learn about clubs, and they can only get event information from limited clubs they have joined. The UQ ClubHub app offers another pathway for students, via which they can participate in events and decide to join a club later.
 ![workflow](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/workflow.png)
+*The workflow of participating in a club and events*
 
 All participants of user tests think the app is valuable for them. Though almost all clubs have their Facebook pages, participant users think the information offered by UQ ClubHub is more relevant to them and might be useful when they need it. The social diagram feature can potentially help them to know more friends.
 
@@ -62,29 +68,35 @@ All participants of user tests think the app is valuable for them. Though almost
 
 ### Overall Process
 ![design process](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/process.png)
+*The overall design process*
 
 ### Examples of design decisions
 ![design decision of the profile screen](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/designdecision1.png)
+*Design decision of the profile screen*
 During the process of designing the user and club profile page, we decided to add the special session presenting the previous events that user attended or the club created before. This includes an internal rating system which allows people to make feedback to the event and club. This is mainly because based on the user test, we find students care about what kinds of events that the clubs used to hold and the quality of the events when deciding to participate a club. 
 
 ----------
 
 ![design decision of tab bar](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/designdecision2.png)
+*Design decision of the tab bar*
 Removing the home tab page and added people tab page. After the first round of A/B test, we found out that testers are would like to make new friends and sometimes unable to find where to add new people. Additionally, there are only limited events in the UQ each week and all events would be listed on the events page, thus setting up a home page showing the trending events would be redundant. As a result, we added the people page so that users can find out the people sharing the same interests and attended same events before much more easily.
 
 ----------
 
 ![design decision of organiser feature](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/designdecision3.png)
+*Design decision of organiser's feature*
 Offering an integrated platform for event publishing and attending. In the post-test interview, organizers reported that in most of the situation it would cost them a lot of efforts planning and creating an event. Meanwhile, members or non-members mentioned that they sometimes cannot receive the events information properly and it could go worse if the event requires fees to join. Thus, in our project, we not only offered the organizer a platform to created an event and also integrated with the payment functionality which offered both organizers and members better experiences.
 
 ----------
 
 ![design decision of social diagram](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/designdecision4.png)
+*Design decision of the social diagram*
 Conducting social diagram in different relationship zone instead of random dispersion. From user test feedback, users are sometimes confused with the diagram display style. Some people considered it may display in 3D vision, others claim that it is hard to understand the distance between different people. Thus, we modified social diagram and set different people in different zones, the relationship closer, the location more central.
 
 ### Theory
 Kietzmann et al. claim a framework of seven functional blocks to explain each important part of social media, which includes identity, conversations, sharing, presence, relationships, reputation, and groups (Kietzmann et al., 2011). A social media platform focuses on several elements of the honeycomb model. For example, Facebook mostly covers relationships, presence, identity, conversations, and reputation. In our concept, we decided to focus more on presence, groups, identity, and relationship.
 ![social media honeycomb framework of UQ ClubHub](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/socialhoneycomb.png)
+*The social media honeycomb framework of UQ ClubHub*
 
 
 ### Limitations
