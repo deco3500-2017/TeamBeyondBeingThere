@@ -66,13 +66,19 @@ All participants of user tests think the app is valuable for them. Though almost
 ### Examples of design decisions
 ![design decision of the profile screen](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/designdecision1.png)
 During the process of designing the user and club profile page, we decided to add the special session presenting the previous events that user attended or the club created before. This includes an internal rating system which allows people to make feedback to the event and club. This is mainly because based on the user test, we find students care about what kinds of events that the clubs used to hold and the quality of the events when deciding to participate a club. 
+
 ----------
+
 ![design decision of tab bar](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/designdecision2.png)
 Removing the home tab page and added people tab page. After the first round of A/B test, we found out that testers are would like to make new friends and sometimes unable to find where to add new people. Additionally, there are only limited events in the UQ each week and all events would be listed on the events page, thus setting up a home page showing the trending events would be redundant. As a result, we added the people page so that users can find out the people sharing the same interests and attended same events before much more easily.
+
 ----------
+
 ![design decision of organiser feature](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/designdecision3.png)
 Offering an integrated platform for event publishing and attending. In the post-test interview, organizers reported that in most of the situation it would cost them a lot of efforts planning and creating an event. Meanwhile, members or non-members mentioned that they sometimes cannot receive the events information properly and it could go worse if the event requires fees to join. Thus, in our project, we not only offered the organizer a platform to created an event and also integrated with the payment functionality which offered both organizers and members better experiences.
+
 ----------
+
 ![design decision of social diagram](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/designdecision4.png)
 Conducting social diagram in different relationship zone instead of random dispersion. From user test feedback, users are sometimes confused with the diagram display style. Some people considered it may display in 3D vision, others claim that it is hard to understand the distance between different people. Thus, we modified social diagram and set different people in different zones, the relationship closer, the location more central.
 
