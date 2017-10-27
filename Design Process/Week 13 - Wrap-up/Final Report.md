@@ -23,6 +23,8 @@ Use the link on your mobile phone: https://invis.io/E4E1WC9XS)
 ### Ionic Prototype
 The other prototype is a vertical prototype. It is implemented to test the “adding events” feature for organisers. The prototype is connected to the database. The source code is accessible in the Github repository: TeamBeyondBeingThere/ClubHub/
 
+![add events feature in ionic framework](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/ionic.png)
+
 #### How to view the prototype:
 (1) Download the Ionic View app:
 iOS version: 
@@ -70,6 +72,7 @@ Conducting social diagram in different relationship zone instead of random dispe
 
 ### Theory
 Kietzmann et al. claim a framework of seven functional blocks to explain each important part of social media, which includes identity, conversations, sharing, presence, relationships, reputation, and groups (Kietzmann et al., 2011). A social media platform focuses on several elements of the honeycomb model. For example, Facebook mostly covers relationships, presence, identity, conversations, and reputation. In our concept, we decided to focus more on presence, groups, identity, and relationship.
+![social media honeycomb framework of UQ ClubHub](https://raw.githubusercontent.com/deco3500-2017/TeamBeyondBeingThere/master/Design%20Process/Week%2013%20-%20Wrap-up/socialhoneycomb.png)
 
 
 ### Limitations
